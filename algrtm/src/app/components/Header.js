@@ -1,8 +1,9 @@
 import React from "react";
 import { links } from "../lib/data";
 import Link from "next/link";
-import EllipseIcon from "../assets/icons/EllipseIcon";
+
 import SunIcon from "../assets/icons/SunIcon";
+import Image from "next/image";
 
 export default function Header() {
   return (
@@ -30,7 +31,12 @@ export default function Header() {
           <button className="buttonSecondary">
             <div className="flex items-center justify-center">
               <SunIcon />
-              <EllipseIcon />
+              <Image
+                src="/ellipse.svg"
+                width={24}
+                height={24}
+                alt="ellipse icon"
+              />
             </div>
           </button>
         </div>

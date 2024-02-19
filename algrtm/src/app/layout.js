@@ -2,6 +2,8 @@ import localFont from "next/font/local";
 import "./styles/globals.css";
 import "./styles/typography.css";
 
+import Header from "./components/Header";
+
 const pingFont = localFont({ src: "/fonts/PingFangHK.ttf" });
 
 export const metadata = {
@@ -12,7 +14,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={pingFont.className}>{children}</body>
+      <body
+        className={`${pingFont.className} text-gray-950 relative h-[5000px]`}
+      >
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }

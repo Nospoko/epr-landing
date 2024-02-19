@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.buttonPrimary {
+  display: flex;
+  height: 2.375rem;
+  padding: 0.625rem 1.25rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--Neutral-40, #808080);
+  background: var(--Neutral-10, #1c1c1c);
+  color: var(--Neutral-100, #fff);
+  flex-shrink: 0;
+
+  font-size: 0.875rem;
+  font-style: normal;
+}
+
+.buttonSecondary {
+  border-radius: 3.125rem;
+  border: 1px solid var(--Neutral-80, #d6d6d6);
+  width: 3.875rem;
+  height: 2.25rem;
+  flex-shrink: 0;
+  flex-shrink: 0;
+}

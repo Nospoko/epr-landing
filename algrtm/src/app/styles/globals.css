@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "./buttons.css";
+@import "./typography.css";
+
 html {
   font-size: 16px;
 }
@@ -17,6 +20,8 @@ html {
   2. Remove default margin and padding
 */
 * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   margin: 0;
   padding: 0;
 }

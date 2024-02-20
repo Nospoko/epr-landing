@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "./buttons.css";
-@import "./typography.css";
+@import "../styles/buttons.css";
+@import "../styles/typography.css";
 
 html {
   font-size: 16px;

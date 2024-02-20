@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Header() {
+export default function Navbar() {
   return (
     <header className="z-[999] relative flex w-full justify-between items-center px-6 py-1 border-b-[1px] border-[#F5F3F5] border-b-solid">
       <div className="flex w-full flex-wrap items-center justify-center gap-y-1 p3SB text-neutralLight-neutral10 sm:w-[initial] sm:flex-nowrap sm:gap-5">

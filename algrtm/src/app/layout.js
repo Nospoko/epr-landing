@@ -1,5 +1,5 @@
 import localFont from "next/font/local";
-import "./globals.css";
+import "../styles/globals.css";
 import Navbar from "../components/Navbar";
 
 const pingFont = localFont({ src: "../fonts/PingFangHK.ttf" });

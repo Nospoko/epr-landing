@@ -1,6 +1,9 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Button from "./shared/Button";
 
 export default function Navbar() {
   return (
@@ -38,9 +41,14 @@ export default function Navbar() {
           </div>
 
           <Link href="/contactUs">
-            <button className="buttonPrimary p3">Contact Us</button>
+            <Button
+              variant="primary"
+              text="Contact Us"
+              onClick={() => console.log("Button clicked!")}
+            />
           </Link>
-          <button className="buttonSecondary">
+
+          <button className="toggleButton">
             <div className="flex items-center justify-center gap-x-2">
               <Image src="/sun.svg" width={18} height={18} alt="Sun icon" />
 

@@ -10,9 +10,9 @@
   align-items: center;
   gap: 0.625rem;
   border-radius: 0.5rem;
-  border: 1px solid var(--Neutral-40, #808080);
-  background: var(--Neutral-10, #1c1c1c);
-  color: var(--Neutral-100, #fff);
+  border: 1px solid theme("colors.neutralLight.neutral40");
+  background: theme("colors.neutralLight.neutral10");
+  color: theme("colors.neutralLight.neutral100");
   flex-shrink: 0;
 
   font-size: 0.875rem;
@@ -21,9 +21,8 @@
 
 .buttonSecondary {
   border-radius: 3.125rem;
-  border: 1px solid var(--Neutral-80, #d6d6d6);
+  border: 1px solid theme("colors.neutralLight.neutral80");
   width: 3.875rem;
   height: 2.25rem;
-  flex-shrink: 0;
   flex-shrink: 0;
 }

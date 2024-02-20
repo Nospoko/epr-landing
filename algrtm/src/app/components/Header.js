@@ -1,11 +1,10 @@
 import React from "react";
 import Link from "next/link";
-import SunIcon from "../assets/icons/SunIcon";
 import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="z-[999] relative flex w-full justify-between items-center px-6 py-1">
+    <header className="z-[999] relative flex w-full justify-between items-center px-6 py-1 border-b-[1px] border-[#F5F3F5] border-b-solid">
       <div className="flex w-full flex-wrap items-center justify-center gap-y-1 p3SB text-neutralLight-neutral10 sm:w-[initial] sm:flex-nowrap sm:gap-5">
         <Link href="/">
           <div className="flex w-full items-center justify-center px-3 py-3 hover:text-blue transition">
@@ -43,10 +42,10 @@ export default function Header() {
           </Link>
           <button className="buttonSecondary">
             <div className="flex items-center justify-center gap-x-2">
-              {/* <SunIcon /> */}
               <Image src="/sun.svg" width={18} height={18} alt="Sun icon" />
+
               <Image
-                src="/circle.svg"
+                src="/ellipse.svg"
                 width={24}
                 height={24}
                 alt="Ellipse icon"

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Button = ({ text, onClick, variant }) => {
+const Button = ({ text, onClick, variant, href }) => {
   let buttonClass =
     "flex justify-center items-center select-none text-sm font-medium px-5 py-2 h-10 gap-4 rounded-md ";
 
@@ -13,7 +13,7 @@ const Button = ({ text, onClick, variant }) => {
   }
 
   return (
-    <button type="button" className={buttonClass} onClick={onClick}>
+    <button type="button" className={buttonClass} onClick={onClick} href={href}>
       {text}
     </button>
   );

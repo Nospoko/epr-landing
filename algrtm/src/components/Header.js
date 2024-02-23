@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="z-[999] relative flex w-full justify-between items-center border-b-[1px] border-[#F5F3F5] border-b-solid p-4 sm:px-[44px] sm:py-4 lg:px-[5.88rem] lg:py-4">
+    <header className="z-[999] relative flex w-full justify-between items-center border-b border-[#F5F3F5] border-solid p-4 md:px-[2.75rem] lg:px-[5.875rem]">
       <div className="flex w-full flex-wrap flex-start sm:items-center sm:justify-center  p3SB text-neutralLight-neutral10 sm:w-[initial] sm:flex-nowrap sm:gap-5 ">
         <Link href="/">
           <div className="flex w-full items-center justify-center hover:text-blue transition">
@@ -19,63 +19,53 @@ export default function Header() {
       <div className="flex flex-end w-full flex-wrap items-center justify-end gap-y-1 sm:w-[initial] sm:flex-nowrap gap-4 ">
         <div className="hidden sm:flex  items-center justify-center gap-x-2">
           <Link
-            className="flex w-full items-center justify-center px-3 py-3 hover:text-blue transition p3 "
+            className="flex w-full items-center justify-center px-3 py-3 hover:text-blue transition p3 p-2.5"
             href="/pianoRoll"
           >
             PianoRoll
           </Link>
 
           <Link
-            className="flex w-full items-center justify-center px-3 py-3 hover:text-blue transition p3 "
+            className="flex w-full items-center justify-center px-3 py-3 hover:text-blue transition p3 p-2.5 "
             href="/customProjects"
           >
             CustomProjects
           </Link>
           <Link
-            className="flex w-full items-center justify-center px-3 py-3 hover:text-blue transition p3 "
+            className="flex w-full items-center justify-center px-3 py-3 hover:text-blue transition p3 p-2.5"
             href="/knowledge"
           >
             Knowledge
           </Link>
         </div>
 
-        <div className="flex  flex-end sm:items-center sm:justify-center gap-x-4 ">
-          <Link href="/contactUs">
-            <Button
-              variant="primary"
-              text="Contact Us"
-              onClick={() => console.log("Button clicked!")}
-            />
-          </Link>
+        <Link
+          className="flex justify-center items-center select-none text-sm px-[1.25rem] py-[0.625rem] h-10 gap-4 rounded-md border border-neutralLight-neutral40 bg-neutralLight-neutral10 text-neutralLight-neutral100 p3SB"
+          href="/contactUs"
+        >
+          Contact Us
+        </Link>
 
-          <div className="hidden sm:flex items-center justify-center">
-            <button className="toggleButton flex items-center justify-center gap-2">
-              <Image
-                src="/sun.svg"
-                width={18}
-                height={18}
-                alt="Sun icon"
-                className="hidden sm:block"
-              />
-              <Image
-                src="/ellipse.svg"
-                width={24}
-                height={24}
-                alt="Ellipse icon"
-                className="hidden sm:block"
-              />
-            </button>
-          </div>
-          <button className=" flex items-center justify-center">
+        <div className="hidden sm:flex items-center justify-center ">
+          <button className="toggleButton items-center justify-center  hidden sm:flex sm:gap-[0.38rem]">
+            <Image src="/sun.svg" width={18} height={18} alt="Sun icon" />
             <Image
-              src="/menu.svg"
+              src="/ellipse.svg"
               width={24}
               height={24}
-              alt="Hamburger icon"
-              className="block sm:hidden"
+              alt="Ellipse icon"
             />
           </button>
         </div>
+        <button className=" flex items-center justify-center">
+          <Image
+            src="/menu.svg"
+            width={24}
+            height={24}
+            alt="Hamburger icon"
+            className="block sm:hidden"
+          />
+        </button>
       </div>
     </header>
   );

@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.toggleButton {
+  border-radius: 3.125rem;
+  border: 1px solid theme("colors.neutralLight.neutral80");
+  width: 3.875rem;
+  height: 2.25rem;
+  flex-shrink: 0;
+}

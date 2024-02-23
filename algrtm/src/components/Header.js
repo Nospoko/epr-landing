@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import React from "react";
-import Button from "./shared/Button";
 import Image from "next/image";
 
 export default function Header() {
@@ -19,20 +18,20 @@ export default function Header() {
       <div className="flex flex-end w-full flex-wrap items-center justify-end gap-y-1 sm:w-[initial] sm:flex-nowrap gap-4 ">
         <div className="hidden sm:flex  items-center justify-center gap-x-2">
           <Link
-            className="flex w-full items-center justify-center px-3 py-3 hover:text-blue transition p3 p-2.5"
+            className="flex w-full items-center justify-center  hover:text-blue transition p3 p-2.5"
             href="/pianoRoll"
           >
             PianoRoll
           </Link>
 
           <Link
-            className="flex w-full items-center justify-center px-3 py-3 hover:text-blue transition p3 p-2.5 "
+            className="flex w-full items-center justify-center hover:text-blue transition p3 p-2.5"
             href="/customProjects"
           >
             CustomProjects
           </Link>
           <Link
-            className="flex w-full items-center justify-center px-3 py-3 hover:text-blue transition p3 p-2.5"
+            className="flex w-full items-center justify-center  hover:text-blue transition p3 p-2.5"
             href="/knowledge"
           >
             Knowledge
@@ -40,14 +39,14 @@ export default function Header() {
         </div>
 
         <Link
-          className="flex justify-center items-center select-none text-sm px-[1.25rem] py-[0.625rem] h-10 gap-4 rounded-md border border-neutralLight-neutral40 bg-neutralLight-neutral10 text-neutralLight-neutral100 p3SB"
+          className="flex justify-center items-center select-none text-sm px-5 py-2.5 h-10 gap-4 rounded-md border border-neutralLight-neutral40 bg-neutralLight-neutral10 text-neutralLight-neutral100 p3SB"
           href="/contactUs"
         >
           Contact Us
         </Link>
 
         <div className="hidden sm:flex items-center justify-center ">
-          <button className="toggleButton items-center justify-center  hidden sm:flex sm:gap-[0.38rem]">
+          <button className="toggleButton items-center justify-center  hidden sm:flex sm:gap-1.5">
             <Image src="/sun.svg" width={18} height={18} alt="Sun icon" />
             <Image
               src="/ellipse.svg"
@@ -57,14 +56,8 @@ export default function Header() {
             />
           </button>
         </div>
-        <button className=" flex items-center justify-center">
-          <Image
-            src="/menu.svg"
-            width={24}
-            height={24}
-            alt="Hamburger icon"
-            className="block sm:hidden"
-          />
+        <button className=" flex sm:hidden items-center justify-center">
+          <Image src="/menu.svg" width={24} height={24} alt="Hamburger icon" />
         </button>
       </div>
     </header>

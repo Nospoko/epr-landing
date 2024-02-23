@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import "../styles/globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "@/components/Footer";
+import LinksSection from "@/components/LinksSection";
 
 const pingFont = localFont({ src: "../fonts/PingFangHK.ttf" });
 
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
       >
         <Navbar />
         {children}
+        <LinksSection />
         <Footer />
       </body>
     </html>

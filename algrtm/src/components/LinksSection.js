@@ -3,7 +3,7 @@ import React from "react";
 
 const LinksSection = () => {
   return (
-    <div className=" bg-neutralLight-neutral10 w-full">
+    <div className=" bg-neutralLight-neutral10 w-full border-t-2 border-neutralLight-neutral20">
       <div className="flex flex-col bg-neutralLight-neutral10 mx-[12.5rem] my-16 gap-16">
         <div className="flex gap-[11.125rem]   bg-neutralLight-neutral10 ">
           <div className=" flex flex-col gap-6 ">

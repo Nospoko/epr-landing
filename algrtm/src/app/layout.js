@@ -7,6 +7,7 @@ import SolutionsSection from "@/components/SolutionsSection";
 import OurStory from "@/components/OurStory";
 import DevelopSection from "@/components/DevelopSection";
 import IconsComponent from "@/components/IconsComponent";
+import AlgorithmicMusicSection from "@/components/AlgorithmicMusicSection";
 
 const pingFont = localFont({ src: "../fonts/PingFangHK.ttf" });
 
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
 
         <DevelopSection />
         <IconsComponent />
+        <AlgorithmicMusicSection />
         <OurStory />
         <SolutionsSection />
         <LinksSection />

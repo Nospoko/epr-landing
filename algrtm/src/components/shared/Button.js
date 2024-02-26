@@ -6,10 +6,10 @@ const Button = ({ text, onClick, variant, href }) => {
 
   if (variant === "primary") {
     buttonClass +=
-      " border border-neutralLight-neutral40 bg-neutralLight-neutral10 text-neutralLight-neutral100";
+      "border border-neutralLight-neutral20 bg-neutralLight-neutral10 text-neutralLight-neutral100";
   } else if (variant === "secondary") {
     buttonClass +=
-      " border border-neutralLight-neutral80 bg-neutralLight-neutral100 text-neutralLight-neutral10";
+      "border border-neutralLight-neutral80 bg-neutralLight-neutral100 text-neutralLight-neutral10";
   }
 
   return (

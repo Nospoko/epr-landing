@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./shared/Button";
+import Image from "next/image";
 // import Image from "next/image";
 
 const AlgorithmicMusicSection = () => {
@@ -25,14 +26,14 @@ const AlgorithmicMusicSection = () => {
       </div>
 
       {/* to solve- images optymalization config */}
-      {/* <div className="max-w-[36.22475rem ] max-h-[37.5rem]">
+      <div className="flex shrink-0">
         <Image
-          src="/assets/images/playingPerson-image.png"
-          width={36.22475}
-          height={37.5}
+          src="/womanPlaying-image.jpg"
           alt="Woman playing the piano"
+          width={580}
+          height={600}
         ></Image>
-      </div> */}
+      </div>
     </div>
   );
 };

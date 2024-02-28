@@ -42,7 +42,7 @@ export default function Header() {
           className="flex justify-center items-center select-none text-sm px-5 py-2.5 h-10 gap-4 rounded-md border border-neutralLight-neutral40 bg-neutralLight-neutral10 text-neutralLight-neutral100 p3SB"
           href="/contactUs"
         >
-          Contact Us
+          Contact us
         </Link>
 
         <div className="hidden sm:flex items-center justify-center ">

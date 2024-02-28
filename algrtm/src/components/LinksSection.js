@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import externalLinks from "@/data/externalLinks";
 
 const LinksSection = () => {
   return (
     <div className=" bg-neutralLight-neutral10 w-full border-t-2 border-neutralLight-neutral20">
-      <div className="flex flex-col bg-neutralLight-neutral10 mx-[12.5rem] my-16 gap-16">
+      <div className="flex flex-col bg-neutralLight-neutral10 mx-[12.5rem] mt-16 mb-[7.75rem] gap-16">
         <div className="flex gap-[11.125rem]   bg-neutralLight-neutral10 ">
           <div className=" flex flex-col gap-6 ">
             <div className="flex w-full justify-start h5">
@@ -21,17 +22,21 @@ const LinksSection = () => {
           </div>
 
           <div className="flex gap-[0.625rem] px-4 items-end">
-            <Link
-              href="#"
+            {/* <Link
+              href="/pianoRoll"
               className="p3 text-neutralLight-neutral90 p-[0.625rem]"
             >
               PianoRoll
+            </Link> */}
+            <Link href="/pianoRoll">
+              <p className="p3 text-neutralLight-neutral90 p-[0.625rem]">
+                PianoRoll
+              </p>
             </Link>
-            <Link
-              href="#"
-              className="p3 text-neutralLight-neutral90 p-[0.625rem]"
-            >
-              Custom Projects
+            <Link href="/customProjects">
+              <p className="p3 text-neutralLight-neutral90 p-[0.625rem]">
+                Custom Projects
+              </p>
             </Link>
             <Link
               href="#"
@@ -39,11 +44,10 @@ const LinksSection = () => {
             >
               Blog & News
             </Link>
-            <Link
-              href="#"
-              className="p3 text-neutralLight-neutral90 p-[0.625rem]"
-            >
-              Contact us
+            <Link href="/contactUs">
+              <p className="p3 text-neutralLight-neutral90 p-[0.625rem]">
+                Contact us
+              </p>
             </Link>
           </div>
         </div>
@@ -53,16 +57,27 @@ const LinksSection = () => {
         </div>
 
         <div className="flex gap-11 flex-center justify-center text-neutralLight-neutral90 p3SB">
-          <Link href="#" className="text-neutralLight-neutral90 p3">
+          <Link
+            href={externalLinks.linkedin}
+            className="text-neutralLight-neutral90 p3"
+          >
             Linkedin
           </Link>
-          <Link href="#" className="text-neutralLight-neutral90 p3">
+          <Link
+            href={externalLinks.github}
+            className="text-neutralLight-neutral90 p3"
+          >
             Github
           </Link>
           <div className="flex">
-            <Link href="#" className="text-neutralLight-neutral90 p3 mr-2">
+            {/* TODO- add link when we create account */}
+            <Link
+              href={externalLinks.clutch}
+              className="text-neutralLight-neutral90 p3 mr-2"
+            >
               Clutch{" "}
             </Link>
+            {/* right now stars are static, don't come from Clutch ;) */}
             <Image width={14} height={14} src="/assets/icons/star.svg" />
             <Image width={14} height={14} src="/assets/icons/star.svg" />
             <Image width={14} height={14} src="/assets/icons/star.svg" />

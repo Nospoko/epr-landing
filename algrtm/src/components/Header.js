@@ -26,9 +26,9 @@ export default function Header() {
 
           <Link
             className="flex w-full items-center justify-center hover:text-blue transition p3 p-2.5"
-            href="/customProjects"
+            href="/customSolutions"
           >
-            CustomProjects
+            CustomSolutions
           </Link>
           <Link
             className="flex w-full items-center justify-center  hover:text-blue transition p3 p-2.5"

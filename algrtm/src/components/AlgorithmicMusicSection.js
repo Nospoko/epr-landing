@@ -1,6 +1,10 @@
 import React from "react";
 import Button from "./shared/Button";
 import Image from "next/image";
+import externalLinks from "@/data/externalLinks";
+import Link from "next/link";
+import CustomLink from "./shared/CustomLink";
+import Icon from "./shared/Icon";
 // import Image from "next/image";
 
 const AlgorithmicMusicSection = () => {
@@ -17,11 +21,28 @@ const AlgorithmicMusicSection = () => {
         <div className="mt-4 p2 leading-[1.64rem]">
           We developed <strong>PianoRoll</strong> - a social platform for Human
           and AI Pianists alike. We curated the largest database with expressive
-          piano MIDI files [link huggingface]
+          piano{" "}
+          <Link
+            href={externalLinks.hugglingface}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <strong>MIDI files.</strong>
+          </Link>
         </div>
         <div className="flex gap-4 justify-start mt-8">
-          <Button variant="primary" text="Read more" />
-          <Button variant="secondary" text="Custom solutions" />
+          <CustomLink
+            variant="primary"
+            text="Read more"
+            href="/pianoRoll"
+          ></CustomLink>
+          <CustomLink
+            variant="secondary"
+            text="Custom solutions"
+            href="/customSolutions"
+            icon="/ArrowUpRight-icon.svg"
+            alt="arrow up icon"
+          ></CustomLink>
         </div>
       </div>
 

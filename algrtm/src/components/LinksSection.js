@@ -22,12 +22,6 @@ const LinksSection = () => {
           </div>
 
           <div className="flex gap-[0.625rem] px-4 items-end">
-            {/* <Link
-              href="/pianoRoll"
-              className="p3 text-neutralLight-neutral90 p-[0.625rem]"
-            >
-              PianoRoll
-            </Link> */}
             <Link href="/pianoRoll">
               <p className="p3 text-neutralLight-neutral90 p-[0.625rem]">
                 PianoRoll

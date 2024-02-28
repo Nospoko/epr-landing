@@ -16,12 +16,7 @@ const IconsComponent = () => {
         height={24}
         alt="Pandas logo"
       ></Image>
-      <Image
-        src="/assets/logos/dbt-logo.svg"
-        width={24}
-        height={24}
-        alt="Dbt logo"
-      ></Image>
+
       <Image
         src="/assets/logos/numpy-logo.svg"
         width={24}

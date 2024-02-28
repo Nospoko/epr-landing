@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -12,12 +13,13 @@ const LinksSection = () => {
               <p className="text-neutralLight-neutral100 h5">lgrtm</p>
             </div>
             <div className="p2 text-neutralLight-neutral60 max-w-[25.375rem]">
-              We develop algorithmic solutions with Machine Learning, Research
-              and Prototyping, Data Quality Engineering, Analytics Automation,
-              Creative Coding, Dataset Management.
+              We develop algorithmic solutions with Machine
+              <br /> Learning, Research and Prototyping, Data Quality
+              Engineering, Analytics Automation, Creative Coding, Dataset
+              Management.
             </div>
           </div>
-          {/* sekcja z linkami */}
+
           <div className="flex gap-[0.625rem] px-4 items-end">
             <Link
               href="#"
@@ -41,7 +43,7 @@ const LinksSection = () => {
               href="#"
               className="p3 text-neutralLight-neutral90 p-[0.625rem]"
             >
-              Contact Us
+              Contact us
             </Link>
           </div>
         </div>
@@ -50,20 +52,24 @@ const LinksSection = () => {
           <hr className="w-full border-t border-gray-400"></hr>
         </div>
 
-        {/* <div>
-        <Image src="/line.svg" width={65} height={0} alt="Line" />
-      </div> */}
-
-        <div className="flex gap-11 flex-center justify-center text-neutralLight-neutral90 p3">
+        <div className="flex gap-11 flex-center justify-center text-neutralLight-neutral90 p3SB">
           <Link href="#" className="text-neutralLight-neutral90 p3">
             Linkedin
           </Link>
           <Link href="#" className="text-neutralLight-neutral90 p3">
             Github
           </Link>
-          <Link href="#" className="text-neutralLight-neutral90 p3">
-            Clutch
-          </Link>
+          <div className="flex">
+            <Link href="#" className="text-neutralLight-neutral90 p3 mr-2">
+              Clutch{" "}
+            </Link>
+            <Image width={14} height={14} src="/assets/icons/star.svg" />
+            <Image width={14} height={14} src="/assets/icons/star.svg" />
+            <Image width={14} height={14} src="/assets/icons/star.svg" />
+            <Image width={14} height={14} src="/assets/icons/star.svg" />
+            <Image width={14} height={14} src="/assets/icons/starEmpty.svg" />
+            4.9
+          </div>
         </div>
       </div>
     </div>

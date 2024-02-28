@@ -4,6 +4,7 @@ import IconsComponent from "@/components/IconsComponent";
 import LinksSection from "@/components/LinksSection";
 import OurStory from "@/components/OurStory";
 import SolutionsSection from "@/components/SolutionsSection";
+import RoundedRectangle from "@/components/shared/RoundedRectangle";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <IconsComponent />
       <AlgorithmicMusicSection />
       <OurStory />
+      <RoundedRectangle />
       <SolutionsSection />
       <LinksSection />
     </main>

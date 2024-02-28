@@ -31,18 +31,15 @@ const AlgorithmicMusicSection = () => {
           </Link>
         </div>
         <div className="flex gap-4 justify-start mt-8">
-          <CustomLink
-            variant="primary"
-            text="Read more"
-            href="/pianoRoll"
-          ></CustomLink>
+          <CustomLink variant="primary" text="Read more" href="/pianoRoll" />
+
           <CustomLink
             variant="secondary"
-            text="Custom solutions"
             href="/customSolutions"
+            text="Custom solutions"
             icon="/ArrowUpRight-icon.svg"
             alt="arrow up icon"
-          ></CustomLink>
+          />
         </div>
       </div>
 

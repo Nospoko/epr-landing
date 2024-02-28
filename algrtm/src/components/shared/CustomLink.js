@@ -1,8 +1,9 @@
 import React from "react";
+import Icon from "./Icon";
 
-const CustomLink = ({ text, href, variant, icon }) => {
+const CustomLink = ({ text, href, variant, icon, alt }) => {
   let linkClass =
-    "flex justify-center items-center select-none text-sm font-medium px-5 py-2 h-10 gap-4 rounded-md ";
+    "flex justify-center items-center select-none text-sm font-medium px-5 py-2 h-10  rounded-md ";
 
   if (variant === "primary") {
     linkClass +=
@@ -14,8 +15,10 @@ const CustomLink = ({ text, href, variant, icon }) => {
 
   return (
     <a className={linkClass} href={href}>
-      {icon && <span className="ml-2">{icon}</span>}
       {text}
+      <span className="ml-[0.01rem]">
+        {icon && <Icon src={icon} alt={alt} />}
+      </span>
     </a>
   );
 };

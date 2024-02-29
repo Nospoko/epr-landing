@@ -56,12 +56,16 @@ const LinksSection = () => {
           <Link
             href={externalLinks.linkedin}
             className="text-neutralLight-neutral90 p3 animation"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Linkedin
           </Link>
           <Link
             href={externalLinks.github}
             className="text-neutralLight-neutral90 p3 animation"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Github
           </Link>
@@ -70,6 +74,8 @@ const LinksSection = () => {
             <Link
               href={externalLinks.clutch}
               className="text-neutralLight-neutral90 p3 mr-2 animation"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Clutch{" "}
             </Link>

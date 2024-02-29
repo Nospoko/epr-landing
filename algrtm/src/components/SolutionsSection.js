@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./shared/Button";
+import CustomLink from "./shared/CustomLink";
 
 const SolutionsSection = () => {
   return (
@@ -10,8 +10,14 @@ const SolutionsSection = () => {
           algorithmic solutions?
         </div>
         <div className=" flex gap-4 justify-center items-center">
-          <Button variant="secondary" text="Let's talk"></Button>
-          <Button variant="primary" text="Book a meeting"></Button>
+          <CustomLink
+            variant="secondary"
+            text="Let's talk"
+            href="/contactUs"
+          ></CustomLink>
+
+          {/*TODO add link href */}
+          <CustomLink variant="primary" text="Book a meeting"></CustomLink>
         </div>
       </div>
     </div>

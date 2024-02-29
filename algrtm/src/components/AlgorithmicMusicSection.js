@@ -1,11 +1,9 @@
 import React from "react";
-import Button from "./shared/Button";
 import Image from "next/image";
 import externalLinks from "@/data/externalLinks";
 import Link from "next/link";
 import CustomLink from "./shared/CustomLink";
-import Icon from "./shared/Icon";
-// import Image from "next/image";
+import "../styles/globals.css";
 
 const AlgorithmicMusicSection = () => {
   return (
@@ -43,7 +41,6 @@ const AlgorithmicMusicSection = () => {
         </div>
       </div>
 
-      {/* to solve- images optymalization config */}
       <div className="flex shrink-0">
         <Image
           src="/womanPlaying-image.jpg"

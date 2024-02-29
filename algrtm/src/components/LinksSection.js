@@ -1,3 +1,5 @@
+// TODO add proper links
+
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -23,23 +25,23 @@ const LinksSection = () => {
 
           <div className="flex gap-[0.625rem] px-4 items-end">
             <Link href="/pianoRoll">
-              <p className="p3 text-neutralLight-neutral90 p-[0.625rem]">
+              <p className="p3 text-neutralLight-neutral90 p-[0.625rem] animation">
                 PianoRoll
               </p>
             </Link>
             <Link href="/customProjects">
-              <p className="p3 text-neutralLight-neutral90 p-[0.625rem]">
+              <p className="p3 text-neutralLight-neutral90 p-[0.625rem] animation">
                 Custom Projects
               </p>
             </Link>
             <Link
               href="#"
-              className="p3 text-neutralLight-neutral90 p-[0.625rem]"
+              className="p3 text-neutralLight-neutral90 p-[0.625rem] animation"
             >
               Blog & News
             </Link>
             <Link href="/contactUs">
-              <p className="p3 text-neutralLight-neutral90 p-[0.625rem]">
+              <p className="p3 text-neutralLight-neutral90 p-[0.625rem] animation">
                 Contact us
               </p>
             </Link>
@@ -53,13 +55,13 @@ const LinksSection = () => {
         <div className="flex gap-11 flex-center justify-center text-neutralLight-neutral90 p3SB">
           <Link
             href={externalLinks.linkedin}
-            className="text-neutralLight-neutral90 p3"
+            className="text-neutralLight-neutral90 p3 animation"
           >
             Linkedin
           </Link>
           <Link
             href={externalLinks.github}
-            className="text-neutralLight-neutral90 p3"
+            className="text-neutralLight-neutral90 p3 animation"
           >
             Github
           </Link>
@@ -67,7 +69,7 @@ const LinksSection = () => {
             {/* TODO- add link when we create account */}
             <Link
               href={externalLinks.clutch}
-              className="text-neutralLight-neutral90 p3 mr-2"
+              className="text-neutralLight-neutral90 p3 mr-2 animation"
             >
               Clutch{" "}
             </Link>

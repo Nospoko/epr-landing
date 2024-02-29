@@ -3,7 +3,7 @@ import Icon from "./Icon";
 
 const CustomLink = ({ text, href, variant, icon, alt }) => {
   let linkClass =
-    "flex justify-center items-center select-none text-sm font-medium px-5 py-2 h-10  rounded-md ";
+    "flex justify-center items-center select-none text-sm font-medium px-5 py-2 h-10 rounded-md transition ease-in-out duration-300 animationSmall";
 
   if (variant === "primary") {
     linkClass +=

@@ -7,15 +7,15 @@ import externalLinks from "@/data/externalLinks";
 
 const LinksSection = () => {
   return (
-    <div className=" bg-neutralLight-neutral10 w-full border-t-2 border-neutralLight-neutral20">
-      <div className="flex flex-col bg-neutralLight-neutral10 mx-[12.5rem] mt-16 mb-[7.75rem] gap-16">
+    <div className=" bg-neutralLight-neutral10 w-full border-t-2 border-neutralLight-neutral20 flex justify-center items-center pt-16 pb-[7.75rem]">
+      <div className="flex flex-col bg-neutralLight-neutral10 mx-[12.5rem] mt-16 mb-[7.75rem] gap-16 max-w-[65.563rem]">
         <div className="flex gap-[11.125rem]   bg-neutralLight-neutral10 ">
           <div className=" flex flex-col gap-6 ">
             <div className="flex w-full justify-start h5">
               <p className="text-blueLight-blue50 h5">A</p>
               <p className="text-neutralLight-neutral100 h5">lgrtm</p>
             </div>
-            <div className="p2 text-neutralLight-neutral60 max-w-[25.375rem]">
+            <div className="p2 text-neutralLight-neutral60 max-w-[25.375rem] leading-[1.4rem]">
               We develop algorithmic solutions with Machine
               <br /> Learning, Research and Prototyping, Data Quality
               Engineering, Analytics Automation, Creative Coding, Dataset
@@ -23,7 +23,7 @@ const LinksSection = () => {
             </div>
           </div>
 
-          <div className="flex gap-[0.625rem] px-4 items-end">
+          <div className="flex gap-[0.625rem] px-4 items-end max-w-[28.93rem]">
             <Link href="/pianoRoll">
               <p className="p3 text-neutralLight-neutral90 p-[0.625rem] animation">
                 PianoRoll

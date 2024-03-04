@@ -7,7 +7,7 @@ import externalLinks from "@/data/externalLinks";
 
 const LinksSection = () => {
   return (
-    <div className=" bg-neutralLight-neutral10 w-full border-t-2 border-neutralLight-neutral20 flex justify-center items-center pt-16 pb-[7.75rem]">
+    <section className=" bg-neutralLight-neutral10 w-full border-t-2 border-neutralLight-neutral20 flex justify-center items-center pt-16 pb-[7.75rem]">
       <div className="flex flex-col bg-neutralLight-neutral10 mx-[12.5rem] mt-16 mb-[7.75rem] gap-16 max-w-[65.563rem]">
         <div className="flex gap-[11.125rem]   bg-neutralLight-neutral10 ">
           <div className=" flex flex-col gap-6 ">
@@ -89,7 +89,7 @@ const LinksSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

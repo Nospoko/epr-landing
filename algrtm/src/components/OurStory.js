@@ -2,7 +2,7 @@ import React from "react";
 
 const OurStory = () => {
   return (
-    <div className="bg-neutralLight-neutral90 text-neutralLight-neutral10 max-w-[78.25rem] flex flex-col items-start px-[6.75rem] py-[5.88rem] rounded-[2rem]">
+    <section className="bg-neutralLight-neutral90 text-neutralLight-neutral10 max-w-[78.25rem] flex flex-col items-start px-[6.75rem] py-[5.88rem] rounded-[2rem]">
       <div className="max-w-[51.75rem]">
         <div className="flex flex-col gap-8">
           <div className="h2 leading-[4rem]">Our Story</div>
@@ -23,7 +23,7 @@ const OurStory = () => {
           intelligence, rather than replacing it.
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

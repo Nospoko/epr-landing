@@ -3,7 +3,7 @@ import CustomLink from "./shared/CustomLink";
 
 const SolutionsSection = () => {
   return (
-    <div className="bg-neutralLight-neutral10 w-full">
+    <section className="bg-neutralLight-neutral10 w-full">
       <div className="pt-[7.75rem] pb-[7.75rem] flex flex-col justify-center items-center gap-11">
         <div className="text-neutralLight-neutral100 h2 flex  w-2/3 justify-center items-center text-center leading-[4.8rem]">
           Looking for <br />
@@ -25,7 +25,7 @@ const SolutionsSection = () => {
           ></CustomLink>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

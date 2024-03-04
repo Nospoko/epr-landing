@@ -2,7 +2,7 @@ import React from "react";
 
 const DevelopSection = () => {
   return (
-    <div className="flex flex-col gap-6 justify-center items-center text-center mt-[7.5rem] max-w-[54.875rem] mx-[17.46rem]">
+    <section className="flex flex-col gap-6 justify-center items-center text-center mt-[7.5rem] max-w-[54.875rem] mx-[17.46rem]">
       <div className="h1 text-neutralLight-neutral10 leading-[6.02rem]">
         We develop algorithmic solutions
       </div>
@@ -13,7 +13,7 @@ const DevelopSection = () => {
           Management.
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 

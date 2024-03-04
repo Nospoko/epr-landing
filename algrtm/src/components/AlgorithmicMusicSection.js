@@ -7,7 +7,7 @@ import "../styles/globals.css";
 
 const AlgorithmicMusicSection = () => {
   return (
-    <div className="flex gap-16 px-[6.75rem] py-[5.88rem] text-neutralLight-neutral10 items-center">
+    <section className="flex gap-16 px-[6.75rem] py-[5.88rem] text-neutralLight-neutral10 items-center">
       <div className="flex flex-col items-stretch max-w-[24.53rem]">
         <div className="h2  leading-[4rem]">Algorithmic Music</div>
         <div className="mt-6 h6_500 leading-[1.98rem]">
@@ -49,7 +49,7 @@ const AlgorithmicMusicSection = () => {
           height={600}
         ></Image>
       </div>
-    </div>
+    </section>
   );
 };
 

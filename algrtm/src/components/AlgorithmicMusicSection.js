@@ -9,7 +9,7 @@ const AlgorithmicMusicSection = () => {
   return (
     <section className="flex gap-16 px-[6.75rem] py-[5.88rem] text-neutralLight-neutral10 items-center">
       <div className="flex flex-col items-stretch max-w-[24.53rem]">
-        <div className="h2  leading-[4rem]">Algorithmic Music</div>
+        <h2 className="h2  leading-[4rem]">Algorithmic Music</h2>
         <div className="mt-6 h6_500 leading-[1.98rem]">
           Music is at the core of our{" "}
           <strong>machine intelligence and creativity research</strong>. <br />

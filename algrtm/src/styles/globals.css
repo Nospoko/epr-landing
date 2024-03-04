@@ -72,3 +72,21 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+.animation {
+  transition-property: transform;
+  transition-duration: 300ms;
+}
+
+.animation:hover {
+  transform: scale(1.25);
+}
+
+.animationSmall {
+  transition-property: transform;
+  transition-duration: 300ms;
+}
+
+.animationSmall:hover {
+  transform: scale(1.1);
+}

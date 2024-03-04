@@ -13,11 +13,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${pingFont.className} text-gray-950 relative h-[5000px]`}
-      >
+      <body className={`${pingFont.className}`}>
         <Navbar />
         {children}
+
         <Footer />
       </body>
     </html>

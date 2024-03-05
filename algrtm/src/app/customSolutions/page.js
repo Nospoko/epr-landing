@@ -9,7 +9,7 @@ import React from "react";
 
 const CustomSolutions = () => {
   return (
-    <main className="flex flex-col items-center justify-center">
+    <main className="flex flex-col items-center justify-center px-[2.75rem]">
       <CustomSolutionsSection />
       <OfferSection />
       <TechnologiesSection />

@@ -1,5 +1,6 @@
 import AlgorithmicMusicSection from "@/components/AlgorithmicMusicSection";
 import DevelopSection from "@/components/DevelopSection";
+
 import IconsComponent from "@/components/IconsComponent";
 import LinksSection from "@/components/LinksSection";
 import RoundedTextComponent from "@/components/RoundedTextComponent";

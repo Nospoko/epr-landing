@@ -1,5 +1,6 @@
 import React from "react";
 import IconsComponent from "./IconsComponent";
+import IconsColoredComponent from "./IconsColoredComponent";
 
 const TechnologiesSection = () => {
   return (
@@ -7,7 +8,7 @@ const TechnologiesSection = () => {
       <h2 className="h2 text-neutralLight-neutral10 leading-[5.375rem]">
         Our technologies
       </h2>
-      <div className="flex flex-col gap-[4.5rem]">
+      <div className="flex flex-col gap-[4.5rem] w-full">
         <div className="leading-[1.98rem] text-neutralLight-neutral20 h6 max-w-[51.75rem]">
           <p>
             By harnessing MIDI data from our users, combined with intricate
@@ -15,8 +16,8 @@ const TechnologiesSection = () => {
           </p>
         </div>
         {/* TODO refactor Icons Component */}
-        <div>
-          <IconsComponent />
+        <div className="w-full">
+          <IconsColoredComponent />
         </div>
       </div>
     </section>

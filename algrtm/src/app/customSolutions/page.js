@@ -1,4 +1,5 @@
 import CustomSolutionsSection from "@/components/CustomSolutionsSection";
+import IconsColoredComponent from "@/components/IconsColoredComponent";
 import LinksSection from "@/components/LinksSection";
 import OfferSection from "@/components/OfferSection";
 import RoundedTextComponent from "@/components/RoundedTextComponent";
@@ -15,6 +16,7 @@ const CustomSolutions = () => {
       <OfferSection />
       <TechnologiesSection />
       {/* TODO- make ourStory reusable and refactor into Technical Consulting */}
+
       <RoundedTextComponent
         backgroundColor="neutralLight-neutral10"
         textTitleColor="neutralLight-neutral100"

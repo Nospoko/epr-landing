@@ -21,7 +21,7 @@ export default function Home() {
         version="version1"
       />
       <RoundedRectangle />
-      <SolutionsSection />
+      <SolutionsSection version="version1" />
       <LinksSection />
     </main>
   );

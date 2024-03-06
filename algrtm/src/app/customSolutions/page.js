@@ -24,7 +24,7 @@ const CustomSolutions = () => {
       />
       <RoundedRectangle />
       {/* TODO- make SolutionsSection reusable and refactor into We know that algormitic solutions are future. Do you? */}
-      <SolutionsSection />
+      <SolutionsSection version="version2" />
       <LinksSection />
     </main>
   );

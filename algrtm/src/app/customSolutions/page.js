@@ -1,7 +1,8 @@
 import CustomSolutionsSection from "@/components/CustomSolutionsSection";
 import LinksSection from "@/components/LinksSection";
 import OfferSection from "@/components/OfferSection";
-import OurStory from "@/components/OurStory";
+import RoundedTextComponent from "@/components/RoundedTextComponent";
+
 import SolutionsSection from "@/components/SolutionsSection";
 import TechnologiesSection from "@/components/TechnologiesSection";
 import RoundedRectangle from "@/components/shared/RoundedRectangle";
@@ -14,7 +15,13 @@ const CustomSolutions = () => {
       <OfferSection />
       <TechnologiesSection />
       {/* TODO- make ourStory reusable and refactor into Technical Consulting */}
-      <OurStory />
+      <RoundedTextComponent
+        backgroundColor="neutralLight-neutral10"
+        textTitleColor="neutralLight-neutral100"
+        textParagraph1Color="neutralLight-neutral60"
+        version="version2"
+        showButton={true}
+      />
       <RoundedRectangle />
       {/* TODO- make SolutionsSection reusable and refactor into We know that algormitic solutions are future. Do you? */}
       <SolutionsSection />

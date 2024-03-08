@@ -51,6 +51,8 @@ const OfferSection = () => {
                     }
                     alt="Arrow icon"
                     onClick={() => handleOffer(0)}
+                    width={20}
+                    height={20}
                   />
                 </div>
               </div>
@@ -83,6 +85,8 @@ const OfferSection = () => {
                     }
                     alt="Arrow icon"
                     onClick={() => handleOffer(1)}
+                    width={20}
+                    height={20}
                   />
                 </div>
               </div>
@@ -100,7 +104,7 @@ const OfferSection = () => {
               <div className="flex items-center gap-4 self-stretch w-full pb-4 justify-between max-w-[25.75rem]">
                 <div>Data Strategy and Architecture Planning</div>
 
-                <div>
+                <div className="w-5 h-5">
                   <Icon
                     src={
                       textVisibility[2]
@@ -109,6 +113,8 @@ const OfferSection = () => {
                     }
                     alt="Arrow icon"
                     onClick={() => handleOffer(2)}
+                    width={20}
+                    height={20}
                   />
                 </div>
               </div>
@@ -130,14 +136,12 @@ const OfferSection = () => {
           </div>
 
           <div className="flex flex-col h6_600 text-neutralLight-neutral20 gap-[0.75rem]">
-            <div className="flex flex-col border-b-[1px] border-neutralLight-neutral100">
-              <div className="flex items-center gap-4 self-stretch w-full pb-4 justify-between max-w-[25.75rem]">
+            <div className="flex flex-col border-b-[1px] border-neutralLight-neutral90">
+              <div className="flex items-center gap-4  w-full pb-4 justify-between max-w-[25.75rem]">
                 <div>Tailored Data Quality & Model Training Pipelines</div>
 
-                <div>
+                <div className="w-5 h-5">
                   <Icon
-                    width={20}
-                    height={20}
                     src={
                       textVisibility[3]
                         ? "/arrow-up-icon.svg"
@@ -145,6 +149,8 @@ const OfferSection = () => {
                     }
                     alt="Arrow icon"
                     onClick={() => handleOffer(3)}
+                    width={20}
+                    height={20}
                   />
                 </div>
               </div>
@@ -158,7 +164,7 @@ const OfferSection = () => {
               )}
             </div>
 
-            <div className="flex flex-col border-b-[1px] border-neutralLight-neutral100">
+            <div className="flex flex-col border-b-[1px] border-neutralLight-neutral90">
               <div className="flex items-center gap-4 self-stretch w-full pb-4 justify-between max-w-[25.75rem]">
                 <div>End-To-End Machine Learning Development</div>
 
@@ -171,6 +177,8 @@ const OfferSection = () => {
                     }
                     alt="Arrow icon"
                     onClick={() => handleOffer(4)}
+                    width={20}
+                    height={20}
                   />
                 </div>
               </div>
@@ -184,7 +192,7 @@ const OfferSection = () => {
               )}
             </div>
 
-            <div className="flex flex-col border-b-[1px] border-neutralLight-neutral100">
+            <div className="flex flex-col border-b-[1px] border-neutralLight-neutral90">
               <div className="flex items-center gap-4 self-stretch w-full pb-4 justify-between max-w-[25.75rem]">
                 <div>Performance Enhancement and Scaling</div>
 
@@ -197,6 +205,8 @@ const OfferSection = () => {
                     }
                     alt="Arrow icon"
                     onClick={() => handleOffer(5)}
+                    width={20}
+                    height={20}
                   />
                 </div>
               </div>

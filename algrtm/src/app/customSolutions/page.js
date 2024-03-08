@@ -15,8 +15,6 @@ const CustomSolutions = () => {
       <CustomSolutionsSection />
       <OfferSection />
       <TechnologiesSection />
-      {/* TODO- make ourStory reusable and refactor into Technical Consulting */}
-
       <RoundedTextComponent
         backgroundColor="neutralLight-neutral10"
         textTitleColor="neutralLight-neutral100"
@@ -25,7 +23,6 @@ const CustomSolutions = () => {
         showButton={true}
       />
       <RoundedRectangle />
-      {/* TODO- make SolutionsSection reusable and refactor into We know that algormitic solutions are future. Do you? */}
       <SolutionsSection version="version2" />
       <LinksSection />
     </main>

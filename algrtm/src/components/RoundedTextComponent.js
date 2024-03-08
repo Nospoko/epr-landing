@@ -32,7 +32,7 @@ const RoundedTextComponent = ({
         </div>
       </div>
       {showButton && (
-        <div className="mt-2rem">
+        <div className="mt-[0.5rem]">
           <CustomLink variant="secondary" text="Book a meeting"></CustomLink>
         </div>
       )}

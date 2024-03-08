@@ -3,10 +3,10 @@ import CustomLink from "./shared/CustomLink";
 
 const CustomSolutionsSection = () => {
   return (
-    <section className="flex mt-[3.945rem] w-full gap-16 items-start h-[25.5625rem]">
-      <div className="flex flex-col gap-4 py-[4.66rem]">
+    <section className="flex mt-[3.945rem] w-full h-[25.5625rem] relative">
+      <div className="flex flex-col gap-4 py-[4.66rem] pl-[6.62rem] pr-[0rem">
         <h1 className="h1 text-neutralLight-neutral10 leading-[5.375rem]">
-          Custom Projects
+          Custom Solutions
         </h1>
         <div className="flex flex-col gap-8">
           {" "}
@@ -27,11 +27,11 @@ const CustomSolutionsSection = () => {
         </div>
       </div>
 
-      {/* <div className="flex flex-col items-baseline">
+      <div className="flex items-start absolute top-[-12rem] right-[-2rem]">
         <p className="text-neutralLight-neutral90 text-[37.5rem] transform -rotate-90 font-semibold">
           A
         </p>
-      </div> */}
+      </div>
     </section>
   );
 };

@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import Icon from "./shared/Icon";
 
 const OfferSection = () => {
-  const [isTextVisible, setIsTextVisible] = useState(false);
   const [textVisibility, setTextVisibility] = useState([
     false,
     false,
@@ -13,7 +12,6 @@ const OfferSection = () => {
     false,
     false,
   ]);
-  const [iconSrc, setIconSrc] = useState("/arrow-down-icon.svg");
 
   const handleOffer = (index) => {
     const newTextVisibility = [...textVisibility];

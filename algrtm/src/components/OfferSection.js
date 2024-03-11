@@ -31,16 +31,16 @@ const OfferSection = () => {
       <div className="flex flex-col gap-4 max-w-[78.25rem]">
         {/* RESEARCH & DISCOVERY */}
         <div className="flex gap-[1.5rem]  bg-neutralLight-neutral90 py-[5.85rem] px-[6.75rem] rounded-[2rem]">
-          <div className="h4 text-neutralLight-neutral10 max-w-[25.75rem] leading-[2.75rem] flex justify-start ">
+          <div className="h4 text-neutralLight-neutral10 leading-[2.75rem] flex justify-start max-w-[25.1875rem] w-full">
             <p>Research & Discovery</p>
           </div>
 
-          <div className="flex flex-col h6_600 text-neutralLight-neutral20 gap-[0.75rem]">
+          <div className="flex flex-col h6_600 text-neutralLight-neutral20 gap-[0.75rem] w-full">
             <div className="flex flex-col border-b-[1px] border-neutralLight-neutral100">
-              <div className="flex items-center gap-4 self-stretch w-full pb-4 justify-between max-w-[25.75rem]">
+              <div className="flex items-center gap-4 pb-4 justify-between w-full">
                 <div>Exploratory Data Analysis</div>
 
-                <div>
+                <div className="flex justify-end">
                   <Icon
                     src={
                       textVisibility[0]
@@ -71,7 +71,7 @@ const OfferSection = () => {
             </div>
 
             <div className="flex flex-col border-b-[1px] border-neutralLight-neutral100">
-              <div className="flex items-center gap-4 self-stretch w-full pb-4 justify-between max-w-[25.75rem]">
+              <div className="flex items-center gap-4 self-stretch w-full pb-4 justify-between">
                 <div>Machine Learning Feasibility Study</div>
 
                 <div>
@@ -84,7 +84,6 @@ const OfferSection = () => {
                     alt="Arrow icon"
                     onClick={() => handleOffer(1)}
                     width={20}
-                    height={20}
                   />
                 </div>
               </div>
@@ -99,7 +98,7 @@ const OfferSection = () => {
             </div>
 
             <div className="flex flex-col border-b-[1px] border-neutralLight-neutral100">
-              <div className="flex items-center gap-4 self-stretch w-full pb-4 justify-between max-w-[25.75rem]">
+              <div className="flex items-center gap-4 self-stretch w-full pb-4 justify-between">
                 <div>Data Strategy and Architecture Planning</div>
 
                 <div className="w-5 h-5">
@@ -112,7 +111,6 @@ const OfferSection = () => {
                     alt="Arrow icon"
                     onClick={() => handleOffer(2)}
                     width={20}
-                    height={20}
                   />
                 </div>
               </div>
@@ -129,13 +127,13 @@ const OfferSection = () => {
         </div>
         {/* Prototyping & Development */}
         <div className="flex gap-[1.5rem] py-[5.85rem] px-[6.75rem]">
-          <div className="h4 text-neutralLight-neutral10 max-w-[25.75rem] leading-[2.75rem] flex justify-start ">
+          <div className="h4 text-neutralLight-neutral10 leading-[2.75rem] flex justify-start max-w-[25.1875rem] w-full">
             <p>Prototyping & Development</p>
           </div>
 
-          <div className="flex flex-col h6_600 text-neutralLight-neutral20 gap-[0.75rem]">
+          <div className="flex flex-col h6_600 text-neutralLight-neutral20 gap-[0.75rem] w-full">
             <div className="flex flex-col border-b-[1px] border-neutralLight-neutral90">
-              <div className="flex items-center gap-4  w-full pb-4 justify-between max-w-[25.75rem]">
+              <div className="flex items-center gap-4  w-full pb-4 justify-between">
                 <div>Tailored Data Quality & Model Training Pipelines</div>
 
                 <div className="w-5 h-5">
@@ -148,7 +146,6 @@ const OfferSection = () => {
                     alt="Arrow icon"
                     onClick={() => handleOffer(3)}
                     width={20}
-                    height={20}
                   />
                 </div>
               </div>
@@ -163,10 +160,10 @@ const OfferSection = () => {
             </div>
 
             <div className="flex flex-col border-b-[1px] border-neutralLight-neutral90">
-              <div className="flex items-center gap-4 self-stretch w-full pb-4 justify-between max-w-[25.75rem]">
+              <div className="flex items-center gap-4 self-stretch w-full pb-4 justify-between">
                 <div>End-To-End Machine Learning Development</div>
 
-                <div>
+                <div className="!w-5 !h-5">
                   <Icon
                     src={
                       textVisibility[4]
@@ -175,8 +172,6 @@ const OfferSection = () => {
                     }
                     alt="Arrow icon"
                     onClick={() => handleOffer(4)}
-                    width={20}
-                    height={20}
                   />
                 </div>
               </div>
@@ -191,10 +186,10 @@ const OfferSection = () => {
             </div>
 
             <div className="flex flex-col border-b-[1px] border-neutralLight-neutral90">
-              <div className="flex items-center gap-4 self-stretch w-full pb-4 justify-between max-w-[25.75rem]">
+              <div className="flex items-center gap-4 self-stretch w-full pb-4 justify-between">
                 <div>Performance Enhancement and Scaling</div>
 
-                <div>
+                <div className="!w-5 !h-5">
                   <Icon
                     src={
                       textVisibility[5]
@@ -203,8 +198,6 @@ const OfferSection = () => {
                     }
                     alt="Arrow icon"
                     onClick={() => handleOffer(5)}
-                    width={20}
-                    height={20}
                   />
                 </div>
               </div>

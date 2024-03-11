@@ -6,10 +6,8 @@ const Icon = ({ src, alt, onClick, width, height, ...rest }) => {
       src={src}
       alt={alt}
       onClick={onClick}
-      width={width}
-      height={height}
       {...rest}
-      className="flex-end"
+      className={`flex-end width-[${width}px] height-[${height}px]`}
     />
   );
 };

@@ -11,7 +11,7 @@ import React from "react";
 
 const CustomSolutions = () => {
   return (
-    <main className="flex flex-col items-center justify-center px-[2.75rem]">
+    <main className="flex flex-col items-center justify-center">
       <CustomSolutionsSection />
       <OfferSection />
       <TechnologiesSection />
@@ -24,7 +24,7 @@ const CustomSolutions = () => {
       />
       <RoundedRectangle />
       <SolutionsSection version="version2" />
-      <LinksSection />
+      {/* <LinksSection /> */}
     </main>
   );
 };

@@ -23,7 +23,6 @@ export default function Home() {
       />
       <RoundedRectangle />
       <SolutionsSection version="version1" />
-      <LinksSection />
     </main>
   );
 }

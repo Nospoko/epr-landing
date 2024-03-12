@@ -31,8 +31,12 @@ const PianoRollDescription = () => {
         <p>
           PianoRoll is a central element in 'Piano for AI,' our ambitious global
           research initiative. Through this venture, we gather data to design an
-          AI tool that mirrors human-like music performance skills. The entirety
-          of this groundbreaking project is spearheaded by the team at algrtm.
+          AI tool that{" "}
+          <p className="text-blueLight-blue50 h5">
+            mirrors human-like music performance{" "}
+          </p>
+          skills. The entirety of this groundbreaking project is spearheaded by
+          the team at algrtm.
         </p>
       </div>
     </section>

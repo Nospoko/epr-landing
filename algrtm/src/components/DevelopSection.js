@@ -15,7 +15,12 @@ const DevelopSection = () => {
         </p>
       </div>
       <div className="w-full">
-        <TechIconsComponent size="small" color={false} />
+        <TechIconsComponent
+          size="small"
+          color={false}
+          justifyBetween={false}
+          gap={true}
+        />
       </div>
     </section>
   );

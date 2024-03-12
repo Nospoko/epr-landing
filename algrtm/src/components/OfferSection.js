@@ -21,7 +21,7 @@ const OfferSection = () => {
       <h2 className="flex h2 text-neutralLight-neutral10 leading-[4rem]">
         What we offer?
       </h2>
-      <div className="flex flex-col gap-4 max-w-[78.25rem]">
+      <div className="flex flex-col gap-4 w-full px-[5.875rem]">
         {/* RESEARCH & DISCOVERY */}
         <div className="flex gap-[1.5rem]  bg-neutralLight-neutral90 py-[5.85rem] px-[6.75rem] rounded-[2rem]">
           <div className="h4 text-neutralLight-neutral10 leading-[2.75rem] flex justify-start max-w-[25.1875rem] w-full">

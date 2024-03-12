@@ -4,23 +4,47 @@ import React, { useState } from "react";
 import Icon from "./shared/Icon";
 
 const OfferSection = () => {
-  const [textVisibility, setTextVisibility] = useState([
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
+  const [sections, setSections] = useState([
+    {
+      title: "Exploratory Data Analysis",
+      description:
+        "Our goal has always been to drive positive change and make a meaningful impact. We thrive on seeking out challenging endeavors. For us, it's about believing in the power of algorithms, not just AI. We focus on areas of machine learning from the point of view of extending intelligence, rather than replacing it.",
+      visible: false,
+    },
+    {
+      title: "Machine Learning Feasibility Study",
+      description: "TEXT",
+      visible: false,
+    },
+    {
+      title: "Data Strategy and Architecture Planning",
+      description: "TEXT",
+      visible: false,
+    },
+    {
+      title: "Tailored Data Quality & Model Training Pipelines",
+      description: "TEXT",
+      visible: false,
+    },
+    {
+      title: "End-To-End Machine Learning Development",
+      description: "TEXT",
+      visible: false,
+    },
+    {
+      title: "Performance Enhancement and Scaling",
+      description: "TEXT",
+      visible: false,
+    },
   ]);
 
   const handleOffer = (index) => {
-    const newTextVisibility = [...textVisibility];
-
-    for (let i = 0; i < newTextVisibility.length; i++) {
-      newTextVisibility[i] = i === index ? !newTextVisibility[i] : false;
-    }
-
-    setTextVisibility(newTextVisibility);
+    setSections((prevSections) =>
+      prevSections.map((section, i) => ({
+        ...section,
+        visible: index === i ? !section.visible : false,
+      }))
+    );
   };
 
   return (
@@ -36,180 +60,85 @@ const OfferSection = () => {
           </div>
 
           <div className="flex flex-col h6_600 text-neutralLight-neutral20 gap-[0.75rem] w-full">
-            <div className="flex flex-col border-b-[1px] border-neutralLight-neutral100">
-              <div className="flex items-center gap-4 pb-4 justify-between w-full">
-                <div>Exploratory Data Analysis</div>
-
-                <div className="flex justify-end">
+            {sections.slice(0, 3).map((section, index) => (
+              <div
+                key={index}
+                className="flex flex-col border-b-[1px] border-neutralLight-neutral100"
+              >
+                <div
+                  className="flex items-center gap-4 self-stretch w-full pb-4 justify-between"
+                  onClick={() => handleOffer(index)}
+                  role="button"
+                  aria-expanded={section.visible}
+                  aria-controls={`section-${index}-content`}
+                >
+                  <div>{section.title}</div>
                   <Icon
                     src={
-                      textVisibility[0]
+                      section.visible
                         ? "/arrow-up-icon.svg"
                         : "/arrow-down-icon.svg"
                     }
                     alt="Arrow icon"
-                    onClick={() => handleOffer(0)}
-                    width={20}
-                    height={20}
-                  />
-                </div>
-              </div>
-
-              {textVisibility[0] && (
-                <div className="max-w-[25.75rem]">
-                  <p className="text-neutralLight-neutral20 p2 leading-[1.64rem] pb-4">
-                    Our goal has always been to drive{" "}
-                    <strong>positive change</strong> and make a meaningful
-                    impact. We thrive on seeking out challenging endeavors. For
-                    us, it's about believing in the power of algorithms, not
-                    just AI. We focus on areas of machine learning from the
-                    point of view of extending intelligence, rather than
-                    replacing it.
-                  </p>
-                </div>
-              )}
-            </div>
-
-            <div className="flex flex-col border-b-[1px] border-neutralLight-neutral100">
-              <div className="flex items-center gap-4 self-stretch w-full pb-4 justify-between">
-                <div>Machine Learning Feasibility Study</div>
-
-                <div>
-                  <Icon
-                    src={
-                      textVisibility[1]
-                        ? "/arrow-up-icon.svg"
-                        : "/arrow-down-icon.svg"
-                    }
-                    alt="Arrow icon"
-                    onClick={() => handleOffer(1)}
                     width={20}
                   />
+                  <div
+                    id={`section-${index}-content`}
+                    className="max-w-[25.75rem]"
+                  >
+                    {section.visible && (
+                      <p className="text-neutralLight-neutral20 p2 leading-[1.64rem] pb-4">
+                        {section.description}
+                      </p>
+                    )}
+                  </div>
                 </div>
               </div>
-
-              {textVisibility[1] && (
-                <div className="max-w-[25.75rem]">
-                  <p className="text-neutralLight-neutral20 p2 leading-[1.64rem] pb-4">
-                    TEXT 1
-                  </p>
-                </div>
-              )}
-            </div>
-
-            <div className="flex flex-col border-b-[1px] border-neutralLight-neutral100">
-              <div className="flex items-center gap-4 self-stretch w-full pb-4 justify-between">
-                <div>Data Strategy and Architecture Planning</div>
-
-                <div className="w-5 h-5">
-                  <Icon
-                    src={
-                      textVisibility[2]
-                        ? "/arrow-up-icon.svg"
-                        : "/arrow-down-icon.svg"
-                    }
-                    alt="Arrow icon"
-                    onClick={() => handleOffer(2)}
-                    width={20}
-                  />
-                </div>
-              </div>
-
-              {textVisibility[2] && (
-                <div className="max-w-[25.75rem]">
-                  <p className="text-neutralLight-neutral20 p2 leading-[1.64rem] pb-4">
-                    TEXT 2
-                  </p>
-                </div>
-              )}
-            </div>
+            ))}
           </div>
         </div>
         {/* Prototyping & Development */}
-        <div className="flex gap-[1.5rem] py-[5.85rem] px-[6.75rem]">
+        <div className="flex gap-[1.5rem] py-[5.85rem] px-[6.75rem] ">
           <div className="h4 text-neutralLight-neutral10 leading-[2.75rem] flex justify-start max-w-[25.1875rem] w-full">
             <p>Prototyping & Development</p>
           </div>
 
           <div className="flex flex-col h6_600 text-neutralLight-neutral20 gap-[0.75rem] w-full">
-            <div className="flex flex-col border-b-[1px] border-neutralLight-neutral90">
-              <div className="flex items-center gap-4  w-full pb-4 justify-between">
-                <div>Tailored Data Quality & Model Training Pipelines</div>
-
-                <div className="w-5 h-5">
+            {sections.slice(3, 6).map((section, index) => (
+              <div
+                key={index}
+                className="flex flex-col border-b-[1px] border-neutralLight-neutral90"
+              >
+                <div
+                  className="flex items-center gap-4 self-stretch w-full pb-4 justify-between"
+                  onClick={() => handleOffer(index + 3)}
+                  role="button"
+                  aria-expanded={section.visible}
+                  aria-controls={`section-${index + 3}-content`}
+                >
+                  <div>{section.title}</div>
                   <Icon
                     src={
-                      textVisibility[3]
+                      section.visible
                         ? "/arrow-up-icon.svg"
                         : "/arrow-down-icon.svg"
                     }
                     alt="Arrow icon"
-                    onClick={() => handleOffer(3)}
                     width={20}
                   />
+                  <div
+                    id={`section-${index + 3}-content`}
+                    className="max-w-[25.75rem]"
+                  >
+                    {section.visible && (
+                      <p className="text-neutralLight-neutral20 p2 leading-[1.64rem] pb-4">
+                        {section.description}
+                      </p>
+                    )}
+                  </div>
                 </div>
               </div>
-
-              {textVisibility[3] && (
-                <div className="max-w-[25.75rem]">
-                  <p className="text-neutralLight-neutral20 p2 leading-[1.64rem] pb-4">
-                    text 3
-                  </p>
-                </div>
-              )}
-            </div>
-
-            <div className="flex flex-col border-b-[1px] border-neutralLight-neutral90">
-              <div className="flex items-center gap-4 self-stretch w-full pb-4 justify-between">
-                <div>End-To-End Machine Learning Development</div>
-
-                <div className="!w-5 !h-5">
-                  <Icon
-                    src={
-                      textVisibility[4]
-                        ? "/arrow-up-icon.svg"
-                        : "/arrow-down-icon.svg"
-                    }
-                    alt="Arrow icon"
-                    onClick={() => handleOffer(4)}
-                  />
-                </div>
-              </div>
-
-              {textVisibility[4] && (
-                <div className="max-w-[25.75rem]">
-                  <p className="text-neutralLight-neutral20 p2 leading-[1.64rem] pb-4">
-                    TEXT 4
-                  </p>
-                </div>
-              )}
-            </div>
-
-            <div className="flex flex-col border-b-[1px] border-neutralLight-neutral90">
-              <div className="flex items-center gap-4 self-stretch w-full pb-4 justify-between">
-                <div>Performance Enhancement and Scaling</div>
-
-                <div className="!w-5 !h-5">
-                  <Icon
-                    src={
-                      textVisibility[5]
-                        ? "/arrow-up-icon.svg"
-                        : "/arrow-down-icon.svg"
-                    }
-                    alt="Arrow icon"
-                    onClick={() => handleOffer(5)}
-                  />
-                </div>
-              </div>
-
-              {textVisibility[5] && (
-                <div className="max-w-[25.75rem]">
-                  <p className="text-neutralLight-neutral20 p2 leading-[1.64rem] pb-4">
-                    TEXT 5
-                  </p>
-                </div>
-              )}
-            </div>
+            ))}
           </div>
         </div>
       </div>

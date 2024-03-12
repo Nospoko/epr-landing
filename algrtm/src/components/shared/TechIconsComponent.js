@@ -14,7 +14,7 @@ const TechIconsComponent = ({ size = "large", color = true }) => {
       small: { width: 24, height: 24 },
     },
     {
-      name: "hugging face",
+      name: "hugging",
       large: { width: 64, height: 64 },
       small: { width: 24, height: 24 },
     },
@@ -61,7 +61,7 @@ const TechIconsComponent = ({ size = "large", color = true }) => {
         return (
           <Image
             key={image.name}
-            src={`/assets/logos/coloredLogos${image.name
+            src={`/assets/logos/coloredLogos/${image.name
               .toLowerCase()
               .split(" ")
               .join("-")}-logo.svg`}

@@ -24,7 +24,6 @@ const CustomSolutions = () => {
       />
       <RoundedRectangle />
       <SolutionsSection version="version2" />
-      {/* <LinksSection /> */}
     </main>
   );
 };

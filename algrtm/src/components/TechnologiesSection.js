@@ -1,6 +1,4 @@
 import React from "react";
-// import IconsComponent from "./IconsComponent";
-// import IconsColoredComponent from "./IconsColoredComponent";
 import TechIconsComponent from "./shared/TechIconsComponent";
 
 const TechnologiesSection = () => {
@@ -16,9 +14,8 @@ const TechnologiesSection = () => {
             algorithms, we're on a journey to find the optimal approach.
           </p>
         </div>
-        {/* TODO refactor Icons Component */}
+
         <div className="w-full">
-          {/* <IconsColoredComponent /> */}
           <TechIconsComponent size="large" />
         </div>
       </div>

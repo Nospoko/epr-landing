@@ -1,18 +1,15 @@
 import AlgorithmicMusicSection from "@/components/AlgorithmicMusicSection";
 import DevelopSection from "@/components/DevelopSection";
-
-import IconsComponent from "@/components/IconsComponent";
-import LinksSection from "@/components/LinksSection";
 import RoundedTextComponent from "@/components/RoundedTextComponent";
-
 import SolutionsSection from "@/components/SolutionsSection";
 import RoundedRectangle from "@/components/shared/RoundedRectangle";
+import TechIconsComponent from "@/components/shared/TechIconsComponent";
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center">
       <DevelopSection />
-      <IconsComponent />
+      <TechIconsComponent color={false} size="small" />
       <AlgorithmicMusicSection />
       <RoundedTextComponent
         backgroundColor="neutralLight-neutral90"

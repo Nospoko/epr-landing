@@ -1,7 +1,8 @@
+import PianoRollDescription from "@/components/PianoRollDescription";
 import React from "react";
 
 function PianoRoll() {
-  return <div>PianoRoll</div>;
+  return <PianoRollDescription />;
 }
 
 export default PianoRoll;

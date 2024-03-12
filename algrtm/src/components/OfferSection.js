@@ -2,41 +2,10 @@
 
 import React, { useState } from "react";
 import Icon from "./shared/Icon";
+import offerSectionTexts from "@/data/offerSectionsTexts";
 
 const OfferSection = () => {
-  const [sections, setSections] = useState([
-    {
-      title: "Exploratory Data Analysis",
-      description:
-        "Our goal has always been to drive positive change and make a meaningful impact. We thrive on seeking out challenging endeavors. For us, it's about believing in the power of algorithms, not just AI. We focus on areas of machine learning from the point of view of extending intelligence, rather than replacing it.",
-      visible: false,
-    },
-    {
-      title: "Machine Learning Feasibility Study",
-      description: "TEXT",
-      visible: false,
-    },
-    {
-      title: "Data Strategy and Architecture Planning",
-      description: "TEXT",
-      visible: false,
-    },
-    {
-      title: "Tailored Data Quality & Model Training Pipelines",
-      description: "TEXT",
-      visible: false,
-    },
-    {
-      title: "End-To-End Machine Learning Development",
-      description: "TEXT",
-      visible: false,
-    },
-    {
-      title: "Performance Enhancement and Scaling",
-      description: "TEXT",
-      visible: false,
-    },
-  ]);
+  const [sections, setSections] = useState(offerSectionTexts);
 
   const handleOffer = (index) => {
     setSections((prevSections) =>

@@ -1,4 +1,5 @@
 import React from "react";
+import TechIconsComponent from "./shared/TechIconsComponent";
 
 const DevelopSection = () => {
   return (
@@ -12,6 +13,9 @@ const DevelopSection = () => {
           Engineering, Analytics Automation, Creative Coding, Dataset
           Management.
         </p>
+      </div>
+      <div className="w-full">
+        <TechIconsComponent size="small" color={false} />
       </div>
     </section>
   );

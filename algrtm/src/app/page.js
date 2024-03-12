@@ -3,13 +3,11 @@ import DevelopSection from "@/components/DevelopSection";
 import RoundedTextComponent from "@/components/RoundedTextComponent";
 import SolutionsSection from "@/components/SolutionsSection";
 import RoundedRectangle from "@/components/shared/RoundedRectangle";
-import TechIconsComponent from "@/components/shared/TechIconsComponent";
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center">
       <DevelopSection />
-      <TechIconsComponent color={false} size="small" />
       <AlgorithmicMusicSection />
       <RoundedTextComponent
         backgroundColor="neutralLight-neutral90"

@@ -51,16 +51,16 @@ const OfferSection = () => {
                     alt="Arrow icon"
                     width={20}
                   />
-                  <div
-                    id={`section-${index}-content`}
-                    className="max-w-[25.75rem]"
-                  >
-                    {section.visible && (
-                      <p className="text-neutralLight-neutral20 p2 leading-[1.64rem] pb-4">
-                        {section.description}
-                      </p>
-                    )}
-                  </div>
+                </div>
+                <div
+                  id={`section-${index}-content`}
+                  className="max-w-[25.75rem]"
+                >
+                  {section.visible && (
+                    <p className="text-neutralLight-neutral20 p2 leading-[1.64rem] pb-4">
+                      {section.description}
+                    </p>
+                  )}
                 </div>
               </div>
             ))}
@@ -95,16 +95,16 @@ const OfferSection = () => {
                     alt="Arrow icon"
                     width={20}
                   />
-                  <div
-                    id={`section-${index + 3}-content`}
-                    className="max-w-[25.75rem]"
-                  >
-                    {section.visible && (
-                      <p className="text-neutralLight-neutral20 p2 leading-[1.64rem] pb-4">
-                        {section.description}
-                      </p>
-                    )}
-                  </div>
+                </div>
+                <div
+                  id={`section-${index + 3}-content`}
+                  className="max-w-[25.75rem]"
+                >
+                  {section.visible && (
+                    <p className="text-neutralLight-neutral20 p2 leading-[1.64rem] pb-4">
+                      {section.description}
+                    </p>
+                  )}
                 </div>
               </div>
             ))}

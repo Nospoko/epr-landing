@@ -16,7 +16,7 @@ const TechnologiesSection = () => {
         </div>
 
         <div className="w-full">
-          <TechIconsComponent size="large" justifyBetween={true} gap={false} />
+          <TechIconsComponent size="large" classNames="justify-between" />
         </div>
       </div>
     </section>

@@ -18,8 +18,7 @@ const DevelopSection = () => {
         <TechIconsComponent
           size="small"
           color={false}
-          justifyBetween={false}
-          gap={true}
+          classNames="gap-4 justify-center"
         />
       </div>
     </section>

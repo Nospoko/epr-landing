@@ -52,10 +52,7 @@ const OfferSection = () => {
                     width={20}
                   />
                 </div>
-                <div
-                  id={`section-${index}-content`}
-                  className="max-w-[25.75rem]"
-                >
+                <div id={`section-${index}-content`}>
                   {section.visible && (
                     <p className="text-neutralLight-neutral20 p2 leading-[1.64rem] pb-4">
                       {section.description}
@@ -96,10 +93,7 @@ const OfferSection = () => {
                     width={20}
                   />
                 </div>
-                <div
-                  id={`section-${index + 3}-content`}
-                  className="max-w-[25.75rem]"
-                >
+                <div id={`section-${index + 3}-content`}>
                   {section.visible && (
                     <p className="text-neutralLight-neutral20 p2 leading-[1.64rem] pb-4">
                       {section.description}

@@ -27,7 +27,7 @@ const CustomSolutionsSection = () => {
         </div>
       </div>
 
-      <div className="flex items-start absolute top-[-13rem] right-[-2rem] transform -rotate-90">
+      <div className="flex items-start absolute top-[-14rem] right-[-2rem] transform -rotate-90">
         <p className="text-neutralLight-neutral90 text-[37.5rem]  font-semibold leading-[52.5rem] w-[25.5rem]">
           A
         </p>

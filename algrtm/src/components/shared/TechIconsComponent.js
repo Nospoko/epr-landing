@@ -5,17 +5,10 @@ import React from "react";
 const TechIconsComponent = ({
   size = "large",
   color = true,
-  justifyBetween = true,
-  gap = true,
+  classNames = "justify-between gap-4",
 }) => {
-  const containerStyle = {
-    justifyContent: justifyBetween ? "space-between" : "center",
-  };
   return (
-    <div
-      className={`flex items-stretch mt-[2.75rem] w-full ${gap ? "gap-4" : ""}`}
-      style={containerStyle}
-    >
+    <div className={`flex items-stretch mt-[2.75rem] w-full ${classNames}`}>
       {imagesArray.map((image) => {
         return (
           <Image

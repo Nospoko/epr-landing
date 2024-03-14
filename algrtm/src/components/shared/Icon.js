@@ -1,7 +1,15 @@
 import React from "react";
 
-const Icon = ({ src, alt, ...rest }) => {
-  return <img src={src} alt={alt} {...rest} className="flex-end" />;
+const Icon = ({ src, alt, onClick, width, height, ...rest }) => {
+  return (
+    <img
+      src={src}
+      alt={alt}
+      onClick={onClick}
+      {...rest}
+      className={`flex-end width-[${width}px] height-[${height}px]`}
+    />
+  );
 };
 
 export default Icon;

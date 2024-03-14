@@ -2,9 +2,6 @@ name: Pages
 
 on:
   push:
-    branches:
-      - develop
-      - PROLL-161/gh-pages
 
 jobs:
   pages:

@@ -1,13 +1,14 @@
 import React from "react";
 import CustomLink from "./shared/CustomLink";
+import solutionsTexts from "@/data/solutionsSectionTexts";
 
-const SolutionsSection = () => {
+const SolutionsSection = ({ version }) => {
+  const { title } = solutionsTexts[version];
   return (
-    <section className="bg-neutralLight-neutral10 w-full">
-      <div className="pt-[7.75rem] pb-[7.75rem] flex flex-col justify-center items-center gap-11">
-        <h4 className="text-neutralLight-neutral100 h2 flex  w-2/3 justify-center items-center text-center leading-[4.8rem]">
-          Looking for <br />
-          algorithmic solutions?
+    <section className="bg-neutralLight-neutral10 w-full flex justify-center">
+      <div className="pt-[7.75rem] pb-[7.75rem] flex flex-col justify-center items-center gap-11 max-w-[49.375rem]">
+        <h4 className="text-neutralLight-neutral100 h2  justify-center items-center text-center leading-[4.8rem]">
+          {title}
         </h4>
         <div className=" flex gap-4 justify-center items-center">
           <CustomLink

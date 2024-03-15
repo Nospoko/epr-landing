@@ -26,19 +26,6 @@ const PianoRollDescription = () => {
           />
         </div>
       </div>
-      {/* TODO font MULLISH! */}
-      <div className="text-neutralLight-neutral10 h5 px-[4rem] flex items-center max-w-[43.88rem]">
-        <p>
-          PianoRoll is a central element in 'Piano for AI,' our ambitious global
-          research initiative. Through this venture, we gather data to design an
-          AI tool that{" "}
-          <p className="text-blueLight-blue50 h5">
-            mirrors human-like music performance{" "}
-          </p>
-          skills. The entirety of this groundbreaking project is spearheaded by
-          the team at algrtm.
-        </p>
-      </div>
     </section>
   );
 };

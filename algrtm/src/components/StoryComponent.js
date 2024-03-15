@@ -62,7 +62,7 @@ const StoryComponent = () => {
         </div>
       </div>
 
-      <div className="flex gap-[1.5rem] px-[12.62rem] pt-[5.88rem]">
+      <div className="flex gap-[1.5rem] px-[12.62rem] pt-[5.88rem] justify-center items-center">
         <div className="rounded-md bg-neutralLight-neutral90 py-[4rem] px-[1.5rem] flex flex-col items-center gap-[2.75rem]">
           <div className="text-[3.25rem] font-semibold text-center">
             <p className="text-neutralLight-neutral10">
@@ -71,24 +71,26 @@ const StoryComponent = () => {
             </p>{" "}
           </div>
           <div className="flex items-center justify-center gap-[1.5rem]">
-            {socialIconsArray.slice(0, 3).map((image) => (
-              <Image
-                key={image.name}
-                src={`assets/social/${image.name
-                  .toLowerCase()
-                  .split(" ")
-                  .join("-")}-logo.svg`}
-                width={image.size.width}
-                height={image.size.height}
-                alt={`${
-                  image.name.charAt(0).toUpperCase() + image.name.slice(1)
-                } logo`}
-                className="transition-transform duration-300 transform hover:scale-125"
-              />
-            ))}
+            {socialIconsArray.slice(0, 3).map((image) => {
+              return (
+                <Image
+                  key={image.name}
+                  src={`/assets/social/${image.name
+                    .toLowerCase()
+                    .split(" ")
+                    .join("-")}-logo.svg`}
+                  width={image.size.width}
+                  height={image.size.height}
+                  alt={`${
+                    image.name.charAt(0).toUpperCase() + image.name.slice(1)
+                  } logo`}
+                  className="transition-transform duration-300 transform hover:scale-125"
+                />
+              );
+            })}
           </div>
         </div>
-        <div className="rounded-md bg-neutralLight-neutral90 py-[4rem] px-[1.5rem] flex flex-col items-center gap-[2.75rem] max-w-[31.625rem]">
+        <div className="rounded-md bg-neutralLight-neutral90 py-[4rem] px-[1.5rem] flex flex-col items-center gap-[2.75rem]">
           <div className="text-[3.25rem] font-semibold text-center">
             <p className="text-neutralLight-neutral10">
               Stay up to date <br />

@@ -10,7 +10,7 @@ const StoryComponent = () => {
         <h2 className="h2 leading-[4rem] text-neutralLight-neutral10">
           What’s the story?
         </h2>
-        <div className="mx-[22.5rem]">
+        <div className="mx-[22.5rem] max-w-[45rem]">
           <h6 className="h6 text-neutralLight-neutral20 text-center">
             Once, a passion for algorithms, AI, ML, and music birthed an idea:
             to teach AI to play the piano. But not just any piano with a flat
@@ -29,7 +29,7 @@ const StoryComponent = () => {
             ></div>
             <div
               className={`flex items-start ${
-                index % 2 === 0 ? "pr-[12.62rem]" : "pl-[12.62rem]"
+                index % 2 === 0 ? "pr-[49.88rem]" : "pl-[49.88rem]"
               }`}
             >
               <div
@@ -39,7 +39,7 @@ const StoryComponent = () => {
                   <rect width="8" height="8" fill="#B3B3B3" />
                 </svg>
               </div>
-              <div className="flex-grow max-w-[27.5rem]">
+              <div className="flex-grow ">
                 <p className="p1SB text-blueLight-blue50">{step.step}</p>
                 <h4 className="h4 text-neutralLight-neutral10 tracking-wider">
                   {step.title}

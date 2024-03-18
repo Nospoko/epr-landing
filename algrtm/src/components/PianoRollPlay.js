@@ -10,9 +10,9 @@ const PianoRollPlay = () => {
           PianoRoll is a central element in 'Piano for AI,' our ambitious global
           research initiative. Through this venture, we gather data to design an
           AI tool that{" "}
-          <p className="text-blueLight-blue50 h5">
+          <span className="text-blueLight-blue50 h5">
             mirrors human-like music performance{" "}
-          </p>
+          </span>
           skills. The entirety of this groundbreaking project is spearheaded by
           the team at algrtm.
         </p>

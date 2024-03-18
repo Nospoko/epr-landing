@@ -80,11 +80,36 @@ const LinksSection = () => {
               Clutch{" "}
             </Link>
             {/* right now stars are static, don't come from Clutch ;) */}
-            <Image width={14} height={14} src="/assets/icons/star.svg" />
-            <Image width={14} height={14} src="/assets/icons/star.svg" />
-            <Image width={14} height={14} src="/assets/icons/star.svg" />
-            <Image width={14} height={14} src="/assets/icons/star.svg" />
-            <Image width={14} height={14} src="/assets/icons/starEmpty.svg" />
+            <Image
+              width={14}
+              height={14}
+              src="/assets/icons/star.svg"
+              alt="starIcon"
+            />
+            <Image
+              width={14}
+              height={14}
+              src="/assets/icons/star.svg"
+              alt="starIcon"
+            />
+            <Image
+              width={14}
+              height={14}
+              src="/assets/icons/star.svg"
+              alt="starIcon"
+            />
+            <Image
+              width={14}
+              height={14}
+              src="/assets/icons/star.svg"
+              alt="starIcon"
+            />
+            <Image
+              width={14}
+              height={14}
+              src="/assets/icons/starEmpty.svg"
+              alt="Empty starIcon"
+            />
             4.9
           </div>
         </div>

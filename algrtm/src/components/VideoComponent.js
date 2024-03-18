@@ -12,9 +12,10 @@ const VideoComponent = () => {
         width="560"
         height="315"
         src={videoUrl}
-        frameborder="0"
-        allowfullscreen
+        frameBorder="0"
+        allowFullScreen
         title="Embedded Video"
+        alt="Embedded Video"
       />
     </div>
   );

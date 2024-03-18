@@ -23,6 +23,7 @@ const PianoRollDescription = () => {
             width={600}
             height={100}
             className="absolute top-[3.8rem] left-[3.8rem]"
+            alt="Piano Roll App Screen"
           />
         </div>
       </div>

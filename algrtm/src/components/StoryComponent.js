@@ -107,6 +107,7 @@ const StoryComponent = () => {
     </section>
   );
 
+  // to remove:
   // return (
   //   <section className="mt-[7.19rem]">
   //     <div className="flex flex-col items-center justify-center mb-[7.75rem] gap-[1.5rem]">
@@ -122,7 +123,6 @@ const StoryComponent = () => {
   //         </h6>
   //       </div>
   //     </div>
-  //     {/* TU TO WKLEJ PONIŻEJ */}
 
   //     {/* <div className="flex flex-col gap-8 mx-[12.62rem] relative">
   //       <div className="absolute top-[10rem] left-[30rem]">

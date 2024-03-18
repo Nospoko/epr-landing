@@ -20,31 +20,34 @@ const StoryComponent = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-8 mx-[12.62rem]">
+      <div className="flex flex-col gap-8 mx-[12.62rem] relative">
         {stepsData.map((step, index) => (
-          <div key={index} className="flex relative pb-12">
-            <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
-              <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
-            </div>
-            <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
-              <svg
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                className="w-5 h-5"
-                viewBox="0 0 24 24"
+          <div key={index} className="relative">
+            <div
+              className="h-full w-1 bg-gray-200 absolute left-1/2 transform -translate-x-1/2"
+              style={{ height: "100%", top: "0" }}
+            ></div>
+            <div
+              className={`flex items-start ${
+                index % 2 === 0 ? "pr-[12.62rem]" : "pl-[12.62rem]"
+              }`}
+            >
+              <div
+                className={`flex-shrink-0 w-10 h-10 items-center justify-center inline-flex absolute z-10 left-1/2 transform -translate-x-1/2`}
               >
-                <circle cx="12" cy="5" r="3"></circle>
-                <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
-              </svg>
-            </div>
-            <div className="flex-grow pl-4">
-              <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
-                {step.title}
-              </h2>
-              <p className="leading-relaxed">{step.description}</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8">
+                  <rect width="8" height="8" fill="#B3B3B3" />
+                </svg>
+              </div>
+              <div className="flex-grow max-w-[27.5rem]">
+                <p className="p1SB text-blueLight-blue50">{step.step}</p>
+                <h4 className="h4 text-neutralLight-neutral10 tracking-wider">
+                  {step.title}
+                </h4>
+                <h6 className="h6 text-neutralLight-neutral20">
+                  {step.description}
+                </h6>
+              </div>
             </div>
           </div>
         ))}

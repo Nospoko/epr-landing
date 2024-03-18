@@ -24,13 +24,17 @@ const StoryComponent = () => {
         {stepsData.map((step, index) => (
           <div
             key={index}
-            className={`relative flex ${index % 2 === 1 && "flex-row-reverse"}`}
+            className={`relative flex ${
+              index % 2 === 0 ? "" : "flex-row-reverse"
+            }`}
           >
             <div
               className="h-full w-1 bg-gray-200 absolute left-1/2 transform -translate-x-1/2"
               style={{ height: "100%", top: "0" }}
             ></div>
-            <div className={"flex items-start"}>
+            <div
+              className={`flex ${index % 2 === 0 ? "" : "flex-row-reverse"}`}
+            >
               <div
                 className={`flex-shrink-0 w-10 h-10 items-center justify-center inline-flex absolute z-10 left-1/2 transform -translate-x-1/2`}
               >
@@ -38,7 +42,11 @@ const StoryComponent = () => {
                   <rect width="8" height="8" fill="#B3B3B3" />
                 </svg>
               </div>
-              <div className="flex-grow max-w-[27.5rem]">
+              <div
+                className={`flex-grow max-w-[50%] ${
+                  index % 2 === 0 ? "pr-[4.875rem]" : "pl-[4.875rem]"
+                }`}
+              >
                 <p className="p1SB text-blueLight-blue50">{step.step}</p>
                 <h4 className="h4 text-neutralLight-neutral10 tracking-wider">
                   {step.title}
@@ -53,7 +61,7 @@ const StoryComponent = () => {
       </div>
 
       <div className="flex gap-[1.5rem] px-[12.62rem] pt-[5.88rem] justify-center items-center">
-        <div className="rounded-md bg-neutralLight-neutral90 py-[4rem] px-[1.5rem] flex flex-col items-center gap-[2.75rem]">
+        <div className="rounded-md bg-neutralLight-neutral90 py-[4rem] px-[1.5rem] flex flex-col items-center gap-[2.75rem] w-full max-w-[31.625rem]">
           <div className="text-[3.25rem] font-semibold text-center">
             <p className="text-neutralLight-neutral10">
               Stay up to date <br />
@@ -80,7 +88,7 @@ const StoryComponent = () => {
             })}
           </div>
         </div>
-        <div className="rounded-md bg-neutralLight-neutral100 py-[4rem] px-[1.5rem] flex flex-col items-center gap-[2.75rem] border-1 border-neutralLight-neutral90">
+        <div className="rounded-md bg-neutralLight-neutral100 py-[4rem] px-[1.5rem] flex flex-col items-center gap-[2.75rem] border-1 border-neutralLight-neutral90 w-full max-w-[31.625rem]">
           <div className="text-[3.25rem] font-semibold text-center">
             <p className="text-neutralLight-neutral10">
               Stay up to date <br />

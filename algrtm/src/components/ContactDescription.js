@@ -9,14 +9,16 @@ const ContactDescription = () => {
       </h2>
       <div className="flex flex-col gap-4">
         <h6 className="h6 text-neutralLight-neutral20 leading-[1.98rem]">
-          Let's explore how we can work together. Share your algorithmic ideas,
-          and we’ll provide the expertise to bring them to life.
+          Let's explore how we can work <br /> together. Share your algorithmic
+          <br />
+          ideas, and we’ll provide the
+          <br /> expertise to bring them to life.
         </h6>
         <div className="flex gap-4 items-start">
-          {/* TODO add link */}
+          {/* TODO add link href */}
           <CustomLink variant="secondary" text="Book a meeting" href="" />
-          <CustomLink />
-          {/* TODO add link */}
+
+          {/* TODO add link href */}
           <CustomLink
             variant="secondary"
             text="Go to the questionnaire"
@@ -24,7 +26,6 @@ const ContactDescription = () => {
             icon="/ArrowUpRightBlack-icon.svg"
             alt="arrow up icon"
           />
-          <CustomLink />
         </div>
       </div>
     </section>

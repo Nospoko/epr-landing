@@ -16,7 +16,7 @@ function PianoRoll() {
         version="version3"
         backgroundColor="neutralLight-neutral10"
         textTitleColor="neutralLight-neutral100"
-        textParagraph1Color="neutralLight-neutral100"
+        textParagraph1Color="neutralLight-neutral60"
       />
       <StoryComponent />
       <RoundedRectangle />

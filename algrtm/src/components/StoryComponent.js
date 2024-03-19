@@ -32,7 +32,7 @@ const StoryComponent = () => {
             }`}
           >
             <div
-              className="h-full w-1 bg-gray-200 absolute left-1/2 transform -translate-x-1/2"
+              className="h-full w-0.5 absolute left-1/2 transform -translate-x-1/2 bg-neutralLight-neutral90"
               style={{ height: "100%", top: "0" }}
             ></div>
             <div
@@ -64,7 +64,7 @@ const StoryComponent = () => {
       </div>
 
       <div className="flex gap-[1.5rem] px-[12.62rem] pt-[5.88rem] justify-center items-center">
-        <div className="rounded-md bg-neutralLight-neutral90 py-[4rem] px-[1.5rem] flex flex-col items-center gap-[2.75rem] w-full max-w-[31.625rem]">
+        <div className="rounded-[1rem]  bg-neutralLight-neutral90 py-[4rem] px-[1.5rem] flex flex-col items-center gap-[2.75rem] w-full max-w-[31.625rem]">
           <div className="text-[3.25rem] font-semibold text-center">
             <p className="text-neutralLight-neutral10">
               Stay up to date <br />
@@ -97,7 +97,7 @@ const StoryComponent = () => {
             })}
           </div>
         </div>
-        <div className="rounded-md bg-neutralLight-neutral100 py-[4rem] px-[1.5rem] flex flex-col items-center gap-[2.75rem] border-1 border-neutralLight-neutral90 w-full max-w-[31.625rem]">
+        <div className="rounded-[1rem] bg-neutralLight-neutral100 py-[4rem] px-[1.5rem] flex flex-col items-center gap-[2.75rem] border border-neutralLight-neutral90 w-full max-w-[31.625rem]">
           <div className="text-[3.25rem] font-semibold text-center">
             <p className="text-neutralLight-neutral10">
               Stay up to date <br />

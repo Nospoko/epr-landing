@@ -3,8 +3,8 @@ import React from "react";
 
 const PianoRollDescription = () => {
   return (
-    <section className="flex flex-col items-center justify-center w-full px-[12.62rem] mt-[3.94rem]">
-      <div className="flex gap-[4.5rem] items-center w-full">
+    <section className="flex flex-col items-center justify-center w-full px-[12.625rem] mt-[3.94rem]">
+      <div className="flex gap-[4.5rem] items-center justify-center">
         <div className="flex flex-col gap-4 max-w-[24.03rem] w-full">
           <h1 className="h1 text-neutralLight-neutral10 leading-[6.02rem]">
             PianoRoll
@@ -17,12 +17,11 @@ const PianoRollDescription = () => {
             </p>
           </div>
         </div>
-        <div className="bg-neutralLight-neutral90 rounded-[2rem] max-w-[36.56rem] w-full h-[29.875rem] relative">
+        <div className="bg-neutralLight-neutral90 rounded-[2rem] w-[36.56rem] overflow-hidden">
           <Image
-            src="/PianoRollTmp.png"
-            width={600}
-            height={100}
-            className="absolute top-[3.8rem] left-[3.8rem]"
+            height={578}
+            width={585}
+            src="/PianoRollScreen.png"
             alt="Piano Roll App Screen"
           />
         </div>

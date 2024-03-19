@@ -14,6 +14,7 @@ export default function Home() {
         textTitleColor="neutralLight-neutral10"
         textParagraph1Color="neutralLight-neutral10"
         textParagraph2Color="neutralLight-neutral20"
+        gap="8"
         version="version1"
       />
       <RoundedRectangle />

@@ -1,3 +1,4 @@
+// TODO add, all links
 import externalLinks from "@/data/externalLinks";
 import socialIconsArray from "@/data/socialIconsArray";
 import stepsData from "@/data/stepsData";
@@ -21,7 +22,7 @@ const StoryComponent = () => {
           </h6>
         </div>
       </div>
-      {/* TODO- during addieng media querries pay attantion on proper display- elements may come into the center */}
+      {/* TODO- during adding media querries pay attantion on proper display- elements may come into the center */}
       <div className="flex flex-col mx-[12.625rem] relative">
         {stepsData.map((step, index) => (
           <div

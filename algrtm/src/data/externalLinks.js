@@ -1,4 +1,4 @@
-// TODO: fill all links
+// TODO: add all links
 
 const externalLinks = {
   linkedin: "https://www.linkedin.com/company/piano-for-ai",

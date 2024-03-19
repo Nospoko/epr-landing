@@ -1,6 +1,8 @@
+import externalLinks from "@/data/externalLinks";
 import socialIconsArray from "@/data/socialIconsArray";
 import stepsData from "@/data/stepsData";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const StoryComponent = () => {
@@ -71,19 +73,25 @@ const StoryComponent = () => {
           <div className="flex items-center justify-center gap-[1.5rem]">
             {socialIconsArray.slice(0, 3).map((image) => {
               return (
-                <Image
+                <Link
                   key={image.name}
-                  src={`/assets/social/${image.name
-                    .toLowerCase()
-                    .split(" ")
-                    .join("-")}-logo.svg`}
-                  width={image.size.width}
-                  height={image.size.height}
-                  alt={`${
-                    image.name.charAt(0).toUpperCase() + image.name.slice(1)
-                  } logo`}
-                  className="transition-transform duration-300 transform hover:scale-125"
-                />
+                  href={externalLinks[image.name]}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src={`/assets/social/${image.name
+                      .toLowerCase()
+                      .split(" ")
+                      .join("-")}-logo.svg`}
+                    width={image.size.width}
+                    height={image.size.height}
+                    alt={`${
+                      image.name.charAt(0).toUpperCase() + image.name.slice(1)
+                    } logo`}
+                    className="transition-transform duration-300 transform hover:scale-125"
+                  />
+                </Link>
               );
             })}
           </div>
@@ -96,20 +104,26 @@ const StoryComponent = () => {
             </p>
           </div>
           <div className="flex items-center justify-center gap-[1.5rem]">
-            {socialIconsArray.slice(3, 6).map((image) => (
-              <Image
-                key={image.name}
-                src={`assets/social/${image.name
-                  .toLowerCase()
-                  .split(" ")
-                  .join("-")}-logo.svg`}
-                width={image.size.width}
-                height={image.size.height}
-                alt={`${
-                  image.name.charAt(0).toUpperCase() + image.name.slice(1)
-                } logo`}
-                className="transition-transform duration-300 transform hover:scale-125"
-              />
+            {socialIconsArray.slice(3, 6).map((image, index) => (
+              <Link
+                key={index}
+                href={externalLinks[image.name]}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src={`assets/social/${image.name
+                    .toLowerCase()
+                    .split(" ")
+                    .join("-")}-logo.svg`}
+                  width={image.size.width}
+                  height={image.size.height}
+                  alt={`${
+                    image.name.charAt(0).toUpperCase() + image.name.slice(1)
+                  } logo`}
+                  className="transition-transform duration-300 transform hover:scale-125"
+                />
+              </Link>
             ))}
           </div>
         </div>

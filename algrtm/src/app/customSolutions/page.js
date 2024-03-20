@@ -19,6 +19,7 @@ const CustomSolutions = () => {
         backgroundColor="neutralLight-neutral10"
         textTitleColor="neutralLight-neutral100"
         textParagraph1Color="neutralLight-neutral60"
+        gap="6"
         version="version2"
         showButton={true}
       />

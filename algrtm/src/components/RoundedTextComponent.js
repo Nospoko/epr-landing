@@ -9,6 +9,7 @@ const RoundedTextComponent = ({
   textParagraph2Color,
   version,
   showButton,
+  gap,
 }) => {
   const { title, paragraph1, paragraph2 } = texts[version];
   return (
@@ -17,7 +18,7 @@ const RoundedTextComponent = ({
         className={`bg-${backgroundColor} w-full flex flex-col items-start px-[6.75rem] py-[5.88rem] rounded-[2rem]`}
       >
         <div className="max-w-[51.75rem]">
-          <div className="flex flex-col gap-8">
+          <div className={`flex flex-col gap-${gap}`}>
             <div className={`h2 leading-[4rem] text-${textTitleColor} `}>
               {title}
             </div>

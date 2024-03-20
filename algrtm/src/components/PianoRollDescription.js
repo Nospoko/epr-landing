@@ -20,12 +20,13 @@ const PianoRollDescription = () => {
             </p>
           </div>
         </div>
-        <div className="bg-neutralLight-neutral90 rounded-[2rem] w-[36.56rem] h-[29.875rem] overflow-hidden">
+        <div className="bg-neutralLight-neutral90 rounded-[2rem] min-w-[36.225rem] overflow-hidden">
           <Image
             height={478}
             width={585}
             src="/PianoRollScreen.png"
             alt="Piano Roll App Screen"
+            className="w-auto h-[29.875rem]"
           />
         </div>
       </div>

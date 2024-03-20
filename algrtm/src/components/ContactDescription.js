@@ -20,7 +20,7 @@ const ContactDescription = () => {
 
           {/* TODO add link href */}
           <CustomLink
-            variant="secondary"
+            variant="tertiary"
             text="Go to the questionnaire"
             href=""
             icon="/ArrowUpRightBlack-icon.svg"

@@ -11,6 +11,8 @@ const CustomLink = ({ text, href, variant, icon, alt }) => {
   } else if (variant === "secondary") {
     linkClass +=
       " border border-neutralLight-neutral80 bg-neutralLight-neutral100 text-neutralLight-neutral10";
+  } else if (variant === "tertiary") {
+    linkClass += "bg-neutralLight-neutral100 text-neutralLight-neutral10";
   }
 
   return (

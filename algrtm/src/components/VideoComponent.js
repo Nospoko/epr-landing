@@ -9,13 +9,14 @@ const VideoComponent = () => {
     <div>
       <iframe
         ref={iframeRef}
-        width="560"
-        height="315"
+        width="826"
+        height="468"
         src={videoUrl}
         frameBorder="0"
         allowFullScreen
         title="Embedded Video"
         alt="Embedded Video"
+        className="rounded-[0.5rem]"
       />
     </div>
   );

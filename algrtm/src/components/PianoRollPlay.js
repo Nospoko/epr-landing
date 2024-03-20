@@ -4,7 +4,7 @@ import VideoComponent from "./VideoComponent";
 const PianoRollPlay = () => {
   return (
     <section className="flex flex-col items-center gap-[5.875rem] my-[7.19rem]">
-      <div className="text-neutralLight-neutral10 h5 px-[4rem] flex items-center max-w-[43.88rem]">
+      <div className="text-neutralLight-neutral10 h5_500 px-[4rem] flex items-center max-w-[51.875rem]">
         <p>
           PianoRoll is a central element in 'Piano for AI,' our ambitious global
           research initiative. Through this venture, we gather data to design an

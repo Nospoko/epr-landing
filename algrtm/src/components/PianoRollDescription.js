@@ -11,15 +11,18 @@ const PianoRollDescription = () => {
           </h1>
           <div>
             <p className="h6 text-neutralLight-neutral20 leading-[1.98rem]">
-              At its surface, PianoRoll serves as a platform for pianists to
-              track and share their progress with friends and the broader
-              community. Yet, it’s so much more than that.
+              At its surface, PianoRoll serves as a{" "}
+              <strong>
+                platform for pianists to track and share their progress
+              </strong>{" "}
+              with friends and the broader community. Yet, it’s so much more
+              than that.
             </p>
           </div>
         </div>
-        <div className="bg-neutralLight-neutral90 rounded-[2rem] w-[36.56rem] overflow-hidden">
+        <div className="bg-neutralLight-neutral90 rounded-[2rem] w-[36.56rem] h-[29.875rem] overflow-hidden">
           <Image
-            height={578}
+            height={478}
             width={585}
             src="/PianoRollScreen.png"
             alt="Piano Roll App Screen"

@@ -43,7 +43,7 @@ const ContactFormContainer = () => {
         <div className="">
           <form className="flex flex-wrap -m-2" ref={form} onSubmit={sendEmail}>
             <div className="p-2 w-1/2">
-              <div className="relative">
+              <div className="relative flex flex-col gap-2">
                 <label
                   htmlFor="name"
                   className="t6 text-neutralLight-neutral20 "
@@ -55,12 +55,12 @@ const ContactFormContainer = () => {
                   type="text"
                   id="name"
                   name="your_name"
-                  className="w-full bg-neutralLight-neutral100 bg-opacity-50 rounded border border-neutralLight-neutral60 focus:border-blueLight-blue50 focus:bg-neutralLight-neutral100 focus:ring-2 text-base outline-none text-neutralLight-neutral20 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  className="w-full bg-neutralLight-neutral100 bg-opacity-50 rounded border border-neutralLight-neutral60 focus:border-blueLight-blue50 focus:bg-neutralLight-neutral100 focus:ring-2 text-base outline-none text-neutralLight-neutral20 py-[0.875rem] px-[1rem] leading-8 transition-colors duration-200 ease-in-out "
                 />
               </div>
             </div>
             <div className="p-2 w-1/2">
-              <div className="relative">
+              <div className="relative flex flex-col gap-2">
                 <label
                   htmlFor="email"
                   className="t6 text-neutralLight-neutral20 "
@@ -72,12 +72,12 @@ const ContactFormContainer = () => {
                   type="email"
                   id="email"
                   name="your_email"
-                  className="w-full bg-neutralLight-neutral100 bg-opacity-50 rounded border border-neutralLight-neutral60 focus:border-blueLight-blue50 focus:bg-neutralLight-neutral100 focus:ring-2 text-base outline-none text-neutralLight-neutral20 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  className="w-full bg-neutralLight-neutral100 bg-opacity-50 rounded border border-neutralLight-neutral60 focus:border-blueLight-blue50 focus:bg-neutralLight-neutral100 focus:ring-2 text-base outline-none text-neutralLight-neutral20 py-[0.875rem] px-[1rem] leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
             </div>
             <div className="p-2 w-full">
-              <div className="relative">
+              <div className="relative flex flex-col gap-2">
                 <label
                   htmlFor="message"
                   className="t6 text-neutralLight-neutral20 "
@@ -88,12 +88,12 @@ const ContactFormContainer = () => {
                   placeholder="Tell us more..."
                   id="message"
                   name="message"
-                  className="w-full bg-neutralLight-neutral100 bg-opacity-50 rounded border border-neutralLight-neutral60 focus:border-blueLight-blue50 focus:bg-neutralLight-neutral100 focus:ring-2 h-32 text-base outline-none text-neutralLight-neutral20 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                  className="w-full bg-neutralLight-neutral100 bg-opacity-50 rounded border border-neutralLight-neutral60 focus:border-blueLight-blue50 focus:bg-neutralLight-neutral100 focus:ring-2 h-32 text-base outline-none py-[0.875rem] px-[1rem] resize-none leading-6 transition-colors duration-200 ease-in-out"
                 ></textarea>
               </div>
             </div>
             <div className="p-2 flex justify-end items-end w-full">
-              <button className="text-neutralLight-neutral100 bg-neutralLight-neutral10 border-0 py-2 px-8 focus:outline-none hover:bg-blueLight-blue50 rounded p3SB transition ease-in-out duration-300 animationSmall">
+              <button className="text-neutralLight-neutral100 bg-neutralLight-neutral10 border-0 py-[0.635rem] px-[1.25rem] focus:outline-none hover:bg-blueLight-blue50 rounded p3SB transition ease-in-out duration-300 animationSmall h-[2.75rem]">
                 Send message
               </button>
             </div>

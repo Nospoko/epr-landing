@@ -5,6 +5,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  env: {
+    BASE_URL: process.env.BASE_URL,
+  },
 };
 
 export default nextConfig;

@@ -30,6 +30,10 @@ jobs:
         run: npm install
       - name: Build
         working-directory: ./algrtm
+        env:
+          EMAILJS_TEMPLATE_ID: ${{ secrets.EMAILJS_TEMPLATE_ID }}
+          EMAILJS_SERVICE_ID: ${{ secrets.EMAILJS_SERVICE_ID }}
+          EMAILJS_PUBLIC_KEY: ${{ secrets.EMAILJS_PUBLIC_KEY }}
         run: npm run build
       - name: Create CNAME
         working-directory: ./algrtm

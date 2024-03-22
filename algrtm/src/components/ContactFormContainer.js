@@ -24,9 +24,17 @@ const ContactFormContainer = () => {
           alert("Email sent");
         },
         (error) => {
-          console.log("FAILED...", error.text);
+          console.error("FAILED...", error);
+          if (error.text) {
+            console.error("Error Text:", error.text);
+          } else {
+            console.error("Unknown Error:", error);
+          }
         }
-      );
+      )
+      .catch((error) => {
+        console.error("Catch Error:", error);
+      });
   };
 
   return (

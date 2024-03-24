@@ -39,6 +39,12 @@ module.exports = {
           neutral100: "#1C1C1C",
         },
       },
+      screens: {
+        sm: "375px", // Small screens, mobile
+        md: "768px", // Medium screens, tablets
+        lg: "1024px", // Large screens, laptops
+        xl: "1440px", // Extra large screens, desktops
+      },
     },
   },
   plugins: [],

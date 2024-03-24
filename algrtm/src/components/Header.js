@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="z-[999] relative flex w-full justify-between items-center border-b border-[#F5F3F5] border-solid p-4 md:px-[2.75rem] lg:px-[5.875rem]">
+    <header className="z-[999] relative flex w-full justify-between items-center self-stretch border-b border-[#F5F3F5] border-solid p-4 lg:px-[2.75rem] xl:px-[5.875rem]">
       <div className="flex w-full flex-wrap flex-start sm:items-center sm:justify-center  p3SB text-neutralLight-neutral10 sm:w-[initial] sm:flex-nowrap sm:gap-5 ">
         <Link
           href="/"
@@ -21,20 +21,20 @@ export default function Header() {
       <div className="flex flex-end w-full flex-wrap items-center justify-end gap-y-1 sm:w-[initial] sm:flex-nowrap gap-4 ">
         <div className="hidden sm:flex  items-center justify-center gap-x-2">
           <Link
-            className="flex w-full items-center justify-center  hover:text-blue transition p3 p-2.5 animation"
+            className="flex w-full items-center justify-center  hover:text-blue transition lg:p3SB xl:p3 p-2.5 animation"
             href="/pianoRoll"
           >
             PianoRoll
           </Link>
 
           <Link
-            className="flex w-full items-center justify-center hover:text-blue transition p3 p-2.5 animation"
+            className="flex w-full items-center justify-center hover:text-blue transition lg:p3SB xl:p3 p-2.5 animation"
             href="/customSolutions"
           >
             CustomSolutions
           </Link>
           <Link
-            className="flex w-full items-center justify-center  hover:text-blue transition p3 p-2.5 animation"
+            className="flex w-full items-center justify-center  hover:text-blue transition lg:p3SB xl:p3 p-2.5 animation"
             href="/knowledge"
           >
             Knowledge

@@ -8,7 +8,9 @@ const TechIconsComponent = ({
   classNames = "justify-between gap-4",
 }) => {
   return (
-    <div className={`flex items-stretch mt-[2.75rem] w-full ${classNames}`}>
+    <div
+      className={`flex flex-wrap items-stretch mt-[2.75rem] w-full ${classNames}`}
+    >
       {imagesArray.map((image) => {
         return (
           <Image

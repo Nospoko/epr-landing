@@ -1,6 +1,9 @@
 "use client";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import Input from "./shared/Input";
+import TextArea from "./shared/TextArea";
+import FormField from "./shared/FormField";
 
 const ContactFormContainer = () => {
   const form = useRef();
@@ -42,58 +45,32 @@ const ContactFormContainer = () => {
       <div className="w-full">
         <div className="">
           <form className="flex flex-wrap -m-2" ref={form} onSubmit={sendEmail}>
-            <div className="p-2 w-1/2">
-              <div className="relative flex flex-col gap-2">
-                <label
-                  htmlFor="name"
-                  className="t6 text-neutralLight-neutral20 "
-                >
-                  Name
-                </label>
-                <input
-                  placeholder="Enter your name and surname..."
-                  type="text"
-                  id="name"
-                  name="your_name"
-                  className="w-full bg-neutralLight-neutral100 bg-opacity-50 rounded border border-neutralLight-neutral60 focus:border-blueLight-blue50 focus:bg-neutralLight-neutral100 focus:ring-2 text-base outline-none text-neutralLight-neutral20 py-[0.875rem] px-[1rem] leading-8 transition-colors duration-200 ease-in-out "
-                />
-              </div>
-            </div>
-            <div className="p-2 w-1/2">
-              <div className="relative flex flex-col gap-2">
-                <label
-                  htmlFor="email"
-                  className="t6 text-neutralLight-neutral20 "
-                >
-                  Your email
-                </label>
-                <input
-                  placeholder="Enter your email address..."
-                  type="email"
-                  id="email"
-                  name="your_email"
-                  className="w-full bg-neutralLight-neutral100 bg-opacity-50 rounded border border-neutralLight-neutral60 focus:border-blueLight-blue50 focus:bg-neutralLight-neutral100 focus:ring-2 text-base outline-none text-neutralLight-neutral20 py-[0.875rem] px-[1rem] leading-8 transition-colors duration-200 ease-in-out"
-                />
-              </div>
-            </div>
-            <div className="p-2 w-full">
-              <div className="relative flex flex-col gap-2">
-                <label
-                  htmlFor="message"
-                  className="t6 text-neutralLight-neutral20 "
-                >
-                  Tell us more
-                </label>
-                <textarea
-                  placeholder="Tell us more..."
-                  id="message"
-                  name="message"
-                  className="w-full bg-neutralLight-neutral100 bg-opacity-50 rounded border border-neutralLight-neutral60 focus:border-blueLight-blue50 focus:bg-neutralLight-neutral100 focus:ring-2 h-32 text-base outline-none py-[0.875rem] px-[1rem] resize-none leading-6 transition-colors duration-200 ease-in-out"
-                ></textarea>
-              </div>
-            </div>
+            <FormField
+              label="Your name"
+              placeholder="Enter your name and surname..."
+              type="text"
+              id="name"
+              name="your_name"
+              fieldType="input"
+            />
+            <FormField
+              label="Your email"
+              placeholder="Enter your email..."
+              type="text"
+              id="email"
+              name="your_email"
+              fieldType="input"
+            />
+            <FormField
+              label="Tell us more"
+              placeholder="Tell us more..."
+              type="text"
+              id="message"
+              name="message"
+              fieldType="textarea"
+            />
             <div className="p-2 flex justify-end items-end w-full">
-              <button className="text-neutralLight-neutral100 bg-neutralLight-neutral10 border-0 py-[0.635rem] px-[1.25rem] focus:outline-none hover:bg-blueLight-blue50 rounded p3SB transition ease-in-out duration-300 animationSmall h-[2.75rem]">
+              <button className="text-neutralLight-neutral100 bg-neutralLight-neutral10 border-0 py-[0.635rem] px-[1.25rem] focus:outline-none hover:bg-blueLight-blue50 rounded-[0.5rem] p3SB transition ease-in-out duration-300 animationSmall h-[2.75rem]">
                 Send message
               </button>
             </div>

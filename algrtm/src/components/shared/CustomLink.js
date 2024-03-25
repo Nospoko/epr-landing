@@ -13,7 +13,7 @@ const CustomLink = ({ text, href, variant, icon, alt }) => {
       " border border-neutralLight-neutral80 bg-neutralLight-neutral100 text-neutralLight-neutral10";
   } else if (variant === "tertiary") {
     linkClass +=
-      "bg-neutralLight-neutral100 text-neutralLight-neutral10 pl-0 pr-0";
+      " bg-neutralLight-neutral100 text-neutralLight-neutral10 pl-0 pr-0";
   }
 
   return (

@@ -1,15 +1,39 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import Input from "./shared/Input";
-import TextArea from "./shared/TextArea";
 import FormField from "./shared/FormField";
 
 const ContactFormContainer = () => {
   const form = useRef();
+  const [errors, setErrors] = useState({});
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    const name = e.target.your_name.value;
+    const email = e.target.your_email.value;
+    const message = e.target.message.value;
+
+    const errors = {};
+
+    if (!name) {
+      errors.your_name = "Name field cannot be empty";
+    }
+
+    if (!email) {
+      errors.your_email = "Email field cannot be empty";
+    } else if (!/\S+@\S+\.\S+/.test(email)) {
+      errors.your_email = "Invalid email address";
+    }
+
+    if (!message) {
+      errors.message = "Message field cannot be empty";
+    }
+
+    if (Object.keys(errors).length > 0) {
+      setErrors(errors);
+      return;
+    }
 
     emailjs
       .sendForm(
@@ -24,6 +48,7 @@ const ContactFormContainer = () => {
         () => {
           console.log("SUCCESS!");
           e.target.reset();
+          setErrors({});
           alert("Email sent");
         },
         (error) => {
@@ -52,7 +77,9 @@ const ContactFormContainer = () => {
               id="name"
               name="your_name"
               fieldType="input"
+              errors={errors}
             />
+
             <FormField
               label="Your email"
               placeholder="Enter your email..."
@@ -60,7 +87,9 @@ const ContactFormContainer = () => {
               id="email"
               name="your_email"
               fieldType="input"
+              errors={errors}
             />
+
             <FormField
               label="Tell us more"
               placeholder="Tell us more..."
@@ -68,7 +97,9 @@ const ContactFormContainer = () => {
               id="message"
               name="message"
               fieldType="textarea"
+              errors={errors}
             />
+
             <div className="p-2 flex justify-end items-end w-full">
               <button className="text-neutralLight-neutral100 bg-neutralLight-neutral10 border-0 py-[0.635rem] px-[1.25rem] focus:outline-none hover:bg-blueLight-blue50 rounded-[0.5rem] p3SB transition ease-in-out duration-300 animationSmall h-[2.75rem]">
                 Send message

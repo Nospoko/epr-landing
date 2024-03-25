@@ -2,6 +2,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import FormField from "./shared/FormField";
+import validateForm from "@/utils/validation";
 
 const ContactFormContainer = () => {
   const form = useRef();
@@ -14,24 +15,10 @@ const ContactFormContainer = () => {
     const email = e.target.your_email.value;
     const message = e.target.message.value;
 
-    const errors = {};
+    const validationErrors = validateForm(name, email, message);
 
-    if (!name) {
-      errors.your_name = "Name field cannot be empty";
-    }
-
-    if (!email) {
-      errors.your_email = "Email field cannot be empty";
-    } else if (!/\S+@\S+\.\S+/.test(email)) {
-      errors.your_email = "Invalid email address";
-    }
-
-    if (!message) {
-      errors.message = "Message field cannot be empty";
-    }
-
-    if (Object.keys(errors).length > 0) {
-      setErrors(errors);
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
       return;
     }
 

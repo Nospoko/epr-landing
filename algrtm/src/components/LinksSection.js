@@ -7,9 +7,9 @@ import externalLinks from "@/data/externalLinks";
 
 const LinksSection = () => {
   return (
-    <section className=" bg-neutralLight-neutral10 w-full border-t-2 border-neutralLight-neutral20 flex justify-center items-center ">
+    <section className=" bg-neutralLight-neutral10 w-full border-t-2 border-neutralLight-neutral20 flex flex-col sm:flex-row justify-center items-center ">
       <div className="flex flex-col justify-between bg-neutralLight-neutral10 mx-[12.5rem] mt-16 mb-[7.75rem] gap-16 max-w-[65.563rem]">
-        <div className="flex gap-[11.125rem]   bg-neutralLight-neutral10 ">
+        <div className=" flex flex-col gap-[2rem] sm:flex-row sm:gap-[11.125rem] bg-neutralLight-neutral10 ">
           <div className=" flex flex-col gap-6 ">
             <div className="flex w-full justify-start h5">
               <p className="text-blueLight-blue50 h5">A</p>
@@ -25,23 +25,23 @@ const LinksSection = () => {
 
           <div className="flex gap-[0.625rem] px-4 items-end max-w-[28.93rem]">
             <Link href="/pianoRoll">
-              <p className="p3 text-neutralLight-neutral90 p-[0.625rem] animation">
+              <p className="p3SB sm:p3 text-neutralLight-neutral90 p-[0.625rem] animation">
                 PianoRoll
               </p>
             </Link>
             <Link href="/customProjects">
-              <p className="p3 text-neutralLight-neutral90 p-[0.625rem] animation">
+              <p className="p3SB sm:p3  text-neutralLight-neutral90 p-[0.625rem] animation">
                 Custom Projects
               </p>
             </Link>
             <Link
               href="#"
-              className="p3 text-neutralLight-neutral90 p-[0.625rem] animation"
+              className="p3SB sm:p3  text-neutralLight-neutral90 p-[0.625rem] animation"
             >
               Blog & News
             </Link>
             <Link href="/contactUs">
-              <p className="p3 text-neutralLight-neutral90 p-[0.625rem] animation">
+              <p className="p3SB sm:p3  text-neutralLight-neutral90 p-[0.625rem] animation">
                 Contact us
               </p>
             </Link>

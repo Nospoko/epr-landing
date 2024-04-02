@@ -19,9 +19,9 @@ export default function Header() {
       </div>
 
       <div className="flex flex-end w-full flex-wrap items-center justify-end gap-y-1 sm:w-[initial] sm:flex-nowrap gap-4 ">
-        <div className="hidden sm:flex  items-center justify-center gap-x-2">
+        <div className="hidden sm:flex items-center justify-center gap-x-2">
           <Link
-            className="flex w-full items-center justify-center  hover:text-blue transition lg:p3SB xl:p3 p-2.5 animation"
+            className="flex w-full items-center justify-center hover:text-blue transition lg:p3SB xl:p3 p-2.5 animation"
             href="/pianoRoll"
           >
             PianoRoll

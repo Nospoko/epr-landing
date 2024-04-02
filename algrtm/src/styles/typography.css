@@ -1,87 +1,99 @@
-/* Headings */
-.h1 {
-  font-size: 5.375rem;
-  font-weight: 600;
-}
-.h1SB {
-  font-size: 4.5rem;
-  font-weight: 600;
-}
+@tailwind utilities;
 
-.h2 {
-  font-size: 4rem;
-  font-weight: 600;
-}
+@layer utilities {
+  /* Headings */
+  .h1 {
+    font-size: 5.375rem;
+    font-weight: 600;
+  }
+  .h1SB {
+    font-size: 4.5rem;
+    font-weight: 600;
+  }
 
-.h3 {
-  font-size: 3.875rem;
-  font-weight: 600;
-}
+  .h2 {
+    font-size: 4rem;
+    font-weight: 600;
+  }
 
-.h4 {
-  font-size: 2.75rem;
-  font-weight: 600;
-}
+  .h2SB {
+    font-size: 3.25rem;
+    font-weight: 600;
+  }
 
-.h5 {
-  font-size: 2rem;
-  font-weight: 600;
-}
+  .h3 {
+    font-size: 3.875rem;
+    font-weight: 600;
+  }
 
-.h5_500 {
-  font-size: 2rem;
-  font-weight: 500;
-}
+  .h4 {
+    font-size: 2.75rem;
+    font-weight: 600;
+  }
 
-.h6_600 {
-  font-size: 1.375rem;
-  font-weight: 600;
-}
-.h6_500 {
-  font-size: 1.375rem;
-  font-weight: 500;
-}
+  .h5 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
 
-.h6 {
-  font-size: 1.375rem;
-  font-weight: 400;
-}
+  .h5_500 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .h6 {
+    font-size: 1.375rem;
+    font-weight: 400;
+  }
 
-.h6SB {
-  font-weight: 600;
-}
+  .h6_600 {
+    font-size: 1.375rem;
+    font-weight: 600;
+  }
+  .h6_500 {
+    font-size: 1.375rem;
+    font-weight: 500;
+  }
+  .h6_400 {
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
 
-/* titles */
+  .h6SB {
+    font-weight: 600;
+  }
 
-.t6 {
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.32rem;
-  letter-spacing: -0.005rem;
-}
-/* Paragraphs */
-.p1SB {
-  font-size: 1.125rem;
-  font-weight: 600;
-}
+  /* titles */
 
-.p2SB {
-  font-size: 1rem;
-  font-weight: 600;
-}
+  .t6 {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.32rem;
+    letter-spacing: -0.005rem;
+  }
+  /* Paragraphs */
+  .p1SB {
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
 
-.p2 {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.64rem;
-}
+  .p2SB {
+    font-size: 1rem;
+    font-weight: 600;
+  }
 
-.p3SB {
-  font-size: 0.875rem;
-  font-weight: 600;
-}
+  .p2 {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.64rem;
+  }
 
-.p3 {
-  font-size: 0.875rem;
-  font-weight: 400;
+  .p3SB {
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+
+  .p3 {
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
 }

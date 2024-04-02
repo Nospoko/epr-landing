@@ -7,11 +7,10 @@ import "../styles/globals.css";
 
 const AlgorithmicMusicSection = () => {
   return (
-    // <section className="flex gap-16 px-[6.75rem] py-[5.88rem] text-neutralLight-neutral10 items-center">
-    <section className="flex flex-col sm:flex-row sm:gap-16 gap-[1.5rem] py-[2.75rem] sm:py-[5.88rem] sm:px-[2.75rem]text-neutralLight-neutral10 items-center">
+    <section className="flex flex-col sm:flex-row gap-[1.5rem] sm:gap-16 py-[2.75rem] px-[1rem] sm:px-[2.75rem] sm:py-[5.88rem] text-neutralLight-neutral10 items-center">
       <div className="flex flex-col items-stretch max-w-[24.53rem]">
-        <h2 className="h2 leading-[4rem]">Algorithmic Music</h2>
-        <div className="mt-6 h6_500 leading-[1.98rem]">
+        <h2 className="h2SB lg:h2 leading-[4rem]">Algorithmic Music</h2>
+        <div className="mt-6 h6_400 lg:h6 leading-[1.98rem]">
           Music is at the core of our{" "}
           <strong>machine intelligence and creativity research</strong>. We pay
           special attention to piano music because of its richness of emotional

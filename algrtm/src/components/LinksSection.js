@@ -8,24 +8,23 @@ import externalLinks from "@/data/externalLinks";
 const LinksSection = () => {
   return (
     <section className=" bg-neutralLight-neutral10 w-full border-t-2 border-neutralLight-neutral20 flex flex-col sm:flex-row justify-center items-center ">
-      <div className="flex flex-col justify-between bg-neutralLight-neutral10 mx-[12.5rem] mt-16 mb-[7.75rem] gap-16 max-w-[65.563rem]">
-        <div className=" flex flex-col gap-[2rem] sm:flex-row sm:gap-[11.125rem] bg-neutralLight-neutral10 ">
+      <div className=" flex flex-col justify-between bg-neutralLight-neutral10 mx-1 my-4 sm:mx-[2.75rem] sm:mt-[4rem] sm-mb-[7.75rem] lg:mx-[12.5rem] lg:mt-16 lg:mb-[7.75rem] gap-16">
+        <div className=" flex flex-col justify-between sm:gap-auto sm:flex-row sm:gap-[11.125rem] bg-neutralLight-neutral10 w-full">
           <div className=" flex flex-col gap-6 ">
-            <div className="flex w-full justify-start h5">
-              <p className="text-blueLight-blue50 h5">A</p>
-              <p className="text-neutralLight-neutral100 h5">lgrtm</p>
+            <div className=" flex w-full justify-start h5">
+              <p className=" text-blueLight-blue50 h5">A</p>
+              <p className=" text-neutralLight-neutral100 h5">lgrtm</p>
             </div>
-            <div className="p2 text-neutralLight-neutral60 max-w-[25.375rem] leading-[1.4rem]">
-              We develop algorithmic solutions with Machine
-              <br /> Learning, Research and Prototyping, Data Quality
-              Engineering, Analytics Automation, Creative Coding, Dataset
-              Management.
+            <div className=" p2 text-neutralLight-neutral60 max-w-[25.375rem] leading-[1.4rem]">
+              We develop algorithmic solutions with Machine Learning, Research
+              and Prototyping, Data Quality Engineering, Analytics Automation,
+              Creative Coding, Dataset Management.
             </div>
           </div>
 
-          <div className="flex gap-[0.625rem] px-4 items-end max-w-[28.93rem]">
+          <div className=" flex gap-[0.625rem] px-4 items-end max-w-[28.93rem]">
             <Link href="/pianoRoll">
-              <p className="p3SB sm:p3 text-neutralLight-neutral90 p-[0.625rem] animation">
+              <p className=" p3SB sm:p3 text-neutralLight-neutral90 p-[0.625rem] animation">
                 PianoRoll
               </p>
             </Link>

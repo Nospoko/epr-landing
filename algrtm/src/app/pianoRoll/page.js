@@ -8,7 +8,7 @@ import React from "react";
 
 function PianoRoll() {
   return (
-    <main className="flex flex-col items-center justify-center">
+    <main className="flex flex-col items-center justify-center mx-4 md:mx-[2.75rem]">
       <PianoRollDescription />
       <PianoRollPlay />
 

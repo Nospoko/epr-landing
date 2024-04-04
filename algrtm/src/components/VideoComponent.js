@@ -9,8 +9,8 @@ const VideoComponent = () => {
     <div>
       <iframe
         ref={iframeRef}
-        width="826"
-        height="468"
+        width="342"
+        height="193"
         src={videoUrl}
         frameBorder="0"
         allowFullScreen

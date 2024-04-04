@@ -8,12 +8,12 @@ import React from "react";
 
 const StoryComponent = () => {
   return (
-    <section className="mt-[7.19rem]">
+    <section className="pt-[2.75rem] pb-[7.75rem] lg:pt-[7.75rem] lg:pb-[7.75rem]">
       <div className="flex flex-col items-center justify-center mb-[7.75rem] gap-[1.5rem]">
-        <h2 className="h2 leading-[4rem] text-neutralLight-neutral10">
+        <h2 className="h4 md:h2SB lg:h2 text-neutralLight-neutral10">
           What’s the story?
         </h2>
-        <div className="mx-[22.5rem] max-w-[45rem]">
+        <div className="md:mx-[9.5rem] lg:mx-[22.5rem] max-w-[45rem]">
           <h6 className="h6 text-neutralLight-neutral20 text-center">
             Once, a passion for algorithms, AI, ML, and music birthed an idea:
             to teach AI to play the piano. But not just any piano with a flat
@@ -23,7 +23,7 @@ const StoryComponent = () => {
         </div>
       </div>
       {/* TODO- during adding media querries pay attantion on proper display- elements may come into the center */}
-      <div className="flex flex-col mx-[12.625rem] relative">
+      <div className="flex flex-col lg:mx-[12.625rem] relative">
         {stepsData.map((step, index) => (
           <div
             key={index}
@@ -51,7 +51,7 @@ const StoryComponent = () => {
                 }`}
               >
                 <p className="p1SB text-blueLight-blue50">{step.step}</p>
-                <h4 className="h4 text-neutralLight-neutral10 tracking-wider">
+                <h4 className="h5 lg:h4 text-neutralLight-neutral10 tracking-wider">
                   {step.title}
                 </h4>
                 <h6 className="h6 text-neutralLight-neutral20">

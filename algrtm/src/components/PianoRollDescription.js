@@ -4,9 +4,9 @@ import React from "react";
 const PianoRollDescription = () => {
   return (
     <section className="flex flex-col items-center justify-center w-full px-[12.625rem] mt-[3.94rem]">
-      <div className="flex gap-[4.5rem] items-center justify-center">
+      <div className="lg:flex-row flex flex-col gap-[4.5rem] items-center justify-center">
         <div className="flex flex-col gap-4 max-w-[24.03rem] w-full">
-          <h1 className="h1 text-neutralLight-neutral10 leading-[6.02rem]">
+          <h1 className="h2 leading-[4.48rem] xl:h1 text-neutralLight-neutral10 ">
             PianoRoll
           </h1>
           <div>
@@ -22,8 +22,13 @@ const PianoRollDescription = () => {
         </div>
         <div className="bg-neutralLight-neutral90 rounded-[2rem] min-w-[36.225rem] overflow-hidden">
           <Image
-            height={478}
-            width={585}
+            height={283}
+            width={343}
+            sizes="100vw"
+            style={{
+              width: "100%",
+              height: "auto",
+            }}
             src="/PianoRollScreen.png"
             alt="Piano Roll App Screen"
             className="w-auto h-[29.875rem]"

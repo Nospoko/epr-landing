@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="z-[999] relative flex w-full justify-between items-center self-stretch border-b border-[#F5F3F5] border-solid p-4 lg:px-[2.75rem] xl:px-[5.875rem]">
+    <header className="z-[999] relative flex w-full justify-between items-center self-stretch border-b border-[#F5F3F5] border-solid p-4 md:px-[2.75rem] lg:px-[5.875rem]">
       <div className="flex w-full flex-wrap flex-start sm:items-center sm:justify-center  p3SB text-neutralLight-neutral10 sm:w-[initial] sm:flex-nowrap sm:gap-5 ">
         <Link
           href="/"
@@ -18,8 +18,8 @@ export default function Header() {
         </Link>
       </div>
 
-      <div className="flex flex-end w-full flex-wrap items-center justify-end gap-y-1 sm:w-[initial] sm:flex-nowrap gap-4 ">
-        <div className="hidden sm:flex items-center justify-center gap-x-2">
+      <div className="flex flex-end w-full flex-wrap items-center justify-end gap-y-1 md:w-[initial] sm:flex-nowrap gap-4 ">
+        <div className="hidden md:flex items-center justify-center gap-x-2">
           <Link
             className="flex w-full items-center justify-center hover:text-blue transition sm:p3SB lg:p3 p-2.5 animation"
             href="/pianoRoll"
@@ -48,8 +48,8 @@ export default function Header() {
           Contact us
         </Link>
 
-        <div className="hidden sm:flex items-center justify-center ">
-          <button className="toggleButton items-center justify-center  hidden sm:flex sm:gap-1.5">
+        <div className=" hidden md:flex items-center justify-center ">
+          <button className="toggleButton items-center justify-center  hidden md:flex md:gap-1.5">
             <Image src="/sun.svg" width={18} height={18} alt="Sun icon" />
             <Image
               src="/ellipse.svg"
@@ -59,7 +59,7 @@ export default function Header() {
             />
           </button>
         </div>
-        <button className=" flex sm:hidden items-center justify-center">
+        <button className=" flex md:hidden items-center justify-center">
           <Image src="/menu.svg" width={24} height={24} alt="Hamburger icon" />
         </button>
       </div>

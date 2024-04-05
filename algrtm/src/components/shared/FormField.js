@@ -11,7 +11,9 @@ const FormField = ({
   fieldType,
   errors,
 }) => {
-  const [isMdOrAbove, setIsMdOrAbove] = useState(window.innerWidth >= 1023);
+  const [isMdOrAbove, setIsMdOrAbove] = useState(
+    typeof window !== "undefined" ? window.innerWidth >= 1023 : false
+  );
 
   useEffect(() => {
     const handleResize = () => {

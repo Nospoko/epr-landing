@@ -1,6 +1,4 @@
 import CustomSolutionsSection from "@/components/CustomSolutionsSection";
-import IconsColoredComponent from "@/components/IconsColoredComponent";
-import LinksSection from "@/components/LinksSection";
 import OfferSection from "@/components/OfferSection";
 import RoundedTextComponent from "@/components/RoundedTextComponent";
 
@@ -11,7 +9,7 @@ import React from "react";
 
 const CustomSolutions = () => {
   return (
-    <main className="flex flex-col items-center justify-center">
+    <main className="flex flex-col items-center justify-center mx-[1rem] md:mx-[2.75rem] lg-mx-[0rem]">
       <CustomSolutionsSection />
       <OfferSection />
       <TechnologiesSection />

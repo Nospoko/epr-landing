@@ -13,7 +13,7 @@ const RoundedTextComponent = ({
 }) => {
   const { title, paragraph1, paragraph2 } = texts[version];
   return (
-    <section className="w-full px-[1rem] md:px-[5.875rem] ">
+    <section className="w-full md:px-[5.875rem] ">
       <div
         className={`bg-${backgroundColor} w-full flex flex-col items-center md:items-start py-[2.75rem] px-[2rem] md:py-[5.88rem] md:px-[6.75rem] rounded-[2rem]`}
       >

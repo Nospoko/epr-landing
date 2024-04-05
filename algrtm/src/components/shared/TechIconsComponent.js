@@ -5,7 +5,7 @@ import React from "react";
 const TechIconsComponent = ({
   size = "large",
   color = true,
-  classNames = "justify-between gap-4",
+  classNames = "justify-between gap-auto",
 }) => {
   return (
     <div

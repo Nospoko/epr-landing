@@ -8,18 +8,21 @@ import React from "react";
 
 function PianoRoll() {
   return (
-    <main className="flex flex-col items-center justify-center mx-4 md:mx-[2.75rem]">
-      <PianoRollDescription />
-      <PianoRollPlay />
+    <main className="flex flex-col items-center justify-center ">
+      <div className="flex flex-col items-center justify-center mx-4 md:mx-[2.75rem]">
+        <PianoRollDescription />
+        <PianoRollPlay />
 
-      <RoundedTextComponent
-        version="version3"
-        backgroundColor="neutralLight-neutral10"
-        textTitleColor="neutralLight-neutral100"
-        textParagraph1Color="neutralLight-neutral60"
-        gap="6"
-      />
-      <StoryComponent />
+        <RoundedTextComponent
+          version="version3"
+          backgroundColor="neutralLight-neutral10"
+          textTitleColor="neutralLight-neutral100"
+          textParagraph1Color="neutralLight-neutral60"
+          gap="6"
+        />
+        <StoryComponent />
+      </div>
+
       <RoundedRectangle />
       <SolutionsSection version="version1" />
     </main>

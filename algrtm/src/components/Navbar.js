@@ -73,7 +73,7 @@ export default function Navbar() {
         <div
           className={
             menuOpen
-              ? "fixed right-0 top-0 width-[100%] h-[40vh] bg-neutralLight-neutral90 p-10 ease-in duration-500"
+              ? "fixed right-0 top-0 width-[100%] h-[100vh] bg-neutralLight-neutral90 p-10 ease-in duration-500"
               : "fixed right-[-100%] top-0 width-[100%] h-screen bg-neutralLight-neutral90 p-10 ease-in duration-500"
           }
         >

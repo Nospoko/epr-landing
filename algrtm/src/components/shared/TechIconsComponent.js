@@ -9,7 +9,7 @@ const TechIconsComponent = ({
 }) => {
   return (
     <div
-      className={`flex flex-wrap items-stretch mt-[2.75rem] w-full ${classNames}`}
+      className={`flex flex-wrap items-stretch w-full gap-[1.38rem] ${classNames}`}
     >
       {imagesArray.map((image) => {
         return (

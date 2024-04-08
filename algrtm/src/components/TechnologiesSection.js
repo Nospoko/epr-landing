@@ -3,7 +3,7 @@ import TechIconsComponent from "./shared/TechIconsComponent";
 
 const TechnologiesSection = () => {
   return (
-    <section className="flex flex-col justify-center lg:px-[5.875rem] my-[4rem] md:my-[7.19rem] lg:mt-[2.38rem] mb-[5.88rem]  gap-6 items-start w-full">
+    <section className="flex flex-col justify-center lg:px-[5.875rem] my-[4rem] md:my-[7.19rem] lg:mt-[2.38rem] mb-[5.88rem] gap-6 items-start w-full">
       <h2 className="h4 md:h2SB lg:h2 text-neutralLight-neutral10 ">
         Our technologies
       </h2>
@@ -14,7 +14,6 @@ const TechnologiesSection = () => {
             algorithms, we're on a journey to find the optimal approach.
           </p>
         </div>
-
         <div className="w-full">
           <TechIconsComponent size="large" classNames="justify-between" />
         </div>

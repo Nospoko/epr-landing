@@ -8,7 +8,7 @@ import React from "react";
 
 const StoryComponent = () => {
   return (
-    <section className="pt-[2.75rem] pb-[7.75rem] lg:pt-[7.75rem] lg:pb-[7.75rem]">
+    <section className="pt-[2.75rem] pb-[7.75rem] lg:pt-[7.75rem] lg:pb-[7.75rem] w-full">
       <div className="flex flex-col items-center justify-center mb-[7.75rem] gap-[1.5rem]">
         <h2 className="h4 md:h2SB lg:h2 text-neutralLight-neutral10">
           What’s the story?
@@ -23,7 +23,7 @@ const StoryComponent = () => {
         </div>
       </div>
       {/* TODO- during adding media querries pay attantion on proper display- elements may come into the center */}
-      <div className="flex flex-col lg:mx-[12.625rem] relative">
+      <div className="flex flex-col lg:mx-[12.625rem] relative gap-[2rem]">
         {stepsData.map((step, index) => (
           <div
             key={index}
@@ -65,7 +65,7 @@ const StoryComponent = () => {
         ))}
       </div>
 
-      <div className="flex flex-col md:flex-row gap-[1.5rem] px-[12.62rem] pt-[5.88rem] justify-center items-center">
+      <div className="flex flex-col md:flex-row gap-[1.5rem] lg:px-[12.62rem] pt-[5.88rem] justify-center items-center">
         <div className="rounded-[1rem]  bg-neutralLight-neutral90 py-[4rem] px-[1.5rem] flex flex-col items-center gap-[2.75rem] w-full max-w-[31.625rem]">
           <div className=" text-[2.25rem] md:h4 lg:text-[3.25rem] font-semibold text-center">
             <p className="text-neutralLight-neutral10">

@@ -9,10 +9,9 @@ import React from "react";
 function PianoRoll() {
   return (
     <main className="flex flex-col items-center justify-center ">
-      <div className="flex flex-col items-center justify-center mx-4 md:mx-[2.75rem]">
+      <div className="w-full flex flex-col items-center justify-center px-4 md:mx-[2.75rem]">
         <PianoRollDescription />
         <PianoRollPlay />
-
         <RoundedTextComponent
           version="version3"
           backgroundColor="neutralLight-neutral10"
@@ -22,7 +21,6 @@ function PianoRoll() {
         />
         <StoryComponent />
       </div>
-
       <RoundedRectangle />
       <SolutionsSection version="version1" />
     </main>

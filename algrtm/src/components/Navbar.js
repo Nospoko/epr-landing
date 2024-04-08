@@ -10,8 +10,8 @@ export default function Navbar() {
     setMenuOpen(!menuOpen);
   };
   return (
-    <nav className="z-[999] relative flex w-full justify-between items-center self-stretch border-b border-[#F5F3F5] border-solid p-4 md:px-[2.75rem] lg:px-[5.875rem]">
-      <div className="flex justify-start p3SB text-neutralLight-neutral10 gap-5 ">
+    <nav className="z-[999] relative flex w-full justify-between  items-center self-stretch border-b border-[#F5F3F5] border-solid p-4 md:px-[2.75rem] lg:px-[5.875rem]">
+      <div className="flex justify-start p3SB text-neutralLight-neutral10 gap-5">
         <Link
           href="/"
           className="transition-transform duration-500 ease-in-out transform hover:scale-150 hover:rotate-180"
@@ -33,7 +33,7 @@ export default function Navbar() {
           </Link>
 
           <Link
-            className="flex w-full items-center justify-center  transition sm:p3SB lg:p3 p-2.5 animation"
+            className="flex w-full items-center justify-center  transition sm:p3SB lg:p3 p-2.5 animation text-nowrap"
             href="/customSolutions"
           >
             Custom Solutions
@@ -78,7 +78,10 @@ export default function Navbar() {
           }
         >
           <div className="flex w-full items-center justify-end">
-            <div onClick={handleNav} className="cursor-pointer">
+            <div
+              onClick={handleNav}
+              className="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-150"
+            >
               <AiOutlineClose size={21} />
             </div>
           </div>
@@ -86,7 +89,7 @@ export default function Navbar() {
             <Link href="/">
               <li
                 onClick={() => setMenuOpen(false)}
-                className="py-4 cursor-pointer list-none hover:text-blueLight-blue50 active:font-semibold"
+                className="py-4 cursor-pointer list-none hover:text-blueLight-blue50 transition-transform duration-500 ease-in-out transform hover:scale-110 active:font-semibold"
               >
                 Home
               </li>
@@ -95,7 +98,7 @@ export default function Navbar() {
             <Link href="/pianoRoll">
               <li
                 onClick={() => setMenuOpen(false)}
-                className="py-4 cursor-pointer list-none hover:text-blueLight-blue50 active:font-semibold"
+                className="py-4 cursor-pointer list-none hover:text-blueLight-blue50 transition-transform duration-500 ease-in-out transform hover:scale-110 active:font-semibold"
               >
                 PianoRoll
               </li>
@@ -104,7 +107,7 @@ export default function Navbar() {
             <Link href="/customSolutions">
               <li
                 onClick={() => setMenuOpen(false)}
-                className="py-4 cursor-pointer list-none hover:text-blueLight-blue50 active:font-semibold"
+                className="py-4 cursor-pointer list-none hover:text-blueLight-blue50 transition-transform duration-500 ease-in-out transform hover:scale-110 active:font-semibold"
               >
                 Custom Solutions
               </li>
@@ -112,7 +115,7 @@ export default function Navbar() {
             <Link href="/knowledge">
               <li
                 onClick={() => setMenuOpen(false)}
-                className="py-4 cursor-pointer list-none hover:text-blueLight-blue50 active:font-semibold"
+                className="py-4 cursor-pointer list-none hover:text-blueLight-blue50 transition-transform duration-500 ease-in-out transform hover:scale-110 active:font-semibold"
               >
                 Knowledge
               </li>

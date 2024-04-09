@@ -16,7 +16,7 @@ const VideoComponent = () => {
         allowFullScreen
         title="Embedded Video"
         alt="Embedded Video"
-        className="rounded-[0.5rem] md:w-[43.5rem] md:h-[24.563rem] lg:w-[51.8125rem] lg:h-[29.3125rem]"
+        className="rounded-[0.5rem] md:w-[43.5rem] md:h-[24.563rem] xl:w-[51.8125rem] xl:h-[29.3125rem]"
       />
     </div>
   );

@@ -3,8 +3,8 @@ import React from "react";
 
 const PianoRollDescription = () => {
   return (
-    <section className="flex flex-col items-center justify-center w-full lg:px-[12.625rem] mt-[4rem] md:mt-[3.94rem]">
-      <div className="lg:flex-row flex flex-col gap-[4.5rem] items-center justify-center w-full">
+    <section className="flex flex-col items-center justify-center w-full xl:px-[12.625rem] mt-[4rem] md:mt-[3.94rem]">
+      <div className="xl:flex-row flex flex-col gap-[4.5rem] items-center justify-center w-full">
         <div className="flex flex-col gap-4 max-w-[24.03rem] w-full">
           <h1 className="h2 leading-[4.48rem] xl:h1 text-neutralLight-neutral10 ">
             PianoRoll

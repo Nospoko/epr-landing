@@ -8,12 +8,12 @@ import React from "react";
 
 const StoryComponent = () => {
   return (
-    <section className="pt-[2.75rem] pb-[7.75rem] lg:pt-[7.75rem] lg:pb-[7.75rem] w-full">
+    <section className="pt-[2.75rem] pb-[7.75rem] xl:pt-[7.75rem] xl:pb-[7.75rem] w-full">
       <div className="flex flex-col items-center justify-center text-center mb-[2.75rem] md:mb-[7.75rem] gap-[1.5rem]">
-        <h2 className="h4 md:h2SB lg:h2 text-neutralLight-neutral10">
+        <h2 className="h4 md:h2SB xl:h2 text-neutralLight-neutral10">
           What’s the story?
         </h2>
-        <div className="md:mx-[9.5rem] lg:mx-[22.5rem] max-w-[45rem]">
+        <div className="md:mx-[9.5rem] xl:mx-[22.5rem] max-w-[45rem]">
           <h6 className="h6 text-neutralLight-neutral20 text-center">
             Once, a passion for algorithms, AI, ML, and music birthed an idea:
             to teach AI to play the piano. But not just any piano with a flat
@@ -23,7 +23,7 @@ const StoryComponent = () => {
         </div>
       </div>
       {/* TODO- during adding media querries pay attantion on proper display- elements may come into the center */}
-      <div className="flex flex-col lg:mx-[12.625rem] relative gap-[2rem]">
+      <div className="flex flex-col xl:mx-[12.625rem] relative gap-[2rem]">
         {stepsData.map((step, index) => (
           <div
             key={index}
@@ -48,12 +48,12 @@ const StoryComponent = () => {
               <div
                 className={`flex flex-col gap-[1rem] md:flex-grow md:max-w-[50%] ${
                   index % 2 === 0
-                    ? "md:pr-[1.5rem] lg:pr-[4.875rem]"
-                    : "md:pl-[1.5rem] lg:pl-[4.875rem]"
+                    ? "md:pr-[1.5rem] xl:pr-[4.875rem]"
+                    : "md:pl-[1.5rem] xl:pl-[4.875rem]"
                 }`}
               >
                 <p className=" p1SB text-blueLight-blue50">{step.step}</p>
-                <h4 className=" h5 lg:h4 text-neutralLight-neutral10 tracking-wider">
+                <h4 className=" h5 xl:h4 text-neutralLight-neutral10 tracking-wider">
                   {step.title}
                 </h4>
                 <h6 className=" h6 text-neutralLight-neutral20">
@@ -65,9 +65,9 @@ const StoryComponent = () => {
         ))}
       </div>
 
-      <div className="flex flex-col md:flex-row gap-[1.5rem] lg:px-[12.62rem] pt-[5rem] ld:pt-[5.88rem] justify-center items-center">
+      <div className="flex flex-col md:flex-row gap-[1.5rem] xl:px-[12.62rem] pt-[5rem] ld:pt-[5.88rem] justify-center items-center">
         <div className="rounded-[1rem]  bg-neutralLight-neutral90 py-[4rem] px-[1.5rem] flex flex-col items-center gap-[2.75rem] w-full max-w-[31.625rem]">
-          <div className=" text-[2.25rem] md:h4 lg:text-[3.25rem] font-semibold text-center">
+          <div className=" text-[2.25rem] md:h4 xl:text-[3.25rem] font-semibold text-center">
             <p className="text-neutralLight-neutral10">
               Stay up to date <br />
               with <span className="text-blueLight-blue50">PianoRoll</span>
@@ -100,7 +100,7 @@ const StoryComponent = () => {
           </div>
         </div>
         <div className="rounded-[1rem] bg-neutralLight-neutral100 py-[4rem] px-[1.5rem] flex flex-col items-center gap-[2.75rem] border border-neutralLight-neutral90 w-full max-w-[31.625rem]">
-          <div className=" text-[2.25rem] md:h4 lg:text-[3.25rem] font-semibold text-center">
+          <div className=" text-[2.25rem] md:h4 xl:text-[3.25rem] font-semibold text-center">
             <p className="text-neutralLight-neutral10">
               Stay up to date <br />
               with Piano for AI

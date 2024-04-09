@@ -20,11 +20,11 @@ const RoundedTextComponent = ({
         <div className="max-w-[51.75rem]">
           <div className={`flex flex-col gap-${gap}`}>
             <div
-              className={`h2SB leading-[2.75rem] md:h2SB md:leading-[3.25rem] lg:h2 text-${textTitleColor} `}
+              className={`h2SB leading-[2.75rem] md:h2SB md:leading-[3.25rem] xl:h2 text-${textTitleColor} `}
             >
               {title}
             </div>
-            <div className={`h6_400 lg:h6 text-${textParagraph1Color}`}>
+            <div className={`h6_400 xl:h6 text-${textParagraph1Color}`}>
               {paragraph1}
             </div>
           </div>

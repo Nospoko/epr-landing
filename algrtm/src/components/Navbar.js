@@ -10,7 +10,7 @@ export default function Navbar() {
     setMenuOpen(!menuOpen);
   };
   return (
-    <nav className="z-[999] relative flex w-full justify-between  items-center self-stretch border-b border-[#F5F3F5] border-solid p-4 md:px-[2.75rem] lg:px-[5.875rem]">
+    <nav className="z-[999] relative flex w-full justify-between  items-center self-stretch border-b border-[#F5F3F5] border-solid p-4 md:px-[2.75rem] xl:px-[5.875rem]">
       <div className="flex justify-start p3SB text-neutralLight-neutral10 gap-5">
         <Link
           href="/"
@@ -26,20 +26,20 @@ export default function Navbar() {
       <div className="flex w-full flex-wrap items-center justify-end gap-y-1 md:w-[initial] md:flex-nowrap gap-[1.5rem]">
         <div className="hidden md:flex items-center justify-center gap-x-2">
           <Link
-            className="flex w-full items-center justify-center transition md:p3SB lg:p3 p-2.5 animation"
+            className="flex w-full items-center justify-center transition md:p3SB xl:p3 p-2.5 animation"
             href="/pianoRoll"
           >
             PianoRoll
           </Link>
 
           <Link
-            className="flex w-full items-center justify-center  transition md:p3SB lg:p3 p-2.5 animation text-nowrap"
+            className="flex w-full items-center justify-center  transition md:p3SB xl:p3 p-2.5 animation text-nowrap"
             href="/customSolutions"
           >
             Custom Solutions
           </Link>
           <Link
-            className="flex w-full items-center justify-center  transition md:p3SB lg:p3 p-2.5 animation"
+            className="flex w-full items-center justify-center  transition md:p3SB xl:p3 p-2.5 animation"
             href="/knowledge"
           >
             Knowledge

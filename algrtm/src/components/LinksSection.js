@@ -8,7 +8,7 @@ import externalLinks from "@/data/externalLinks";
 const LinksSection = () => {
   return (
     <section className=" bg-neutralLight-neutral10 w-full border-t-2 border-neutralLight-neutral20 flex flex-col md:flex-row justify-center items-center ">
-      <div className=" flex flex-col justify-between bg-neutralLight-neutral10 mx-[1rem] my-[4rem] md:mx-[2.75rem] md:mt-[4rem] md:mb-[7.75rem] lg:mx-[12.5rem] lg:mt-16 lg:mb-[7.75rem] gap-[3rem] md:gap-16">
+      <div className=" w-full flex flex-col justify-between bg-neutralLight-neutral10 px-[1rem] py-[4rem] md:mx-[2.75rem] md:mt-[4rem] md:mb-[7.75rem] lg:mx-[12.5rem] lg:mt-16 lg:mb-[7.75rem] gap-[3rem] md:gap-16">
         <div className=" flex flex-col justify-between md:gap-auto md:flex-row xl:gap-[11.125rem] bg-neutralLight-neutral10 w-full">
           <div className=" flex flex-col gap-6 ">
             <div className=" flex w-full justify-start h5">

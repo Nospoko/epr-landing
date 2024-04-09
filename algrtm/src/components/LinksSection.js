@@ -7,22 +7,22 @@ import externalLinks from "@/data/externalLinks";
 
 const LinksSection = () => {
   return (
-    <section className=" bg-neutralLight-neutral10 w-full border-t-2 border-neutralLight-neutral20 flex flex-col sm:flex-row justify-center items-center ">
-      <div className=" flex flex-col justify-between bg-neutralLight-neutral10 mx-1 my-4 sm:mx-[2.75rem] sm:mt-[4rem] sm-mb-[7.75rem] lg:mx-[12.5rem] lg:mt-16 lg:mb-[7.75rem] gap-[3rem] md:gap-16">
+    <section className=" bg-neutralLight-neutral10 w-full border-t-2 border-neutralLight-neutral20 flex flex-col md:flex-row justify-center items-center ">
+      <div className=" flex flex-col justify-between bg-neutralLight-neutral10 mx-[1rem] my-[4rem] md:mx-[2.75rem] md:mt-[4rem] md:mb-[7.75rem] lg:mx-[12.5rem] lg:mt-16 lg:mb-[7.75rem] gap-[3rem] md:gap-16">
         <div className=" flex flex-col justify-between md:gap-auto md:flex-row md:gap-[1rem] lg:gap-[11.125rem] bg-neutralLight-neutral10 w-full">
           <div className=" flex flex-col gap-6 ">
             <div className=" flex w-full justify-start h5">
               <p className=" text-blueLight-blue50 h5">A</p>
               <p className=" text-neutralLight-neutral100 h5">lgrtm</p>
             </div>
-            <div className=" p2 text-neutralLight-neutral60 max-w-[25.375rem] leading-[1.4rem]">
+            <div className=" p2 text-neutralLight-neutral60 max-w-[25.375rem]">
               We develop algorithmic solutions with Machine Learning, Research
               and Prototyping, Data Quality Engineering, Analytics Automation,
               Creative Coding, Dataset Management.
             </div>
           </div>
 
-          <div className=" flex gap-[0.625rem] lg:px-4 items-end max-w-[28.93rem] text-nowrap flex-wrap">
+          <div className=" flex gap-[0.625rem] lg:px-4 items-end max-w-[28.93rem] text-nowrap flex-wrap mt-[2rem] md:mt-[0rem">
             <Link href="/pianoRoll">
               <p className=" p3SB md:p3 text-neutralLight-neutral90 py-[0.625rem] animation">
                 PianoRoll
@@ -51,7 +51,7 @@ const LinksSection = () => {
           <hr className="w-full border-t border-neutralLight-neutral20"></hr>
         </div>
 
-        <div className="flex gap-11 flex-center justify-center text-neutralLight-neutral90 p3SB">
+        <div className="flex md:gap-11 gap-[2.75rem] flex-center justify-center text-neutralLight-neutral90 p3SB">
           <Link
             href={externalLinks.linkedin}
             className="text-neutralLight-neutral90 p3 animation"

@@ -9,7 +9,7 @@ import React from "react";
 const StoryComponent = () => {
   return (
     <section className="pt-[2.75rem] pb-[7.75rem] lg:pt-[7.75rem] lg:pb-[7.75rem] w-full">
-      <div className="flex flex-col items-center justify-center mb-[7.75rem] gap-[1.5rem]">
+      <div className="flex flex-col items-center justify-center text-center mb-[2.75rem] md:mb-[7.75rem] gap-[1.5rem]">
         <h2 className="h4 md:h2SB lg:h2 text-neutralLight-neutral10">
           What’s the story?
         </h2>
@@ -46,7 +46,7 @@ const StoryComponent = () => {
                 </svg>
               </div>
               <div
-                className={`flex flex-col md:flex-grow md:max-w-[50%] ${
+                className={`flex flex-col gap-[1rem] md:flex-grow md:max-w-[50%] ${
                   index % 2 === 0
                     ? "md:pr-[1.5rem] lg:pr-[4.875rem]"
                     : "md:pl-[1.5rem] lg:pl-[4.875rem]"
@@ -65,7 +65,7 @@ const StoryComponent = () => {
         ))}
       </div>
 
-      <div className="flex flex-col md:flex-row gap-[1.5rem] lg:px-[12.62rem] pt-[5.88rem] justify-center items-center">
+      <div className="flex flex-col md:flex-row gap-[1.5rem] lg:px-[12.62rem] pt-[5rem] ld:pt-[5.88rem] justify-center items-center">
         <div className="rounded-[1rem]  bg-neutralLight-neutral90 py-[4rem] px-[1.5rem] flex flex-col items-center gap-[2.75rem] w-full max-w-[31.625rem]">
           <div className=" text-[2.25rem] md:h4 lg:text-[3.25rem] font-semibold text-center">
             <p className="text-neutralLight-neutral10">

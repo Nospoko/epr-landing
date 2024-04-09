@@ -23,23 +23,23 @@ export default function Navbar() {
         </Link>
       </div>
 
-      <div className="flex w-full flex-wrap items-center justify-end gap-y-1 md:w-[initial] sm:flex-nowrap gap-4 ">
+      <div className="flex w-full flex-wrap items-center justify-end gap-y-1 md:w-[initial] md:flex-nowrap gap-[1.5rem] ">
         <div className="hidden md:flex items-center justify-center gap-x-2">
           <Link
-            className="flex w-full items-center justify-center transition sm:p3SB lg:p3 p-2.5 animation"
+            className="flex w-full items-center justify-center transition md:p3SB lg:p3 p-2.5 animation"
             href="/pianoRoll"
           >
             PianoRoll
           </Link>
 
           <Link
-            className="flex w-full items-center justify-center  transition sm:p3SB lg:p3 p-2.5 animation text-nowrap"
+            className="flex w-full items-center justify-center  transition md:p3SB lg:p3 p-2.5 animation text-nowrap"
             href="/customSolutions"
           >
             Custom Solutions
           </Link>
           <Link
-            className="flex w-full items-center justify-center  transition sm:p3SB lg:p3 p-2.5 animation"
+            className="flex w-full items-center justify-center  transition md:p3SB lg:p3 p-2.5 animation"
             href="/knowledge"
           >
             Knowledge

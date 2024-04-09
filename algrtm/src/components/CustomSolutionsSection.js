@@ -3,8 +3,8 @@ import CustomLink from "./shared/CustomLink";
 
 const CustomSolutionsSection = () => {
   return (
-    <section className="flex mt-[4rem] md:mt-[3.94rem] w-full relative overflow-hidden">
-      <div className="flex flex-col gap-4 lg:gap-[1.5rem] py-[4.66rem] lg:pl-[9.75rem] pr-[0rem]">
+    <section className="flex mt-[0rem] md:mt-[3.94rem] w-full relative overflow-hidden">
+      <div className="flex flex-col gap-4 lg:gap-[1.5rem] py-[4rem] lg:pl-[9.75rem] pr-[0rem]">
         <h1 className="h2 md:h1SB lg:h1 text-neutralLight-neutral10 leading-[5.375rem]">
           Custom Solutions
         </h1>

@@ -15,7 +15,7 @@ const RoundedTextComponent = ({
   return (
     <section className="w-full md:px-[5.875rem] ">
       <div
-        className={`bg-${backgroundColor} w-full flex flex-col items-center md:items-start py-[2.75rem] px-[2rem] md:py-[5.88rem] md:px-[6.75rem] rounded-[2rem]`}
+        className={`bg-${backgroundColor} w-full flex flex-col items-start py-[2.75rem] px-[2rem] md:py-[5.88rem] md:px-[6.75rem] rounded-[2rem]`}
       >
         <div className="max-w-[51.75rem]">
           <div className={`flex flex-col gap-${gap}`}>

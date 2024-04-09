@@ -25,10 +25,6 @@ const PianoRollDescription = () => {
             height={283}
             width={343}
             sizes="100vw"
-            // style={{
-            //   width: "100%",
-            //   height: "auto",
-            // }}
             src="/PianoRollScreen.png"
             alt="Piano Roll App Screen"
             className="w-auto h-[17.678rem] md:h-[29.875rem]"

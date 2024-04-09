@@ -51,7 +51,7 @@ const LinksSection = () => {
           <hr className="w-full border-t border-neutralLight-neutral20"></hr>
         </div>
 
-        <div className="flex md:gap-11 gap-[2.75rem] flex-center justify-center text-neutralLight-neutral90 p3SB">
+        <div className="flex gap-[2.75rem] flex-center justify-center text-neutralLight-neutral90 p3SB w-full">
           <Link
             href={externalLinks.linkedin}
             className="text-neutralLight-neutral90 p3 animation"

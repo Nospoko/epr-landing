@@ -38,12 +38,13 @@ export default function Navbar() {
           >
             Custom Solutions
           </Link>
-          <Link
+          {/* TODO- uncomment when we have sth to show on Knowlenge page */}
+          {/* <Link
             className="flex w-full items-center justify-center  transition md:p3SB xl:p3 p-2.5 animation"
             href="/knowledge"
           >
             Knowledge
-          </Link>
+          </Link> */}
         </div>
 
         <Link

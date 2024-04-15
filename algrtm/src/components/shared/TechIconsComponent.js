@@ -9,7 +9,9 @@ const TechIconsComponent = ({
 }) => {
   return (
     <div
-      className={`flex flex-wrap items-stretch w-full gap-x-[1.88rem] gap-y-[1.25rem] md:gap-[0] ${classNames}`}
+      className={`flex flex-wrap items-stretch w-full gap-x-[1.88rem] gap-y-[1.25rem] md:gap-[0] ${classNames} ${
+        size === "small" ? "homepage" : ""
+      }`}
     >
       {imagesArray.map((image) => {
         return (
@@ -25,7 +27,7 @@ const TechIconsComponent = ({
               image.name.charAt(0).toUpperCase() + image.name.slice(1)
             } logo`}
             className={`transition-transform duration-300 transform hover:scale-125 ${
-              image.name
+              size === "large" ? image.name : ""
             } ${!color && "grayscale"}`}
           />
         );

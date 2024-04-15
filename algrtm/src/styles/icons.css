@@ -28,6 +28,10 @@
   height: 37.8px;
 }
 
+.homepage {
+  gap: 1rem !important;
+}
+
 /* PostgreSQL */
 .postgreSQL {
   width: 32px;

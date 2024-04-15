@@ -10,7 +10,7 @@ import React from "react";
 const CustomSolutions = () => {
   return (
     <main className="flex flex-col items-center justify-center ">
-      <div className="flex flex-col items-center justify-center px-[1rem] md:px-[2.75rem] xl-px-[0] w-full">
+      <div className="flex flex-col items-center justify-center px-[1rem] md:px-[2.75rem] xl:px-[0] w-full">
         <CustomSolutionsSection />
         <OfferSection />
         <TechnologiesSection />

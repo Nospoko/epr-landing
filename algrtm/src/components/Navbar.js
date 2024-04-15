@@ -3,6 +3,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
 import { AiOutlineClose } from "react-icons/ai";
+import ThemeToggle from "./shared/ThemeToggle";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -54,17 +55,7 @@ export default function Navbar() {
           Contact us
         </Link>
 
-        <div className=" hidden md:flex items-center justify-center ">
-          <button className="toggleButton items-center justify-center  hidden md:flex md:gap-1.5">
-            <Image src="/sun.svg" width={18} height={18} alt="Sun icon" />
-            <Image
-              src="/ellipse.svg"
-              width={24}
-              height={24}
-              alt="Ellipse icon"
-            />
-          </button>
-        </div>
+        <ThemeToggle />
         <div
           className=" flex md:hidden items-center justify-center cursor-pointer"
           onClick={handleNav}

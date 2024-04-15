@@ -53,10 +53,14 @@ const ContactFormContainer = () => {
   };
 
   return (
-    <section className="text-gray-600 body-font relative">
+    <section className="text-gray-600 body-font relative w-full">
       <div className="w-full">
-        <div className="">
-          <form className="flex flex-wrap -m-2" ref={form} onSubmit={sendEmail}>
+        <form
+          className="w-full flex flex-col self-stretch -m-2"
+          ref={form}
+          onSubmit={sendEmail}
+        >
+          <div className="w-full flex flex-col md:flex-row self-stretch ">
             <FormField
               label="Your name"
               placeholder="Enter your name and surname..."
@@ -76,24 +80,24 @@ const ContactFormContainer = () => {
               fieldType="input"
               errors={errors}
             />
+          </div>
 
-            <FormField
-              label="Tell us more"
-              placeholder="Tell us more..."
-              type="text"
-              id="message"
-              name="message"
-              fieldType="textarea"
-              errors={errors}
-            />
+          <FormField
+            label="Tell us more"
+            placeholder="Tell us more..."
+            type="text"
+            id="message"
+            name="message"
+            fieldType="textarea"
+            errors={errors}
+          />
 
-            <div className="p-2 flex justify-end items-end w-full">
-              <button className="text-neutralLight-neutral100 bg-neutralLight-neutral10 border-0 py-[0.635rem] px-[1.25rem] focus:outline-none hover:bg-blueLight-blue50 rounded-[0.5rem] p3SB transition ease-in-out duration-300 animationSmall h-[2.75rem]">
-                Send message
-              </button>
-            </div>
-          </form>
-        </div>
+          <div className="p-2 flex justify-end items-end w-full">
+            <button className="text-neutralLight-neutral100 bg-neutralLight-neutral10 border-0 py-[0.635rem] px-[1.25rem] focus:outline-none hover:bg-blueLight-blue50 rounded-[0.5rem] p3SB transition ease-in-out duration-300 animationSmall h-[2.75rem]">
+              Send message
+            </button>
+          </div>
+        </form>
       </div>
     </section>
   );

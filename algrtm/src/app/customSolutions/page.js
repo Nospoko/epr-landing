@@ -1,6 +1,4 @@
 import CustomSolutionsSection from "@/components/CustomSolutionsSection";
-import IconsColoredComponent from "@/components/IconsColoredComponent";
-import LinksSection from "@/components/LinksSection";
 import OfferSection from "@/components/OfferSection";
 import RoundedTextComponent from "@/components/RoundedTextComponent";
 
@@ -11,18 +9,21 @@ import React from "react";
 
 const CustomSolutions = () => {
   return (
-    <main className="flex flex-col items-center justify-center">
-      <CustomSolutionsSection />
-      <OfferSection />
-      <TechnologiesSection />
-      <RoundedTextComponent
-        backgroundColor="neutralLight-neutral10"
-        textTitleColor="neutralLight-neutral100"
-        textParagraph1Color="neutralLight-neutral60"
-        gap="6"
-        version="version2"
-        showButton={true}
-      />
+    <main className="flex flex-col items-center justify-center ">
+      <div className="flex flex-col items-center justify-center px-[1rem] md:px-[2.75rem] xl:px-[0] w-full">
+        <CustomSolutionsSection />
+        <OfferSection />
+        <TechnologiesSection />
+        <RoundedTextComponent
+          backgroundColor="neutralLight-neutral10"
+          textTitleColor="neutralLight-neutral100"
+          textParagraph1Color="neutralLight-neutral60"
+          gap="6"
+          version="version2"
+          showButton={true}
+        />
+      </div>
+
       <RoundedRectangle />
       <SolutionsSection version="version2" />
     </main>

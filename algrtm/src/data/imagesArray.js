@@ -4,6 +4,7 @@ const imagesArray = [
     large: { width: 64, height: 64 },
     small: { width: 24.1, height: 24 },
   },
+
   {
     name: "pandas",
     large: { width: 64, height: 64 },

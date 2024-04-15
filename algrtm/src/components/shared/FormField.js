@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Input from "./Input";
 import TextArea from "./TextArea";
 
@@ -11,8 +11,26 @@ const FormField = ({
   fieldType,
   errors,
 }) => {
+  const [isMdOrAbove, setIsMdOrAbove] = useState(
+    typeof window !== "undefined" ? window.innerWidth >= 1023 : false
+  );
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMdOrAbove(window.innerWidth >= 1023);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const FieldComponent = fieldType === "textarea" ? TextArea : Input;
-  const widthClass = fieldType === "textarea" ? "w-full" : "w-1/2";
+  const widthClass =
+    fieldType === "textarea" ? "w-full" : isMdOrAbove ? "w-1/2" : "w-full";
+
   return (
     <div className={`p-2 ${widthClass}`}>
       <div className="relative flex flex-col gap-2">

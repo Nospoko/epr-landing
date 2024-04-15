@@ -5,10 +5,14 @@ import React from "react";
 const TechIconsComponent = ({
   size = "large",
   color = true,
-  classNames = "justify-between gap-4",
+  classNames = "justify-between gap-auto",
 }) => {
   return (
-    <div className={`flex items-stretch mt-[2.75rem] w-full ${classNames}`}>
+    <div
+      className={`flex flex-wrap items-stretch w-full gap-x-[1.88rem] gap-y-[1.25rem] md:gap-[0] ${classNames} ${
+        size === "small" ? "homepage" : ""
+      }`}
+    >
       {imagesArray.map((image) => {
         return (
           <Image
@@ -23,8 +27,8 @@ const TechIconsComponent = ({
               image.name.charAt(0).toUpperCase() + image.name.slice(1)
             } logo`}
             className={`transition-transform duration-300 transform hover:scale-125 ${
-              !color && "grayscale"
-            }`}
+              size === "large" ? image.name : ""
+            } ${!color && "grayscale"}`}
           />
         );
       })}

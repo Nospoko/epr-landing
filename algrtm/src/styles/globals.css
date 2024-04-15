@@ -4,6 +4,7 @@
 
 @import "./buttons.css";
 @import "./typography.css";
+@import "./icons.css";
 
 html {
   font-size: 16px;

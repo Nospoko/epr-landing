@@ -17,14 +17,14 @@ const OfferSection = () => {
   };
 
   return (
-    <section className="flex flex-col w-full mt-[8.5rem] gap-[2.75rem] justify-center items-center">
-      <h2 className="flex h2 text-neutralLight-neutral10 leading-[4rem]">
+    <section className="flex flex-col w-full md:mt-[8.5rem] gap-[2.75rem] justify-center items-center">
+      <h2 className="flex h4 xl:h2 md:h2S text-neutralLight-neutral10">
         What we offer?
       </h2>
-      <div className="flex flex-col gap-4 w-full px-[5.875rem]">
+      <div className="flex flex-col gap-4 w-full xl:px-[5.875rem]">
         {/* RESEARCH & DISCOVERY */}
-        <div className="flex gap-[1.5rem]  bg-neutralLight-neutral90 py-[5.85rem] px-[6.75rem] rounded-[2rem]">
-          <div className="h4 text-neutralLight-neutral10 leading-[2.75rem] flex justify-start max-w-[25.1875rem] w-full">
+        <div className="flex flex-col md:flex-row gap-[1.5rem]  bg-neutralLight-neutral90 px-[2.75rem] py-[2.75rem] md:py-[5.88rem]  xl:py-[5.85rem] xl:px-[6.75rem] rounded-[2rem]">
+          <div className=" h5_small_bold md:h4SB lg:h4 text-neutralLight-neutral10 flex justify-start max-w-[25.1875rem] w-full">
             <p>Research & Discovery</p>
           </div>
 
@@ -41,7 +41,7 @@ const OfferSection = () => {
                   aria-expanded={section.visible}
                   aria-controls={`section-${index}-content`}
                 >
-                  <div>{section.title}</div>
+                  <div className="h6SB xl:h6_600">{section.title}</div>
                   <Icon
                     src={
                       section.visible
@@ -64,8 +64,8 @@ const OfferSection = () => {
           </div>
         </div>
         {/* Prototyping & Development */}
-        <div className="flex gap-[1.5rem] py-[5.85rem] px-[6.75rem] ">
-          <div className="h4 text-neutralLight-neutral10 leading-[2.75rem] flex justify-start max-w-[25.1875rem] w-full">
+        <div className="flex flex-col md:flex-row gap-[1.5rem] px-[2.75rem] py-[2.75rem] md:py-[5.88rem] xl:py-[5.85rem] xl:px-[6.75rem]">
+          <div className=" h5_small_bold md:h4SB lg:h4 text-neutralLight-neutral10 leading-[2.75rem] flex justify-start max-w-[25.1875rem] w-full">
             <p>Prototyping & Development</p>
           </div>
 
@@ -82,7 +82,7 @@ const OfferSection = () => {
                   aria-expanded={section.visible}
                   aria-controls={`section-${index + 3}-content`}
                 >
-                  <div>{section.title}</div>
+                  <div className="h6SB xl:h6_600">{section.title}</div>
                   <Icon
                     src={
                       section.visible

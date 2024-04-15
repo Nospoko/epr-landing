@@ -7,14 +7,14 @@ import "../styles/globals.css";
 
 const AlgorithmicMusicSection = () => {
   return (
-    <section className="flex gap-16 px-[6.75rem] py-[5.88rem] text-neutralLight-neutral10 items-center">
+    <section className="flex flex-col lg:flex-row gap-[1.5rem] xl:gap-16 py-[2.75rem] xl:px-[2.75rem] xl:py-[5.88rem] text-neutralLight-neutral10 items-center">
       <div className="flex flex-col items-stretch max-w-[24.53rem]">
-        <h2 className="h2  leading-[4rem]">Algorithmic Music</h2>
-        <div className="mt-6 h6_500 leading-[1.98rem]">
+        <h2 className="h2SB xl:h2 leading-[4rem]">Algorithmic Music</h2>
+        <div className="mt-6 h6_400 xl:h6 leading-[1.98rem]">
           Music is at the core of our{" "}
-          <strong>machine intelligence and creativity research</strong>. <br />
-          We pay special attention to piano music because of its richness of
-          emotional expression, and relative simplicity of data structures.
+          <strong>machine intelligence and creativity research</strong>. We pay
+          special attention to piano music because of its richness of emotional
+          expression, and relative simplicity of data structures.
         </div>
         <div className="mt-4 p2 leading-[1.64rem]">
           We developed <strong>PianoRoll</strong> - a social platform for Human
@@ -45,8 +45,13 @@ const AlgorithmicMusicSection = () => {
         <Image
           src="/womanPlaying-image.jpg"
           alt="Woman playing the piano"
-          width={580}
-          height={600}
+          width={343}
+          height={355}
+          sizes="100vw"
+          style={{
+            width: "100%",
+            height: "auto",
+          }}
         ></Image>
       </div>
     </section>

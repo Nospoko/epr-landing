@@ -1,0 +1,126 @@
+/* Python */
+.python {
+  width: 36px;
+  height: 35.86px;
+}
+
+/* Pandas */
+.pandas {
+  width: 36px;
+  height: 36px;
+}
+
+/* Hugging */
+.hugging {
+  width: 36px;
+  height: 36px;
+}
+
+/* NumPy */
+.numpy {
+  width: 36px;
+  height: 36px;
+}
+
+/* Redis */
+.redis {
+  width: 44px;
+  height: 37.8px;
+}
+
+.homepage {
+  gap: 1rem !important;
+}
+
+/* PostgreSQL */
+.postgreSQL {
+  width: 32px;
+  height: 32px;
+}
+
+/* AWS */
+.AWS {
+  width: 52px;
+  height: 30.47px;
+}
+
+/* Docker */
+.docker {
+  width: 44px;
+  height: 31.57px;
+}
+
+/* PyTorch */
+.pyTorch {
+  width: 32px;
+  height: 32px;
+}
+
+/* Streamlit */
+.streamlit {
+  width: 54px;
+  height: 29.53px;
+}
+
+/* Media Query */
+@media only screen and (min-width: 1024px) {
+  /* Python */
+  .python {
+    width: 64px;
+    height: 64px;
+  }
+
+  /* Pandas */
+  .pandas {
+    width: 64px;
+    height: 64px;
+  }
+
+  /* Hugging */
+  .hugging {
+    width: 64px;
+    height: 64px;
+  }
+
+  /* NumPy */
+  .numpy {
+    width: 64px;
+    height: 64px;
+  }
+
+  /* Redis */
+  .redis {
+    width: 74.488px;
+    height: 64px;
+  }
+
+  /* PostgreSQL */
+  .postgreSQL {
+    width: 64px;
+    height: 64px;
+  }
+
+  /* AWS */
+  .AWS {
+    width: 109.215px;
+    height: 64px;
+  }
+
+  /* Docker */
+  .docker {
+    width: 89.2px;
+    height: 64px;
+  }
+
+  /* PyTorch */
+  .pyTorch {
+    width: 64px;
+    height: 64px;
+  }
+
+  /* Streamlit */
+  .streamlit {
+    width: 117.029px;
+    height: 64px;
+  }
+}

@@ -3,7 +3,7 @@ import CustomLink from "./shared/CustomLink";
 
 const ContactDescription = () => {
   return (
-    <section className="flex flex-col gap-6 max-w-[22.375rem] w-full">
+    <section className="flex flex-col gap-6 md:max-w-[18.375rem] xl:max-w-[22.375rem] w-full">
       <h2 className=" h4 md:h2SB xl:h2 text-neutralLight-neutral10 leading-[4rem] ">
         Contact
       </h2>

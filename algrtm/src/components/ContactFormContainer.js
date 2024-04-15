@@ -53,7 +53,7 @@ const ContactFormContainer = () => {
   };
 
   return (
-    <section className="text-gray-600 body-font relative">
+    <section className="text-gray-600 body-font relative w-full">
       <div className="w-full">
         <form
           className="w-full flex flex-col self-stretch -m-2"

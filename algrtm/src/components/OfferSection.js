@@ -24,7 +24,7 @@ const OfferSection = () => {
       <div className="flex flex-col gap-4 w-full xl:px-[5.875rem]">
         {/* RESEARCH & DISCOVERY */}
         <div className="flex flex-col md:flex-row gap-[1.5rem]  bg-neutralLight-neutral90 px-[2.75rem] py-[2.75rem] md:py-[5.88rem]  xl:py-[5.85rem] xl:px-[6.75rem] rounded-[2rem]">
-          <div className="h4SB md:h4 text-neutralLight-neutral10 leading-[2.75rem] flex justify-start max-w-[25.1875rem] w-full">
+          <div className=" h5_small_bold md:h4SB lg:h4 text-neutralLight-neutral10 flex justify-start max-w-[25.1875rem] w-full">
             <p>Research & Discovery</p>
           </div>
 
@@ -65,7 +65,7 @@ const OfferSection = () => {
         </div>
         {/* Prototyping & Development */}
         <div className="flex flex-col md:flex-row gap-[1.5rem] px-[2.75rem] py-[2.75rem] md:py-[5.88rem] xl:py-[5.85rem] xl:px-[6.75rem]">
-          <div className="h4SB md:h4  text-neutralLight-neutral10 leading-[2.75rem] flex justify-start max-w-[25.1875rem] w-full">
+          <div className=" h5_small_bold md:h4SB lg:h4 text-neutralLight-neutral10 leading-[2.75rem] flex justify-start max-w-[25.1875rem] w-full">
             <p>Prototyping & Development</p>
           </div>
 

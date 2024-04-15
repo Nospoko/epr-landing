@@ -13,7 +13,7 @@ const ContactDescription = () => {
           and we’ll provide the expertise to bring them to life.
         </h6>
 
-        <div className=" flex flex-col gap-4 self-stretch xl:flex-row">
+        <div className=" flex flex-col md:items-start gap-4 self-stretch xl:flex-row">
           {/* TODO add link href */}
           <CustomLink variant="secondary" text="Book a meeting" href="" />
 

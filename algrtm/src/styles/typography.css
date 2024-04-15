@@ -48,6 +48,19 @@
   .h5_500 {
     font-size: 2rem;
     font-weight: 500;
+    line-height: 2.48rem;
+  }
+
+  .h5_small_bold {
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+  }
+
+  .h5_small {
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 2.17rem;
   }
   .h6 {
     font-size: 1.375rem;

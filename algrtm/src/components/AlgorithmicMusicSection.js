@@ -43,7 +43,7 @@ const AlgorithmicMusicSection = () => {
 
       <div className="flex shrink-0">
         <Image
-          src="/womanPlaying-image.jpg"
+          src="/womanPlaying-image.png"
           alt="Woman playing the piano"
           width={343}
           height={355}

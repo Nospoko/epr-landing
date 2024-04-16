@@ -11,7 +11,7 @@ export default function Navbar() {
     setMenuOpen(!menuOpen);
   };
   return (
-    <nav className="z-[999] relative flex w-full justify-between  items-center self-stretch border-b border-[#F5F3F5] border-solid p-4 md:px-[2.75rem] xl:px-[5.875rem] dark:bg-neutralDark-neutral100">
+    <nav className="z-[999] relative flex w-full justify-between  items-center self-stretch border-b border-neutralLight-neutral90 dark:border-neutralDark-neutral90 border-solid p-4 md:px-[2.75rem] xl:px-[5.875rem] dark:bg-neutralDark-neutral100">
       <div className="flex justify-start p3SB text-neutralLight-neutral10 dark:text-neutralDark-neutral10 gap-5 ">
         <Link
           href="/"

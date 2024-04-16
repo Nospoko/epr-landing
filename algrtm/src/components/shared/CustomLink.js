@@ -7,13 +7,13 @@ const CustomLink = ({ text, href, variant, icon, alt }) => {
 
   if (variant === "primary") {
     linkClass +=
-      " border border-neutralLight-neutral40 bg-neutralLight-neutral10 text-neutralLight-neutral100";
+      " border border-neutralLight-neutral40 dark:border-neutralDark-neutral40 bg-neutralLight-neutral10 dark:bg-neutralDark-neutral10 text-neutralLight-neutral100 dark:text-neutralDark-neutral100";
   } else if (variant === "secondary") {
     linkClass +=
-      " border border-neutralLight-neutral80 bg-neutralLight-neutral100 text-neutralLight-neutral10";
+      " border border-neutralLight-neutral80 dark:border-neutralDark-neutral80 bg-neutralLight-neutral100 dark:bg-neutralDark-neutral100 text-neutralLight-neutral10 dark:text-neutralDark-neutral10";
   } else if (variant === "tertiary") {
     linkClass +=
-      " bg-neutralLight-neutral100 text-neutralLight-neutral10 pl-0 pr-0";
+      " bg-neutralLight-neutral100 dark:bg-neutralDark-neutral100 text-neutralLight-neutral10 dark:text-neutralDark-neutral10 pl-0 pr-0";
   }
 
   return (

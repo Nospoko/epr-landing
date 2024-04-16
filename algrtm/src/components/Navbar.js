@@ -31,7 +31,7 @@ export default function Navbar() {
             className="flex w-full items-center justify-center transition md:p3SB xl:p3 p-2.5 animation"
             href="/pianoRoll"
           >
-            PianoRoll
+            Piano for AI
           </Link>
 
           <Link

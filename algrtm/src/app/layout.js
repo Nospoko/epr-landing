@@ -15,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${pingFont.className}`}>
+      <body className={`${pingFont.className} dark:bg-neutralDark-neutral100`}>
         <Header />
         {children}
         <LinksSection />

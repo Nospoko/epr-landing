@@ -93,7 +93,7 @@ const ContactFormContainer = () => {
           />
 
           <div className="p-2 flex justify-end items-end w-full">
-            <button className="text-neutralLight-neutral100 bg-neutralLight-neutral10 border-0 py-[0.635rem] px-[1.25rem] focus:outline-none hover:bg-blueLight-blue50 rounded-[0.5rem] p3SB transition ease-in-out duration-300 animationSmall h-[2.75rem]">
+            <button className="text-neutralLight-neutral100 dark:text-neutralDark-neutral100 bg-neutralLight-neutral10 dark:bg-neutralDark-neutral10 border-0 py-[0.635rem] px-[1.25rem] focus:outline-none hover:bg-blueLight-blue50 dark:hover:bg-blueLight-blue50 rounded-[0.5rem] p3SB transition ease-in-out duration-300 animationSmall h-[2.75rem]">
               Send message
             </button>
           </div>

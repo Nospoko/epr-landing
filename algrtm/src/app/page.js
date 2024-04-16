@@ -6,7 +6,7 @@ import RoundedRectangle from "@/components/shared/RoundedRectangle";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center">
+    <main className="flex flex-col items-center justify-center bg-neutralLight-neutral100 dark:bg-neutralDark-neutral100">
       <div className="w-full flex flex-col items-center justify-center px-[1rem] md:px-[2.75rem] xl:px-[0]">
         <DevelopSection />
         <AlgorithmicMusicSection />

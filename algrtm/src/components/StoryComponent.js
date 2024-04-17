@@ -123,7 +123,7 @@ const StoryComponent = () => {
                   alt={`${
                     image.name.charAt(0).toUpperCase() + image.name.slice(1)
                   } logo`}
-                  className="transition-transform duration-300 transform hover:scale-125"
+                  className="transition-transform duration-300 transform hover:scale-12"
                 />
               </Link>
             ))}

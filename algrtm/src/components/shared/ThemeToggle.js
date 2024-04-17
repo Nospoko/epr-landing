@@ -27,22 +27,22 @@ const ThemeToggle = () => {
         onClick={() => setDarkMode(!darkMode)}
       >
         {darkMode ? (
-          <div
-            className="bg-neutralLight-neutral10 dark:bg-neutralLight-neutral100 w-6 h-6 rounded-full shadow-md transform transition-transform duration-300"
-            style={{ left: "2px" }}
-          ></div>
+          <>
+            <Image src="/moon.svg" width={18} height={18} alt="Moon icon" />
+            <div
+              className="bg-neutralLight-neutral10 dark:bg-neutralLight-neutral100 w-6 h-6 rounded-full shadow-md transition-transform duration-500"
+              style={{ left: "2px", transitionProperty: "left" }}
+            ></div>
+          </>
         ) : (
-          <div
-            className="bg-neutralLight-neutral10 dark:bg-neutralLight-neutral100 w-6 h-6 rounded-full shadow-md transform transition-transform duration-300"
-            style={{ right: "2px" }}
-          ></div>
+          <>
+            <div
+              className="bg-neutralLight-neutral10 dark:bg-neutralLight-neutral100 w-6 h-6 rounded-full shadow-md transition-transform duration-500"
+              style={{ right: "2px", transitionProperty: "right" }}
+            ></div>
+            <Image src="/sun.svg" width={18} height={18} alt="Sun icon" />
+          </>
         )}
-        <Image
-          src={darkMode ? "/moon.svg" : "/sun.svg"}
-          width={18}
-          height={18}
-          alt={darkMode ? "Moon icon" : "Sun icon"}
-        />
       </div>
     </div>
   );

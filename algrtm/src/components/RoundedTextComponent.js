@@ -4,32 +4,40 @@ import CustomLink from "./shared/CustomLink";
 
 const RoundedTextComponent = ({
   backgroundColor,
+  backgroundColorDark,
   textTitleColor,
+  textTitleColorDark,
   textParagraph1Color,
+  textParagraph1ColorDark,
   textParagraph2Color,
+  textParagraph2ColorDark,
   version,
   showButton,
   gap,
 }) => {
   const { title, paragraph1, paragraph2 } = texts[version];
   return (
-    <section className="w-full xl:px-[5.875rem] ">
+    <section className="w-full md:px-[5.875rem] ">
       <div
-        className={`bg-${backgroundColor} w-full flex flex-col items-start py-[2.75rem] px-[2.75rem] md:py-[5.88rem] md:px-[6.75rem] rounded-[2rem]`}
+        className={`bg-${backgroundColor} dark:bg-${backgroundColorDark} w-full flex flex-col items-start py-[2.75rem] px-[2rem] md:py-[5.88rem] md:px-[6.75rem] rounded-[2rem]`}
       >
         <div className="max-w-[51.75rem]">
           <div className={`flex flex-col gap-${gap}`}>
             <div
-              className={`h2SB leading-[2.75rem] md:h2SB md:leading-[3.25rem] xl:h2 text-${textTitleColor} `}
+              className={`h2SB leading-[2.75rem] md:h2SB md:leading-[3.25rem] xl:h2 text-${textTitleColor} dark:text-${textTitleColorDark} `}
             >
               {title}
             </div>
-            <div className={`h6_400 xl:h6 text-${textParagraph1Color}`}>
+            <div
+              className={`h6_400 xl:h6 text-${textParagraph1Color} dark:text-${textParagraph1ColorDark}`}
+            >
               {paragraph1}
             </div>
           </div>
 
-          <div className={`p2 mt-4 text-${textParagraph2Color}`}>
+          <div
+            className={`p2 mt-4 text-${textParagraph2Color} dark:text-${textParagraph2ColorDark} `}
+          >
             {paragraph2}
           </div>
         </div>

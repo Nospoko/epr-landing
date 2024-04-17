@@ -6,15 +6,19 @@ import RoundedRectangle from "@/components/shared/RoundedRectangle";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center bg-neutralLight-neutral100 dark:bg-neutralDark-neutral100">
-      <div className="w-full flex flex-col items-center justify-center px-[1rem] md:px-[2.75rem] xl:px-[0]">
+    <main className="flex flex-col items-center justify-center">
+      <div className="w-full flex flex-col items-center justify-center px-4 md:mx-[2.75rem]">
         <DevelopSection />
         <AlgorithmicMusicSection />
         <RoundedTextComponent
           backgroundColor="neutralLight-neutral90"
+          backgroundColorDark="neutralDark-neutral90"
           textTitleColor="neutralLight-neutral10"
+          textTitleColorDark="neutralDark-neutral10"
           textParagraph1Color="neutralLight-neutral10"
+          textParagraph1ColorDark="neutralDark-neutral10"
           textParagraph2Color="neutralLight-neutral20"
+          textParagraph2ColorDark="neutralDark-neutral20"
           gap="8"
           version="version1"
         />

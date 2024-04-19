@@ -34,7 +34,10 @@ const FormField = ({
   return (
     <div className={`p-2 ${widthClass}`}>
       <div className="relative flex flex-col gap-2">
-        <label htmlFor={id} className="t6 text-neutralLight-neutral20">
+        <label
+          htmlFor={id}
+          className="t6 text-neutralLight-neutral20 dark:text-neutralDark-neutral20"
+        >
           {label}
         </label>
         <FieldComponent

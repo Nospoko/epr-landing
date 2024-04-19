@@ -9,7 +9,7 @@ const TextArea = ({ type, placeholder, value, onChange, id, name }) => {
       onChange={onChange}
       id={id}
       name={name}
-      className="w-full bg-neutralLight-neutral100 bg-opacity-50 rounded-[0.5rem] border border-neutralLight-neutral60 focus:border-blueLight-blue50 focus:bg-neutralLight-neutral100 focus:ring-2 h-32 text-base outline-none py-[0.875rem] px-[1rem] resize-none leading-[1.32rem]  transition-colors duration-200 ease-in-out"
+      className="w-full bg-neutralLight-neutral100 dark:bg-neutralDark-neutral100 bg-opacity-50 rounded-[0.5rem] border border-neutralLight-neutral60 focus:border-blueLight-blue50 focus:bg-neutralLight-neutral100 focus:ring-2 h-32 text-base outline-none py-[0.875rem] px-[1rem] resize-none leading-[1.32rem]  transition-colors duration-200 ease-in-out"
     />
   );
 };

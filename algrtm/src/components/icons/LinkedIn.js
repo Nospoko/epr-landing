@@ -1,6 +1,6 @@
 import React from "react";
 
-const LinkedIn = ({ color, className }) => {
+const Linkedin = ({ color, className }) => {
   return (
     <svg
       width="45"
@@ -26,4 +26,4 @@ const LinkedIn = ({ color, className }) => {
   );
 };
 
-export default LinkedIn;
+export default Linkedin;

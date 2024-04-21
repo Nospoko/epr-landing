@@ -1,6 +1,6 @@
 import React from "react";
 
-const Linkedin = () => {
+const Linkedin = ({ color, className }) => {
   return (
     <svg
       width="45"

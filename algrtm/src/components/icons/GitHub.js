@@ -1,6 +1,6 @@
 import React from "react";
 
-const Github = () => {
+const Github = ({ color, className }) => {
   return (
     <svg
       width="45"

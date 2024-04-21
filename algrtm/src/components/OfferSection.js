@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Icon from "./shared/Icon";
 import offerSectionTexts from "@/data/offerSectionsTexts";
+import CustomIcon from "./shared/CustomIcon";
 
 const OfferSection = () => {
   const [sections, setSections] = useState(offerSectionTexts);
@@ -42,14 +43,11 @@ const OfferSection = () => {
                   aria-controls={`section-${index}-content`}
                 >
                   <div className="h6SB xl:h6_600">{section.title}</div>
-                  <Icon
-                    src={
-                      section.visible
-                        ? "/arrow-up-icon.svg"
-                        : "/arrow-down-icon.svg"
-                    }
-                    alt="Arrow icon"
-                    width={20}
+
+                  <CustomIcon
+                    name={section.visible ? "ArrowUp" : "ArrowDown"}
+                    className="transition-transform duration-300 transform hover:scale-125"
+                    color="black"
                   />
                 </div>
                 <div id={`section-${index}-content`}>
@@ -83,14 +81,10 @@ const OfferSection = () => {
                   aria-controls={`section-${index + 3}-content`}
                 >
                   <div className="h6SB xl:h6_600">{section.title}</div>
-                  <Icon
-                    src={
-                      section.visible
-                        ? "/arrow-up-icon.svg"
-                        : "/arrow-down-icon.svg"
-                    }
-                    alt="Arrow icon"
-                    width={20}
+                  <CustomIcon
+                    name={section.visible ? "ArrowUp" : "ArrowDown"}
+                    className="transition-transform duration-300 transform hover:scale-125"
+                    color="black"
                   />
                 </div>
                 <div id={`section-${index + 3}-content`}>

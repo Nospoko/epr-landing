@@ -1,3 +1,5 @@
+import ArrowDown from "../icons/ArrowDown";
+import ArrowUp from "../icons/ArrowUp";
 import Facebook from "../icons/Facebook";
 import Github from "../icons/Github";
 import Insta from "../icons/Insta";
@@ -13,6 +15,8 @@ const icons = {
   Insta: Insta,
   Linkedin: Linkedin,
   Note: Note,
+  ArrowUp: ArrowUp,
+  ArrowDown: ArrowDown,
 };
 
 const CustomIcon = ({ name, ...props }) => {

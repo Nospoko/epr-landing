@@ -21,7 +21,7 @@ const AlgorithmicMusicSection = () => {
           and AI Pianists alike. We curated the largest database with expressive
           piano{" "}
           <Link
-            href={externalLinks.hugglingface}
+            href={externalLinks.Hugglingface}
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -1,16 +1,16 @@
 import Facebook from "../icons/Facebook";
-import GitHub from "../icons/GitHub";
+import Github from "../icons/Github";
 import Insta from "../icons/Insta";
-import LinkedIn from "../icons/LinkedIn";
+import Linkedin from "../icons/Linkedin";
 import Note from "../icons/Note";
 import Twitter from "../icons/Twitter";
 
 const icons = {
   Facebook: Facebook,
-  GitHub: GitHub,
+  Github: Github,
   Twitter: Twitter,
   Insta: Insta,
-  LinkedIn: LinkedIn,
+  Linkedin: Linkedin,
   Note: Note,
 };
 

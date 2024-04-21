@@ -3,7 +3,6 @@
 import externalLinks from "@/data/externalLinks";
 import socialIconsArray from "@/data/socialIconsArray";
 import stepsData from "@/data/stepsData";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import CustomIcon from "./shared/CustomIcon";
@@ -76,11 +75,22 @@ const StoryComponent = () => {
             </p>
           </div>
           <div className="flex items-center justify-center gap-[1.5rem]">
-            <CustomIcon
-              name="Insta"
-              className="transition-transform duration-300 transform hover:scale-125 "
-              color="yellow"
-            />
+            {socialIconsArray.slice(0, 3).map((icon, index) => (
+              <Link
+                key={index}
+                href={externalLinks[icon.name]}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <CustomIcon
+                  key={index}
+                  name={icon.name}
+                  className="transition-transform duration-300 transform hover:scale-125"
+                  color="black"
+                  size={{ width: icon.size.width, height: icon.size.height }}
+                />
+              </Link>
+            ))}
           </div>
         </div>
         <div className="rounded-[1rem] bg-neutralLight-neutral100 dark:bg-neutralDark-neutral100 py-[4rem] px-[1.5rem] flex flex-col items-center gap-[2.75rem] border border-neutralLight-neutral90 dark:border-neutralDark-neutral90 w-full max-w-[31.625rem]">
@@ -90,24 +100,19 @@ const StoryComponent = () => {
             </p>
           </div>
           <div className="flex items-center justify-center gap-[1.5rem]">
-            {socialIconsArray.slice(3, 6).map((image, index) => (
+            {socialIconsArray.slice(3, 6).map((icon, index) => (
               <Link
                 key={index}
-                href={externalLinks[image.name]}
+                href={externalLinks[icon.name]}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Image
-                  src={`assets/social/${image.name
-                    .toLowerCase()
-                    .split(" ")
-                    .join("-")}-logo.svg`}
-                  width={image.size.width}
-                  height={image.size.height}
-                  alt={`${
-                    image.name.charAt(0).toUpperCase() + image.name.slice(1)
-                  } logo`}
-                  className="transition-transform duration-300 transform hover:scale-12"
+                <CustomIcon
+                  key={index}
+                  name={icon.name}
+                  className="transition-transform duration-300 transform hover:scale-125"
+                  color="black"
+                  size={{ width: icon.size.width, height: icon.size.height }}
                 />
               </Link>
             ))}

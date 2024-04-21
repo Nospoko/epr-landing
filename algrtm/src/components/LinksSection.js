@@ -52,7 +52,7 @@ const LinksSection = () => {
 
         <div className="flex gap-[2.75rem] flex-center justify-center text-neutralLight-neutral90 p3SB w-full">
           <Link
-            href={externalLinks.linkedin}
+            href={externalLinks.Linkedin}
             className="text-neutralLight-neutral90 p3 animation"
             target="_blank"
             rel="noopener noreferrer"
@@ -60,7 +60,7 @@ const LinksSection = () => {
             Linkedin
           </Link>
           <Link
-            href={externalLinks.github}
+            href={externalLinks.Github}
             className="text-neutralLight-neutral90 p3 animation"
             target="_blank"
             rel="noopener noreferrer"
@@ -70,7 +70,7 @@ const LinksSection = () => {
           <div className="flex">
             {/* TODO- add link when we create account */}
             <Link
-              href={externalLinks.clutch}
+              href={externalLinks.Clutch}
               className="text-neutralLight-neutral90 p3 mr-2 animation"
               target="_blank"
               rel="noopener noreferrer"

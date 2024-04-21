@@ -4,6 +4,7 @@ import Insta from "../icons/Insta";
 import Linkedin from "../icons/Linkedin";
 import Note from "../icons/Note";
 import Twitter from "../icons/Twitter";
+Github;
 
 const icons = {
   Facebook: Facebook,

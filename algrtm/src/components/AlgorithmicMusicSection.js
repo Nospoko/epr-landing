@@ -36,7 +36,7 @@ const AlgorithmicMusicSection = () => {
             variant="secondary"
             href="/customSolutions"
             text="Custom solutions"
-            icon={<CustomIcon name="ArrowUpRight" color="black" />}
+            customIcon={<CustomIcon name="ArrowUpRight" color="black" />}
             alt="arrow up icon"
           />
         </div>

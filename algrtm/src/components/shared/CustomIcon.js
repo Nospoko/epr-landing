@@ -6,7 +6,7 @@ import Insta from "../icons/Insta";
 import Linkedin from "../icons/Linkedin";
 import Note from "../icons/Note";
 import Twitter from "../icons/Twitter";
-Github;
+import ArrowUpRight from "../icons/ArrowUpRight";
 
 const icons = {
   Facebook: Facebook,
@@ -17,6 +17,7 @@ const icons = {
   Note: Note,
   ArrowUp: ArrowUp,
   ArrowDown: ArrowDown,
+  ArrowUpRight: ArrowUpRight,
 };
 
 const CustomIcon = ({ name, ...props }) => {

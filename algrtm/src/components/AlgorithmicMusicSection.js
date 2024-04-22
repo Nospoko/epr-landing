@@ -4,6 +4,7 @@ import externalLinks from "@/data/externalLinks";
 import Link from "next/link";
 import CustomLink from "./shared/CustomLink";
 import "../styles/globals.css";
+import CustomIcon from "./shared/CustomIcon";
 
 const AlgorithmicMusicSection = () => {
   return (
@@ -35,7 +36,7 @@ const AlgorithmicMusicSection = () => {
             variant="secondary"
             href="/customSolutions"
             text="Custom solutions"
-            icon="/ArrowUpRightBlack-icon.svg"
+            icon={<CustomIcon name="ArrowUpRight" color="black" />}
             alt="arrow up icon"
           />
         </div>

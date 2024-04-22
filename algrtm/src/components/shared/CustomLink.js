@@ -1,5 +1,4 @@
 import React from "react";
-import Icon from "./Icon";
 
 const CustomLink = ({ text, href, variant, alt, customIcon }) => {
   let linkClass =
@@ -19,7 +18,6 @@ const CustomLink = ({ text, href, variant, alt, customIcon }) => {
   return (
     <a className={linkClass} href={href}>
       {text}
-
       {customIcon && <span className="ml-[0.01rem]">{customIcon}</span>}
     </a>
   );

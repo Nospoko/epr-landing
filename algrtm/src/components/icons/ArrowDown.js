@@ -16,15 +16,15 @@ const ArrowDown = ({ color, className }) => {
             id="Vector"
             d="M10.4151 4.48147V16.2666"
             stroke={color}
-            stroke-width="2"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinejoin="round"
             className="dark:stroke-white"
           />
           <path
             id="Vector_2"
             d="M16.3076 10.374L10.4151 16.2666L4.5225 10.374"
             stroke={color}
-            stroke-width="2"
+            strokeWidth="2"
             className="dark:stroke-white"
           />
         </g>

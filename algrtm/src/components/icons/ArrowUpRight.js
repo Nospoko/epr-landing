@@ -14,15 +14,15 @@ const ArrowUpRight = ({ color, className }) => {
         id="Vector"
         d="M5.5 11.9665L12.1667 5.2998"
         stroke={color}
-        stroke-width="2"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinejoin="round"
         className="dark:stroke-white"
       />
       <path
         id="Vector_2"
         d="M5.5 5.2998H12.1667V11.9665"
         stroke={color}
-        stroke-width="2"
+        strokeWidth="2"
         className="dark:stroke-white"
       />
     </svg>

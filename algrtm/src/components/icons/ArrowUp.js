@@ -16,15 +16,15 @@ const ArrowUp = ({ color, className }) => {
             id="Vector"
             d="M9.58494 15.5185V3.73342"
             stroke={color}
-            stroke-width="2"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinejoin="round"
             className="dark:stroke-white"
           />
           <path
             id="Vector_2"
             d="M3.69238 9.62598L9.58494 3.73342L15.4775 9.62598"
             stroke={color}
-            stroke-width="2"
+            strokeWidth="2"
             className="dark:stroke-white"
           />
         </g>

@@ -1,6 +1,7 @@
 import React from "react";
 import CustomLink from "./shared/CustomLink";
 import solutionsTexts from "@/data/solutionsSectionTexts";
+import CustomIcon from "./shared/CustomIcon";
 
 const SolutionsSection = ({ version }) => {
   const { title } = solutionsTexts[version];
@@ -19,9 +20,9 @@ const SolutionsSection = ({ version }) => {
 
           {/*TODO add link href */}
           <CustomLink
-            variant="primary"
+            variant="tertiary"
             text="Book a meeting"
-            icon="/ArrowUpRightWhite-icon.svg"
+            customIcon={<CustomIcon name="ArrowUpRight" color="white" />}
             alt="arrow up icon"
           ></CustomLink>
         </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import CustomLink from "./shared/CustomLink";
+import CustomIcon from "./shared/CustomIcon";
 
 const ContactDescription = () => {
   return (
@@ -18,12 +19,11 @@ const ContactDescription = () => {
           <CustomLink variant="secondary" text="Book a meeting" href="" />
 
           {/* TODO add link href */}
-
           <CustomLink
-            variant="tertiary"
+            variant="quaternary"
             text="Go to the questionnaire"
             href=""
-            icon="/ArrowUpRightBlack-icon.svg"
+            customIcon={<CustomIcon name="ArrowUpRight" color="black" />}
             alt="arrow up icon"
           />
         </div>

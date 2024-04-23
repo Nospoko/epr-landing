@@ -12,7 +12,10 @@ const CustomLink = ({ text, href, variant, alt, customIcon }) => {
       " border border-neutralLight-neutral80 dark:border-neutralDark-neutral80 bg-neutralLight-neutral100 dark:bg-neutralDark-neutral100 text-neutralLight-neutral10 dark:text-neutralDark-neutral10";
   } else if (variant === "tertiary") {
     linkClass +=
-      " bg-neutralLight-neutral100 dark:bg-neutralDark-neutral100 text-neutralLight-neutral10 dark:text-neutralDark-neutral10 pl-0 pr-0";
+      " border border-neutralLight-neutral20 dark:border-neutralDark-neutral90 bg-neutralLight-neutral10 dark:bg-neutralDark-neutral90 text-neutralLight-neutral100 dark:text-neutralLight-neutral100";
+  } else if (variant === "quaternary") {
+    linkClass +=
+      "  bg-neutralLight-neutral100 dark:bg-neutralDark-neutral100 text-neutralLight-neutral10 dark:text-neutralDark-neutral10 pl-0";
   }
 
   return (

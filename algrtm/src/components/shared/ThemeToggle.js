@@ -3,18 +3,17 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
 const ThemeToggle = () => {
-  const isClient = typeof window !== "undefined"; // Sprawdzamy, czy kod jest wykonywany po stronie klienta
+  const isClient = typeof window !== "undefined";
   const [darkMode, setDarkMode] = useState(() => {
     if (isClient) {
       const theme = localStorage.getItem("theme");
       return theme === "dark";
     }
-    return false; // Domyślnie ustawiamy na false, jeśli kod jest wykonywany na serwerze
+    return false;
   });
 
   useEffect(() => {
     if (isClient) {
-      // Sprawdzamy, czy kod jest wykonywany po stronie klienta
       if (darkMode) {
         document.documentElement.classList.add("dark");
         localStorage.setItem("theme", "dark");

@@ -3,28 +3,37 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
 const ThemeToggle = () => {
-  const [darkMode, setDarkMode] = useState(true);
-
-  useEffect(() => {
-    const theme = localStorage.getItem("theme");
-    if (theme === "dark") setDarkMode(true);
-  }, []);
-
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
+  const isClient = typeof window !== "undefined"; // Sprawdzamy, czy kod jest wykonywany po stronie klienta
+  const [darkMode, setDarkMode] = useState(() => {
+    if (isClient) {
+      const theme = localStorage.getItem("theme");
+      return theme === "dark";
     }
-  }, [darkMode]);
+    return false; // Domyślnie ustawiamy na false, jeśli kod jest wykonywany na serwerze
+  });
+
+  useEffect(() => {
+    if (isClient) {
+      // Sprawdzamy, czy kod jest wykonywany po stronie klienta
+      if (darkMode) {
+        document.documentElement.classList.add("dark");
+        localStorage.setItem("theme", "dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+        localStorage.setItem("theme", "light");
+      }
+    }
+  }, [darkMode, isClient]);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
 
   return (
     <div className="hidden md:flex items-center justify-center">
       <div
         className="toggleButton items-center justify-center hidden md:flex md:gap-1.5 dark:bg-neutralLight-neutral10 bg-neutralLight-neutral90 "
-        onClick={() => setDarkMode(!darkMode)}
+        onClick={toggleDarkMode}
       >
         {darkMode ? (
           <>

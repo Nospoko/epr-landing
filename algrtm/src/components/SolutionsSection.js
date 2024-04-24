@@ -13,7 +13,7 @@ const SolutionsSection = ({ version }) => {
         </h4>
         <div className=" flex gap-4 justify-center items-center">
           <CustomLink
-            variant="secondary"
+            variant="quinary"
             text="Let's talk"
             href="/contactUs"
           ></CustomLink>

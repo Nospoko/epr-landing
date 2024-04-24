@@ -16,6 +16,9 @@ const CustomLink = ({ text, href, variant, alt, customIcon }) => {
   } else if (variant === "quaternary") {
     linkClass +=
       "  bg-neutralLight-neutral100 dark:bg-neutralDark-neutral100 text-neutralLight-neutral10 dark:text-neutralDark-neutral10 pl-0";
+  } else if (variant === "quinary") {
+    linkClass +=
+      " border border-neutralLight-neutral80 dark:border-neutralDark-neutral80 bg-neutralLight-neutral100 text-neutralLight-neutral10 ";
   }
 
   return (

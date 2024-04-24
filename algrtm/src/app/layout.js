@@ -4,6 +4,7 @@ import Navbar from "../components/Header";
 import Footer from "@/components/Footer";
 import LinksSection from "@/components/LinksSection";
 import Header from "../components/Header";
+import ThemeContextProvider, { ThemeContext } from "@/contexts/ThemeContext";
 
 const pingFont = localFont({ src: "../fonts/PingFangHK.ttf" });
 
@@ -16,10 +17,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${pingFont.className} dark:bg-neutralDark-neutral100`}>
-        <Header />
-        {children}
-        <LinksSection />
-        <Footer />
+        <ThemeContextProvider>
+          <Header />
+          {children}
+          <LinksSection />
+          <Footer />
+        </ThemeContextProvider>
       </body>
     </html>
   );

@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useContext } from "react";
 import Image from "next/image";
 import externalLinks from "@/data/externalLinks";
 import Link from "next/link";

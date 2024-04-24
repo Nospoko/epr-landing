@@ -1,7 +1,10 @@
+"use client";
+import { useThemeContext } from "@/contexts/ThemeContext";
 import Image from "next/image";
 import React from "react";
 
 const PianoRollDescription = () => {
+  const { darkMode } = useThemeContext();
   return (
     <section className="flex flex-col items-center justify-center w-full xl:px-[12.625rem] mt-[4rem] md:mt-[3.94rem]">
       <div className="lg:flex-row flex flex-col gap-[4.5rem] items-center justify-center w-full">
@@ -25,7 +28,7 @@ const PianoRollDescription = () => {
             height={283}
             width={343}
             sizes="100vw"
-            src="/PianoRollScreen.png"
+            src={darkMode ? "/PianoRollScreenDark.png" : "/PianoRollScreen.png"}
             alt="Piano Roll App Screen"
             className="w-auto h-[17.678rem] md:h-[29.875rem]"
           />

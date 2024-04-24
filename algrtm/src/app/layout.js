@@ -1,10 +1,9 @@
 import localFont from "next/font/local";
 import "../styles/globals.css";
-import Navbar from "../components/Header";
 import Footer from "@/components/Footer";
 import LinksSection from "@/components/LinksSection";
 import Header from "../components/Header";
-import ThemeContextProvider, { ThemeContext } from "@/contexts/ThemeContext";
+import ThemeContextProvider from "@/contexts/ThemeContext";
 
 const pingFont = localFont({ src: "../fonts/PingFangHK.ttf" });
 

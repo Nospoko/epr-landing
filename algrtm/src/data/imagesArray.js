@@ -1,32 +1,31 @@
 const imagesArray = [
   {
-    name: "python",
+    name: "Python",
     large: { width: 64, height: 64 },
     small: { width: 24.1, height: 24 },
   },
-
   {
-    name: "pandas",
+    name: "Pandas",
     large: { width: 64, height: 64 },
     small: { width: 24, height: 24 },
   },
   {
-    name: "hugging",
+    name: "Hugging",
     large: { width: 64, height: 64 },
     small: { width: 24, height: 24 },
   },
   {
-    name: "numpy",
+    name: "Numpy",
     large: { width: 64, height: 64 },
     small: { width: 24, height: 24 },
   },
   {
-    name: "redis",
+    name: "Redis",
     large: { width: 74.488, height: 64 },
     small: { width: 27.93, height: 24 },
   },
   {
-    name: "postgreSQL",
+    name: "Postgresql",
     large: { width: 64, height: 64 },
     small: { width: 24, height: 24 },
   },
@@ -36,17 +35,17 @@ const imagesArray = [
     small: { width: 40.96, height: 24 },
   },
   {
-    name: "docker",
+    name: "Docker",
     large: { width: 89.2, height: 64 },
     small: { width: 33.45, height: 24 },
   },
   {
-    name: "pyTorch",
+    name: "Pytorch",
     large: { width: 64, height: 64 },
     small: { width: 24, height: 24 },
   },
   {
-    name: "streamlit",
+    name: "Streamlit",
     large: { width: 117.029, height: 64 },
     small: { width: 43.83, height: 24 },
   },

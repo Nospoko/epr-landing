@@ -13,16 +13,15 @@ export default function Home() {
         <DataLabSection />
         {/* <AlgorithmicMusicSection /> */}
         <RoundedTextComponent
-          backgroundColor="neutralLight-neutral90"
+          version="version4"
+          backgroundColor="neutralLight-neutral10"
           backgroundColorDark="neutralDark-neutral90"
-          textTitleColor="neutralLight-neutral10"
+          textTitleColor="neutralLight-neutral100"
           textTitleColorDark="neutralDark-neutral10"
-          textParagraph1Color="neutralLight-neutral10"
-          textParagraph1ColorDark="neutralDark-neutral10"
-          textParagraph2Color="neutralLight-neutral20"
-          textParagraph2ColorDark="neutralDark-neutral20"
+          textParagraph1Color="neutralLight-neutral60"
+          textParagraph2ColorDark="neutralDark-neutral60"
           gap="8"
-          version="version1"
+          showButton={true}
         />
       </div>
       <RoundedRectangle />

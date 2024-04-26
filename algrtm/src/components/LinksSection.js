@@ -7,15 +7,14 @@ import externalLinks from "@/data/externalLinks";
 
 const LinksSection = () => {
   return (
-    <section className=" bg-neutralLight-neutral10 w-full border-t-2 border-neutralLight-neutral20 flex flex-col md:flex-row justify-center items-center ">
-      <div className=" w-full flex flex-col justify-between bg-neutralLight-neutral10 px-[1rem] py-[4rem] md:mx-[2.75rem] md:mt-[4rem] md:mb-[7.75rem] xl:mx-[12.5rem] xl:mt-16 xl:mb-[7.75rem] gap-[3rem] md:gap-16">
-        <div className=" flex flex-col justify-between md:gap-auto md:flex-row xl:gap-[11.125rem] bg-neutralLight-neutral10 w-full">
+    <section className=" bg-neutralLight-neutral10 dark:bg-neutralDark-neutral90 w-full border-t-2 border-neutralLight-neutral20 dark:border-neutralDark-neutral100 flex flex-col md:flex-row justify-center items-center ">
+      <div className=" w-full flex flex-col justify-between bg-neutralLight-neutral10 dark:bg-neutralDark-neutral90 px-[1rem] py-[4rem] md:mx-[2.75rem] md:mt-[4rem] md:mb-[7.75rem] xl:mx-[12.5rem] xl:mt-16 xl:mb-[7.75rem] gap-[3rem] md:gap-16">
+        <div className=" flex flex-col justify-between md:gap-auto md:flex-row xl:gap-[11.125rem] bg-neutralLight-neutral10 dark:bg-neutralDark-neutral90 w-full">
           <div className=" flex flex-col gap-6 ">
             <div className=" flex w-full justify-start h5">
-              <p className=" text-blueLight-blue50 h5">A</p>
-              <p className=" text-neutralLight-neutral100 h5">lgrtm</p>
+              <p className=" text-neutralLight-neutral100 h5">EPR</p>
             </div>
-            <div className=" p2 text-neutralLight-neutral60 max-w-[25.375rem]">
+            <div className=" p2 text-neutralLight-neutral60 dark:text-neutralDark-neutral60 max-w-[25.375rem]">
               We develop algorithmic solutions with Machine Learning, Research
               and Prototyping, Data Quality Engineering, Analytics Automation,
               Creative Coding, Dataset Management.
@@ -53,7 +52,7 @@ const LinksSection = () => {
 
         <div className="flex gap-[2.75rem] flex-center justify-center text-neutralLight-neutral90 p3SB w-full">
           <Link
-            href={externalLinks.linkedin}
+            href={externalLinks.Linkedin}
             className="text-neutralLight-neutral90 p3 animation"
             target="_blank"
             rel="noopener noreferrer"
@@ -61,7 +60,7 @@ const LinksSection = () => {
             Linkedin
           </Link>
           <Link
-            href={externalLinks.github}
+            href={externalLinks.Github}
             className="text-neutralLight-neutral90 p3 animation"
             target="_blank"
             rel="noopener noreferrer"
@@ -71,7 +70,7 @@ const LinksSection = () => {
           <div className="flex">
             {/* TODO- add link when we create account */}
             <Link
-              href={externalLinks.clutch}
+              href={externalLinks.Clutch}
               className="text-neutralLight-neutral90 p3 mr-2 animation"
               target="_blank"
               rel="noopener noreferrer"

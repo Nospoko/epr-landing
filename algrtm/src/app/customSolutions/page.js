@@ -16,8 +16,11 @@ const CustomSolutions = () => {
         <TechnologiesSection />
         <RoundedTextComponent
           backgroundColor="neutralLight-neutral10"
+          backgroundColorDark="neutralDark-neutral90"
           textTitleColor="neutralLight-neutral100"
+          textTitleColorDark="neutralDark-neutral10"
           textParagraph1Color="neutralLight-neutral60"
+          textParagraph1ColorDark="neutralDark-neutral60"
           gap="6"
           version="version2"
           showButton={true}

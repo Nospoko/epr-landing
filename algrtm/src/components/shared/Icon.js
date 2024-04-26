@@ -7,7 +7,7 @@ const Icon = ({ src, alt, onClick, width, height, ...rest }) => {
       alt={alt}
       onClick={onClick}
       {...rest}
-      className={`flex-end width-[${width}px] height-[${height}px]`}
+      className={`dark:fill-neutralLight-neutral100 flex-end width-[${width}px] height-[${height}px]`}
     />
   );
 };

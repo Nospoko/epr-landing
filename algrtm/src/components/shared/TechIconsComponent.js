@@ -1,6 +1,5 @@
 import imagesArray from "@/data/imagesArray";
-import Image from "next/image";
-import React from "react";
+import CustomIcon from "./CustomIcon";
 
 const TechIconsComponent = ({
   size = "large",
@@ -13,22 +12,17 @@ const TechIconsComponent = ({
         size === "small" ? "homepage" : ""
       }`}
     >
-      {imagesArray.map((image) => {
+      {imagesArray.map((image, index) => {
         return (
-          <Image
-            key={image.name}
-            src={`/assets/logos/${image.name
-              .toLowerCase()
-              .split(" ")
-              .join("-")}-logo.svg`}
+          <CustomIcon
+            key={index}
+            name={image.name}
             width={image[size].width}
             height={image[size].height}
-            alt={`${
-              image.name.charAt(0).toUpperCase() + image.name.slice(1)
-            } logo`}
             className={`transition-transform duration-300 transform hover:scale-125 ${
-              size === "large" ? image.name : ""
-            } ${!color && "grayscale"}`}
+              size === "large" ? image.name.toLowerCase() : ""
+            } ${!color && "grayscale"} 
+           `}
           />
         );
       })}

@@ -1,6 +1,7 @@
 import AlgorithmicMusicSection from "@/components/AlgorithmicMusicSection";
 import DataLabSection from "@/components/DataLabSection";
 import DevelopSection from "@/components/DevelopSection";
+import OurWork from "@/components/OurWork";
 import RoundedTextComponent from "@/components/RoundedTextComponent";
 import SolutionsSection from "@/components/SolutionsSection";
 import RoundedRectangle from "@/components/shared/RoundedRectangle";
@@ -23,6 +24,7 @@ export default function Home() {
           gap="8"
           showButton={true}
         />
+        <OurWork />
       </div>
       <RoundedRectangle />
       <SolutionsSection version="version1" />

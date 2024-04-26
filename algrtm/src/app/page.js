@@ -1,4 +1,5 @@
 import AlgorithmicMusicSection from "@/components/AlgorithmicMusicSection";
+import DataLabSection from "@/components/DataLabSection";
 import DevelopSection from "@/components/DevelopSection";
 import RoundedTextComponent from "@/components/RoundedTextComponent";
 import SolutionsSection from "@/components/SolutionsSection";
@@ -9,7 +10,8 @@ export default function Home() {
     <main className="flex flex-col items-center justify-center">
       <div className="w-full flex flex-col items-center justify-center px-4 md:mx-[2.75rem]">
         <DevelopSection />
-        <AlgorithmicMusicSection />
+        <DataLabSection />
+        {/* <AlgorithmicMusicSection /> */}
         <RoundedTextComponent
           backgroundColor="neutralLight-neutral90"
           backgroundColorDark="neutralDark-neutral90"

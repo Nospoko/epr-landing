@@ -3,6 +3,7 @@ import DataLabSection from "@/components/DataLabSection";
 import DevelopSection from "@/components/DevelopSection";
 import OurWork from "@/components/OurWork";
 import RoundedTextComponent from "@/components/RoundedTextComponent";
+import SoftwareConsultingSection from "@/components/SoftwareConsultingSection";
 import SolutionsSection from "@/components/SolutionsSection";
 import RoundedRectangle from "@/components/shared/RoundedRectangle";
 
@@ -13,6 +14,7 @@ export default function Home() {
         <DevelopSection />
         <DataLabSection />
         {/* <AlgorithmicMusicSection /> */}
+        <SoftwareConsultingSection />
         <RoundedTextComponent
           version="version4"
           backgroundColor="neutralLight-neutral10"

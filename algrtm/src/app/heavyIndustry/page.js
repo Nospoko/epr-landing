@@ -1,4 +1,3 @@
-import AlgorithmicMusicSection from "@/components/AlgorithmicMusicSection";
 import DescriptionImageComponent from "@/components/DescriptionImageComponent";
 import RoundedTextComponent from "@/components/RoundedTextComponent";
 import SolutionsSection from "@/components/SolutionsSection";
@@ -10,7 +9,7 @@ const HeavyIndustry = () => {
   return (
     <main className="flex flex-col items-center justify-center">
       <div className="w-full flex flex-col items-center justify-center px-4 md:mx-[2.75rem]">
-        <DescriptionImageComponent />
+        <DescriptionImageComponent version="version1" />
         {/* <SoftwareConsultingSection /> */}
         <RoundedTextComponent
           version="version4"

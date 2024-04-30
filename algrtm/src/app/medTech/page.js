@@ -1,4 +1,4 @@
-import AlgorithmicMusicSection from "@/components/AlgorithmicMusicSection";
+import DescriptionImageComponent from "@/components/DescriptionImageComponent";
 import RoundedTextComponent from "@/components/RoundedTextComponent";
 import SolutionsSection from "@/components/SolutionsSection";
 import TechnologiesSection from "@/components/TechnologiesSection";
@@ -9,7 +9,8 @@ const MedTech = () => {
   return (
     <main className="flex flex-col items-center justify-center">
       <div className="w-full flex flex-col items-center justify-center px-4 md:mx-[2.75rem]">
-        <AlgorithmicMusicSection />
+        <DescriptionImageComponent version="version2" />
+        {/* <AlgorithmicMusicSection /> */}
         {/* <SoftwareConsultingSection /> */}
         <RoundedTextComponent
           version="version4"

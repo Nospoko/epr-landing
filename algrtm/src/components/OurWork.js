@@ -18,6 +18,7 @@ const OurWork = () => {
                 text="Learn more"
                 customIcon={<CustomIcon name="ArrowUpRight" color="white" />}
                 alt="arrow up icon"
+                href="/heavyIndustry"
               />
             </div>
           </div>
@@ -34,6 +35,7 @@ const OurWork = () => {
                 text="Learn more"
                 customIcon={<CustomIcon name="ArrowUpRight" color="white" />}
                 alt="arrow up icon"
+                href="/medTech"
               />
             </div>
           </div>
@@ -50,6 +52,7 @@ const OurWork = () => {
                 text="Learn more"
                 customIcon={<CustomIcon name="ArrowUpRight" color="white" />}
                 alt="arrow up icon"
+                href="/pianoRoll"
               />
             </div>
           </div>

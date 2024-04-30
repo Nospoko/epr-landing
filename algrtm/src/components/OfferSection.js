@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Icon from "./shared/Icon";
 import offerSectionTexts from "@/data/offerSectionsTexts";
 import CustomIcon from "./shared/CustomIcon";
+import CollapsibleSectionsComponent from "./shared/CollapsibleSectionsComponent";
 
 const OfferSection = () => {
   const [sections, setSections] = useState(offerSectionTexts);
@@ -29,7 +30,8 @@ const OfferSection = () => {
             <p>Research & Discovery</p>
           </div>
 
-          <div className="flex flex-col h6_600 text-neutralLight-neutral20 dark:text-neutralDark-neutral20 gap-[0.75rem] w-full">
+          <CollapsibleSectionsComponent />
+          {/* <div className="flex flex-col h6_600 text-neutralLight-neutral20 dark:text-neutralDark-neutral20 gap-[0.75rem] w-full">
             {sections.slice(0, 3).map((section, index) => (
               <div
                 key={index}
@@ -59,7 +61,7 @@ const OfferSection = () => {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
         {/* Prototyping & Development */}
         <div className="flex flex-col md:flex-row gap-[1.5rem] px-[2.75rem] py-[2.75rem] md:py-[5.88rem] xl:py-[5.85rem] xl:px-[6.75rem]">

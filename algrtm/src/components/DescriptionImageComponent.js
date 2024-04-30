@@ -27,7 +27,7 @@ const DescriptionImageComponent = ({ version }) => {
             width: "100%",
             height: "auto",
           }}
-        ></Image>
+        />{" "}
       </div>
     </section>
   );

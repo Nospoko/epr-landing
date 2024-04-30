@@ -1,4 +1,5 @@
 import DescriptionImageComponent from "@/components/DescriptionImageComponent";
+import OpportunitiesSection from "@/components/OpportunitiesSection";
 import RoundedTextComponent from "@/components/RoundedTextComponent";
 import SolutionsSection from "@/components/SolutionsSection";
 import TechnologiesSection from "@/components/TechnologiesSection";
@@ -10,8 +11,7 @@ const MedTech = () => {
     <main className="flex flex-col items-center justify-center">
       <div className="w-full flex flex-col items-center justify-center px-4 md:mx-[2.75rem]">
         <DescriptionImageComponent version="version2" />
-        {/* <AlgorithmicMusicSection /> */}
-        {/* <SoftwareConsultingSection /> */}
+        <OpportunitiesSection />
         <RoundedTextComponent
           version="version4"
           backgroundColor="neutralLight-neutral10"

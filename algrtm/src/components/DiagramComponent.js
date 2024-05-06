@@ -29,7 +29,7 @@ const DiagramComponent = () => {
               <div className=" h6 max-w-[7.5rem]">
                 Regular feedback sessions
               </div>
-              <div className="flex items-end">
+              <div className="flex items-end lg:items-center">
                 <CustomIcon
                   name="ArrowDownLong"
                   color="white"

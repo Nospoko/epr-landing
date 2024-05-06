@@ -1,6 +1,6 @@
 import DescriptionImageComponent from "@/components/DescriptionImageComponent";
+import DiagramComponent from "@/components/DiagramComponent";
 import OpportunitiesIndustrySection from "@/components/OpportunitiesIndustrySection";
-import RoundedTextComponent from "@/components/RoundedTextComponent";
 import SolutionsSection from "@/components/SolutionsSection";
 import TechnologiesSection from "@/components/TechnologiesSection";
 import RoundedRectangle from "@/components/shared/RoundedRectangle";
@@ -17,17 +17,7 @@ const HeavyIndustry = () => {
           imageHeight={478}
         />
         <OpportunitiesIndustrySection />
-        <RoundedTextComponent
-          version="version4"
-          backgroundColor="neutralLight-neutral10"
-          backgroundColorDark="neutralDark-neutral90"
-          textTitleColor="neutralLight-neutral100"
-          textTitleColorDark="neutralDark-neutral10"
-          textParagraph1Color="neutralLight-neutral60"
-          textParagraph2ColorDark="neutralDark-neutral60"
-          gap="8"
-          showButton={true}
-        />
+        <DiagramComponent />
         <TechnologiesSection />
       </div>
       <RoundedRectangle />

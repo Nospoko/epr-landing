@@ -1,4 +1,5 @@
 import DescriptionImageComponent from "@/components/DescriptionImageComponent";
+import DiagramComponent from "@/components/DiagramComponent";
 import OpportunitiesSection from "@/components/OpportunitiesSection";
 import RoundedTextComponent from "@/components/RoundedTextComponent";
 import SolutionsSection from "@/components/SolutionsSection";
@@ -17,7 +18,7 @@ const MedTech = () => {
           imageHeight={478}
         />
         <OpportunitiesSection />
-        <RoundedTextComponent
+        {/* <RoundedTextComponent
           version="version4"
           backgroundColor="neutralLight-neutral10"
           backgroundColorDark="neutralDark-neutral90"
@@ -27,7 +28,8 @@ const MedTech = () => {
           textParagraph2ColorDark="neutralDark-neutral60"
           gap="8"
           showButton={true}
-        />
+        /> */}
+        <DiagramComponent />
         <TechnologiesSection />
       </div>
       <RoundedRectangle />

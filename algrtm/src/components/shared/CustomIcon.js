@@ -17,6 +17,8 @@ import AWS from "../logos/AWS";
 import Docker from "../logos/Docker";
 import Pytorch from "../logos/Pytorch";
 import Streamlit from "../logos/Streamlit";
+import ArrowDownLong from "../icons/ArrowDownLong";
+import CurvedArrow from "../icons/CurvedArrow";
 
 const icons = {
   Facebook: Facebook,
@@ -38,6 +40,8 @@ const icons = {
   Docker: Docker,
   Pytorch: Pytorch,
   Streamlit: Streamlit,
+  ArrowDownLong: ArrowDownLong,
+  CurvedArrow: CurvedArrow,
 };
 
 const CustomIcon = ({ name, ...props }) => {

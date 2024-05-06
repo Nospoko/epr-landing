@@ -45,6 +45,11 @@ module.exports = {
         lg: "1024px", // Large screens, laptops
         xl: "1440px", // Extra large screens, desktops
       },
+      // backgroundImage: {
+      //   "heavy-industry": "url('/heavyIndustry-bg-image.jpeg')",
+      //   "lab-assistant": "url('/labAssistant-bg-image.jpeg')",
+      //   "piano-playing": "url('/pianoPlaying-bg-image.jpeg')",
+      // },
     },
   },
   plugins: [],

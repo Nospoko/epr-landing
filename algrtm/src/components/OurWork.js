@@ -7,8 +7,8 @@ const OurWork = () => {
     <section className="mt-[2.75rem] w-full justify-center items-center text-center max-w-[78.25rem] flex flex-col gap-6 mx-[1rem] md:max-w-[54.875rem] md:mt-[7.75rem md:mx-[4.56rem] xl:m-[5.88rem] bg-neutralLight-neutral100 dark:bg-neutralDark-neutral100">
       <h4 className="h4 lg:h2">Our work</h4>
       <div className="flex flex-col lg:flex-row w-full gap-[1.5rem] md:flex-row xl:gap-[2rem] mt-[2rem]">
-        <div className="rounded-[2rem] max-w-[20.25rem] text-neutralLight-neutral100 bg-[url('/heavyIndustry-bg-image.jpeg')]">
-          <div className="flex flex-col items-start mt-[9rem] lg:mt-[10.29rem] xl:mt-[8.48rem]   text-start gap-[1.5rem] mx-[1.5rem] mb-[2.75rem] lg:m-[2rem] xl:m-[2.75rem] ">
+        <div className="flex flex-col justify-end  items-center self-stretch pt-[9.29169rem] pb-[0.02081rem] rounded-[2rem] max-w-[20.25rem] text-neutralLight-neutral100 bg-[url('/heavyIndustry-bg-image.jpeg')]">
+          <div className="flex flex-col shrink-0 items-start text-start justify-self-end gap-[1.5rem] px-[1.5rem] py-[2.75rem] lg:p-[2rem] xl:p-[2.75rem]">
             <h5 className="h5_small mt-[3rem]">Heavy Industry </h5>
             <p className="p2">Cement Manufacturing Data Laboratory</p>
             <div className="flex items-start">
@@ -22,8 +22,8 @@ const OurWork = () => {
             </div>
           </div>
         </div>
-        <div className="rounded-[2rem] bg-[url('/labAssistant-bg-image.jpeg')] w-[21.44rem] text-neutralLight-neutral100">
-          <div className="flex flex-col items-start mt-[9rem] lg:mt-[10.29rem] xl:mt-[8.48rem]   text-start gap-[1.5rem] mx-[1.5rem] mb-[2.75rem] lg:m-[2rem] xl:m-[2.75rem]">
+        <div className="flex flex-col justify-end  items-center self-stretch pt-[9.29169rem] pb-[0.02081rem] rounded-[2rem] bg-[url('/labAssistant-bg-image.jpeg')] w-[21.44rem] text-neutralLight-neutral100">
+          <div className="flex flex-col shrink-0 items-start text-start justify-self-end gap-[1.5rem] px-[1.5rem] py-[2.75rem] lg:p-[2rem] xl:p-[2.75rem]">
             <h5 className="h5_small mt-[3rem]">Med Tech </h5>
             <p className="p2">
               ECG Signal Analysis Engine for Multi-lead Holter Exams
@@ -39,8 +39,8 @@ const OurWork = () => {
             </div>
           </div>
         </div>
-        <div className="rounded-[2rem] bg-[url('/pianoPlaying-bg-image.jpeg')] w-[21.44rem] text-neutralLight-neutral100">
-          <div className="flex flex-col items-start mt-[9rem] lg:mt-[10.29rem] xl:mt-[8.48rem]   text-start gap-[1.5rem] mx-[1.5rem] mb-[2.75rem] lg:m-[2rem] xl:m-[2.75rem]">
+        <div className="flex flex-col justify-end  items-center self-stretch pt-[9.29169rem] pb-[0.02081rem] rounded-[2rem] bg-[url('/pianoPlaying-bg-image.jpeg')] w-[21.44rem] text-neutralLight-neutral100">
+          <div className="flex flex-col shrink-0 items-start text-start justify-self-end gap-[1.5rem] px-[1.5rem] py-[2.75rem] lg:p-[2rem] xl:p-[2.75rem]">
             <h5 className="h5_small mt-[3rem]">Piano for AI</h5>
             <p className="p2">
               We open the door to a mathematical understanding of music

@@ -12,7 +12,7 @@ const MedTech = () => {
       <div className="w-full flex flex-col items-center justify-center px-4 md:mx-[2.75rem]">
         <DescriptionImageComponent
           version="version2"
-          image="/labAssistant-image.png"
+          image="/labAssistant-bg-image.jpeg"
           imageWidth={580}
           imageHeight={478}
         />

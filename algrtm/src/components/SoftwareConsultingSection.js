@@ -3,7 +3,7 @@ import CustomLink from "./shared/CustomLink";
 
 const SoftwareConsultingSection = () => {
   return (
-    <section className="flex flex-col gap-[1.5rem] lg:gap-[4rem] self-stretch lg:mx-[2.75rem] lg:my-[1.5rem]">
+    <section className="flex flex-col gap-[1.5rem] lg:gap-[4rem] self-stretch lg:mx-[2.75rem] lg:my-[1.5rem]  text-neutralLight-neutral10 dark:text-neutralDark-neutral10">
       <h4 className="h4 lg:h2SB xl:h2">
         Software Consulting <br />
         for Research Institutions

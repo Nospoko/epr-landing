@@ -5,6 +5,8 @@
   .h1 {
     font-size: 5.375rem;
     font-weight: 600;
+    line-height: 6.02rem;
+    letter-spacing: -0.215rem;
   }
   .h1SB {
     font-size: 4.5rem;

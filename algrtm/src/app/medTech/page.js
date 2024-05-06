@@ -10,7 +10,12 @@ const MedTech = () => {
   return (
     <main className="flex flex-col items-center justify-center">
       <div className="w-full flex flex-col items-center justify-center px-4 md:mx-[2.75rem]">
-        <DescriptionImageComponent version="version2" />
+        <DescriptionImageComponent
+          version="version2"
+          image="/labAssistant-image.png"
+          imageWidth={580}
+          imageHeight={478}
+        />
         <OpportunitiesSection />
         <RoundedTextComponent
           version="version4"

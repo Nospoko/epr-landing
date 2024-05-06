@@ -14,7 +14,7 @@ const OpportunitiesSection = () => {
           <div className=" h5_small_bold md:h4SB lg:h4 text-neutralLight-neutral10 dark:text-neutralDark-neutral10 flex justify-start max-w-[25.1875rem] w-full">
             <Image
               src="/med-image.png"
-              alt="Image of the factory inside"
+              alt="Medical analysis image"
               width={440}
               height={360}
               sizes="100vw"

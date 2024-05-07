@@ -21,7 +21,7 @@ const HeavyIndustry = () => {
         <TechnologiesSection />
       </div>
       <RoundedRectangle />
-      <SolutionsSection version="version1" />
+      <SolutionsSection version="version3" />
     </main>
   );
 };

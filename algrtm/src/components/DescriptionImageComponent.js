@@ -20,7 +20,7 @@ const DescriptionImageComponent = ({
         <div className="mt-4 h6_400 xl:h6">{description}</div>
       </div>
 
-      <div className="flex shrink-0 max-w-[36.25rem] ">
+      <div className="flex shrink-0 max-w-[36.25rem]">
         <Image
           src={image}
           alt="Image"

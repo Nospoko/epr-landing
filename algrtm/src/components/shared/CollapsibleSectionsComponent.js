@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import CustomIcon from "./CustomIcon";
 import offerSectionTexts from "@/data/offerSectionsTexts";
 
-const CollapsibleSectionsComponent = ({ version, handleOffer }) => {
+const CollapsibleSectionsComponent = ({ version }) => {
   const [sections, setSections] = useState([]);
 
   useEffect(() => {
@@ -21,7 +21,6 @@ const CollapsibleSectionsComponent = ({ version, handleOffer }) => {
       visible: index === i ? !section.visible : section.visible,
     }));
     setSections(updatedSections);
-    handleOffer(index);
   };
 
   return (

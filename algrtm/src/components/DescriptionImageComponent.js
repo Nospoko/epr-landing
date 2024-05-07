@@ -19,18 +19,22 @@ const DescriptionImageComponent = ({
         </div>
         <div className="mt-4 h6_400 xl:h6">{description}</div>
       </div>
-
-      <div className="flex shrink-0 max-w-[36.25rem]">
+      <div
+        className="flex shrink-0 max-w-[36.25rem]"
+        style={{
+          position: "relative",
+          width: imageWidth,
+          height: imageHeight,
+        }}
+      >
         <Image
           src={image}
           alt="Image"
-          width={imageWidth}
-          height={imageHeight}
-          sizes="100vw"
+          sizes={imageWidth}
+          fill
+          className="rounded-[2rem]"
           style={{
-            width: "100%",
-            height: "auto",
-            borderRadius: "7%",
+            objectFit: "cover",
           }}
         />
       </div>

@@ -7,7 +7,7 @@ const DataLabSection = () => {
       <h4 className="h4 lg:h2SB xl:h2 text-start text-neutralLight-neutral10 dark:text-neutralDark-neutral10">
         Our Data Laboratory
       </h4>
-      <div className="flex flex-col gap-[2rem] lg:flex-row w-full max-w-[78.25rem] self-stretch">
+      <div className="flex flex-col gap-[2rem] lg:flex-row w-full self-stretch">
         {dataLabSectionTexts.map((item, index) => (
           <div
             key={index}

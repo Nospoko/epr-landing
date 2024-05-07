@@ -5,7 +5,9 @@ const DiagramComponent = () => {
   return (
     <section className="w-full ">
       <div className=" bg-neutralLight-neutral10 w-full flex flex-col text-center items-center p-[2.75rem] lg:px-[2.75] lg:py-[4rem] xl:px-[6.75rem] xl:py-[5.88rem rounded-[2rem] text-neutralLight-neutral100 mb-[4rem] lg:mb-[7.19rem] ">
-        <div className=" h4 lg:h2SB xl:h2 lg:mb-[1.5rem]">How do we work?</div>
+        <div className=" flex w-full lg:items-start lg:justify-start h4 lg:h2SB xl:h2 lg:mb-[1.5rem]">
+          <p>How do we work?</p>
+        </div>
         <div className=" flex flex-col lg:flex-row items-center">
           <div className=" h6 my-[1.5rem] max-w-[12.5rem]">
             Collecting data from the company
@@ -23,13 +25,13 @@ const DiagramComponent = () => {
             <CustomIcon
               name="CurvedArrow"
               color="white"
-              className="absolute left-[6rem] top-9"
+              className="absolute left-[4rem] top-6"
             />
-            <div className="flex">
+            <div className="flex flex-col">
               <div className=" h6 max-w-[7.5rem]">
                 Regular feedback sessions
               </div>
-              <div className="flex items-end lg:items-center">
+              <div className="flex items-end lg:justify-center">
                 <CustomIcon
                   name="ArrowDownLong"
                   color="white"
@@ -45,7 +47,7 @@ const DiagramComponent = () => {
               <CustomIcon
                 name="CurvedArrow"
                 color="white"
-                className="rotate-180 absolute right-[6rem] bottom-9"
+                className="rotate-180 absolute right-[6rem] bottom-4"
               />
             </div>
           </div>

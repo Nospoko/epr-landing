@@ -17,7 +17,7 @@ const DiagramComponent = () => {
             color="white"
             className="lg:-rotate-90"
           />
-          <div className=" h6 my-[1.5rem] max-w-[12.5rem]">
+          <div className=" h6 my-[1.5rem] max-w-[12.5rem] ">
             First Principles Analysis
           </div>
           {/* blue circle */}

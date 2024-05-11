@@ -44,9 +44,12 @@ const CollapsibleSectionsComponent = ({ version }) => {
               color="black"
             />
           </div>
-          <div id={`section-${index}-content`}>
+          <div
+            id={`section-${index}-content`}
+            className="flex flex-start items-start text-start"
+          >
             {section.visible && (
-              <p className="text-neutralLight-neutral20 dark:text-neutralDark-neutral20 p2 leading-[1.64rem] pb-4">
+              <p className="text-neutralLight-neutral20 dark:text-neutralDark-neutral20 p2 leading-[1.64rem] pb-4 flex flex-start items-start">
                 {section.description}
               </p>
             )}

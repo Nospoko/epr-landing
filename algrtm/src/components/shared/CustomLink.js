@@ -19,6 +19,9 @@ const CustomLink = ({ text, href, variant, alt, customIcon }) => {
   } else if (variant === "quinary") {
     linkClass +=
       " border border-neutralLight-neutral80 dark:border-neutralDark-neutral80 bg-neutralLight-neutral100 text-neutralLight-neutral10 ";
+  } else if (variant === "sixth") {
+    linkClass +=
+      " border border-neutralLight-neutral80  bg-transparent text-neutralLight-neutral100 ";
   }
 
   return (

@@ -15,7 +15,7 @@ const OurWork = () => {
             <p className="p2">Cement Manufacturing Data Laboratory</p>
             <div className="flex items-start">
               <CustomLink
-                variant="tertiary"
+                variant="sixth"
                 text="Learn more"
                 customIcon={<CustomIcon name="ArrowUpRight" color="white" />}
                 alt="arrow up icon"
@@ -32,7 +32,7 @@ const OurWork = () => {
             </p>
             <div className="flex items-start">
               <CustomLink
-                variant="tertiary"
+                variant="sixth"
                 text="Learn more"
                 customIcon={<CustomIcon name="ArrowUpRight" color="white" />}
                 alt="arrow up icon"
@@ -49,7 +49,7 @@ const OurWork = () => {
             </p>
             <div className="flex items-start">
               <CustomLink
-                variant="tertiary"
+                variant="sixth"
                 text="Learn more"
                 customIcon={<CustomIcon name="ArrowUpRight" color="white" />}
                 alt="arrow up icon"

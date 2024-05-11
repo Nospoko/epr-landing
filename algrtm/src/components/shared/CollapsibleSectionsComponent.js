@@ -37,7 +37,7 @@ const CollapsibleSectionsComponent = ({ version }) => {
             aria-expanded={section.visible}
             aria-controls={`section-${index}-content`}
           >
-            <div className="h6SB xl:h6_600 flex text-start items-start max-w-[13.69rem] md:w-full">
+            <div className="h6SB xl:h6_600 flex text-start items-start max-w-[13.69rem] md:max-w-[20.5rem] xl:max-w-[32.25rem]">
               {section.title}
             </div>
             <CustomIcon

@@ -31,13 +31,15 @@ const CollapsibleSectionsComponent = ({ version }) => {
           className="flex flex-col border-b-[1px] border-neutralLight-neutral100 dark:border-neutralDark-neutral100"
         >
           <div
-            className="flex items-center gap-4 w-full pb-4 justify-between"
+            className="flex items-center gap-4 w-full pb-4 justify-between "
             onClick={() => handleClick(index)}
             role="button"
             aria-expanded={section.visible}
             aria-controls={`section-${index}-content`}
           >
-            <div className="h6SB xl:h6_600">{section.title}</div>
+            <div className="h6SB xl:h6_600 flex text-start items-start max-w-[13.69rem] md:w-full">
+              {section.title}
+            </div>
             <CustomIcon
               name={section.visible ? "ArrowUp" : "ArrowDown"}
               className="transition-transform duration-300 transform hover:scale-125"

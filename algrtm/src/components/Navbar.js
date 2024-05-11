@@ -11,7 +11,7 @@ export default function Navbar() {
     setMenuOpen(!menuOpen);
   };
   return (
-    <nav className="z-[999] relative flex w-full justify-between  items-center self-stretch border-b border-neutralLight-neutral90 dark:border-neutralDark-neutral90 border-solid p-4 md:px-[2.75rem] xl:px-[5.875rem] dark:bg-neutralDark-neutral100">
+    <nav className="z-[999] relative flex w-full justify-between items-center self-stretch border-b border-neutralLight-neutral90 dark:border-neutralDark-neutral90 border-solid p-4 md:px-[2.75rem] xl:px-[5.875rem] dark:bg-neutralDark-neutral100">
       <div className="flex justify-start p3SB text-neutralLight-neutral10 dark:text-neutralDark-neutral10 gap-5 ">
         <Link
           href="/"
@@ -25,24 +25,24 @@ export default function Navbar() {
         </Link>
       </div>
 
-      <div className="flex w-full flex-wrap items-center justify-end gap-y-1 md:w-[initial] md:flex-nowrap gap-[1.5rem]">
-        <div className="hidden md:flex items-center justify-center gap-x-2  text-neutralLight-neutral10 dark:text-neutralDark-neutral10 ">
+      <div className="flex w-full max-w-[37rem] flex-wrap items-center justify-end gap-y-1 md:w-[initial] md:flex-nowrap gap-[1.5rem]">
+        <div className="hidden md:flex items-center justify-center gap-x-2  text-neutralLight-neutral10 dark:text-neutralDark-neutral10">
           <Link
-            className="flex w-full items-center justify-center transition md:p3SB xl:p3 p-2.5 animation"
-            href="/pianoRoll"
+            className="flex w-full items-center justify-center transition md:p3SB xl:p3 p-2.5 animation focus:text-blueLight-blue50 focus:border-b-2 focus:border-blueLight-blue50"
+            href="/pianoRoll "
           >
             Piano for AI
           </Link>
 
           <Link
-            className="flex w-full items-center justify-center  transition md:p3SB xl:p3 p-2.5 animation text-nowrap"
+            className="flex w-full items-center justify-center text-nowrap transition md:p3SB xl:p3 p-2.5 animation focus:text-blueLight-blue50 focus:border-b-2 focus:border-blueLight-blue50"
             href="/customSolutions"
           >
             Custom Solutions
           </Link>
           {/* TODO- uncomment when we have sth to show on Knowlenge page */}
           {/* <Link
-            className="flex w-full items-center justify-center  transition md:p3SB xl:p3 p-2.5 animation"
+            className="flex w-full items-center justify-center transition md:p3SB xl:p3 p-2.5 animation focus:text-blueLight-blue50 focus:border-b-2 focus:border-blueLight-blue50"
             href="/knowledge"
           >
             Knowledge
@@ -50,7 +50,7 @@ export default function Navbar() {
         </div>
 
         <Link
-          className="flex justify-center items-center select-none text-sm px-5 py-2.5 h-10 gap-4 rounded-md border border-neutralLight-neutral40 bg-neutralLight-neutral10 dark:bg-neutralDark-neutral10 text-neutralLight-neutral100 dark:text-neutralDark-neutral100 p3SB animation"
+          className="flex justify-center items-center select-none text-sm px-5 py-2.5 h-10 gap-4 rounded-md border border-neutralLight-neutral40 bg-neutralLight-neutral10 dark:bg-neutralDark-neutral10 text-neutralLight-neutral100 dark:text-neutralDark-neutral100 p3SB animation focus:text-blueLight-blue50 dark:focus:text-blueLight-blue50 "
           href="/contactUs"
         >
           Contact us

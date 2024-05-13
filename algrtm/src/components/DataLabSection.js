@@ -3,7 +3,7 @@ import dataLabSectionTexts from "@/data/dataLabSectionTexts";
 
 const DataLabSection = () => {
   return (
-    <section className="w-full flex flex-col gap-6 mb-[2.75rem] lg:my-[5.88rem] mt-[2.75rem] mx-[1rem] md:mt-[7.75rem] md:mx-[4.56rem] xl:mx-[5.88rem] bg-neutralLight-neutral100 dark:bg-neutralDark-neutral100">
+    <section className="w-full flex flex-col items-center gap-6 mb-[2.75rem] lg:my-[5.88rem] mt-[2.75rem] mx-[1rem] md:mt-[7.75rem] md:mx-[4.56rem] xl:mx-[5.88rem] bg-neutralLight-neutral100 dark:bg-neutralDark-neutral100">
       <div className="h4 lg:h2SB xl:h2 mx-[1rem] md:mx-[4.56rem] xl:mx-[5.88rem] text-neutralLight-neutral10 dark:text-neutralDark-neutral10">
         Our Data Laboratory
       </div>
@@ -19,6 +19,13 @@ const DataLabSection = () => {
             <p className="p2">{item.description}</p>
           </div>
         ))}
+      </div>
+      <div className="mt-[1.5rem] flex flex-col gap-[1rem] items-center text-center w-full max-w-[64.75rem] px-[1.5rem] md:px-[3.38rem] xl:mx-[6.75rem] py-[5.88rem] text-neutralLight-neutral10 dark:text-neutralDark-neutral10 bg-neutralLight-neutral90 dark:bg-neutralDark-neutral90 rounded-[2rem]">
+        <h5 className="h5_500">No chatbots</h5>
+        <h6 className="h6_600">
+          We love and appreciate all of our AI chatting friends, but if you’re
+          looking to build one for yourself, go somewhere else
+        </h6>
       </div>
     </section>
   );

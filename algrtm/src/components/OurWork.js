@@ -59,13 +59,6 @@ const OurWork = () => {
           </div>
         </div>
       </div>
-      <div className="mt-[1.5rem] flex flex-col gap-[1rem] items-center w-full max-w-[64.75rem] px-[1.5rem] md:px-[3.38rem] xl:mx-[6.75rem] py-[5.88rem] text-neutralLight-neutral10 dark:text-neutralDark-neutral10 bg-neutralLight-neutral90 dark:bg-neutralDark-neutral90 rounded-[2rem]">
-        <h5 className="h5_500">No chatbots</h5>
-        <h6 className="h6_600">
-          We love and appreciate all of our AI chatting friends, but if you’re
-          looking to build one for yourself, go somewhere else
-        </h6>
-      </div>
     </section>
   );
 };

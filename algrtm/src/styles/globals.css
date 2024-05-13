@@ -73,6 +73,10 @@ h6 {
   isolation: isolate;
 }
 
+.active {
+  background-color: blueviolet;
+}
+
 .animation {
   transition-property: transform;
   transition-duration: 300ms;

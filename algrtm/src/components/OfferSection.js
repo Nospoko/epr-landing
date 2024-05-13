@@ -1,22 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
-import Icon from "./shared/Icon";
-import offerSectionTexts from "@/data/offerSectionsTexts";
-import CustomIcon from "./shared/CustomIcon";
+
+import CollapsibleSectionsComponent from "./shared/CollapsibleSectionsComponent";
 
 const OfferSection = () => {
-  const [sections, setSections] = useState(offerSectionTexts);
-
-  const handleOffer = (index) => {
-    setSections((prevSections) =>
-      prevSections.map((section, i) => ({
-        ...section,
-        visible: index === i ? !section.visible : false,
-      }))
-    );
-  };
-
   return (
     <section className="flex flex-col w-full md:mt-[8.5rem] gap-[2.75rem] justify-center items-center">
       <h2 className="flex h4 xl:h2 md:h2S text-neutralLight-neutral10 dark:text-neutralDark-neutral10">
@@ -29,37 +17,7 @@ const OfferSection = () => {
             <p>Research & Discovery</p>
           </div>
 
-          <div className="flex flex-col h6_600 text-neutralLight-neutral20 dark:text-neutralDark-neutral20 gap-[0.75rem] w-full">
-            {sections.slice(0, 3).map((section, index) => (
-              <div
-                key={index}
-                className="flex flex-col border-b-[1px] border-neutralLight-neutral100 dark:border-neutralDark-neutral100"
-              >
-                <div
-                  className="flex items-center gap-4 self-stretch w-full pb-4 justify-between"
-                  onClick={() => handleOffer(index)}
-                  role="button"
-                  aria-expanded={section.visible}
-                  aria-controls={`section-${index}-content`}
-                >
-                  <div className="h6SB xl:h6_600">{section.title}</div>
-
-                  <CustomIcon
-                    name={section.visible ? "ArrowUp" : "ArrowDown"}
-                    className="transition-transform duration-300 transform hover:scale-125"
-                    color="black"
-                  />
-                </div>
-                <div id={`section-${index}-content`}>
-                  {section.visible && (
-                    <p className="text-neutralLight-neutral20 dark:text-neutralDark-neutral20 p2 leading-[1.64rem] pb-4">
-                      {section.description}
-                    </p>
-                  )}
-                </div>
-              </div>
-            ))}
-          </div>
+          <CollapsibleSectionsComponent version="version1" />
         </div>
         {/* Prototyping & Development */}
         <div className="flex flex-col md:flex-row gap-[1.5rem] px-[2.75rem] py-[2.75rem] md:py-[5.88rem] xl:py-[5.85rem] xl:px-[6.75rem]">
@@ -67,36 +25,7 @@ const OfferSection = () => {
             <p>Prototyping & Development</p>
           </div>
 
-          <div className="flex flex-col h6_600 text-neutralLight-neutral20 dark:text-neutralDark-neutral20 gap-[0.75rem] w-full">
-            {sections.slice(3, 6).map((section, index) => (
-              <div
-                key={index}
-                className="flex flex-col border-b-[1px] border-neutralLight-neutral90 dark:border-neutralDark-neutral90"
-              >
-                <div
-                  className="flex items-center gap-4 self-stretch w-full pb-4 justify-between"
-                  onClick={() => handleOffer(index + 3)}
-                  role="button"
-                  aria-expanded={section.visible}
-                  aria-controls={`section-${index + 3}-content`}
-                >
-                  <div className="h6SB xl:h6_600">{section.title}</div>
-                  <CustomIcon
-                    name={section.visible ? "ArrowUp" : "ArrowDown"}
-                    className="transition-transform duration-300 transform hover:scale-125"
-                    color="black"
-                  />
-                </div>
-                <div id={`section-${index + 3}-content`}>
-                  {section.visible && (
-                    <p className="text-neutralLight-neutral20 dark:text-neutralDark-neutral20 p2 leading-[1.64rem] pb-4">
-                      {section.description}
-                    </p>
-                  )}
-                </div>
-              </div>
-            ))}
-          </div>
+          <CollapsibleSectionsComponent version="version2" />
         </div>
       </div>
     </section>

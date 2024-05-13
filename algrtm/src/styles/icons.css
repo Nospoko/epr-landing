@@ -33,13 +33,13 @@
 }
 
 /* PostgreSQL */
-.postgreSQL {
+.postgresql {
   width: 32px;
   height: 32px;
 }
 
 /* AWS */
-.AWS {
+.aws {
   width: 52px;
   height: 30.47px;
 }
@@ -51,7 +51,7 @@
 }
 
 /* PyTorch */
-.pyTorch {
+.pytorch {
   width: 32px;
   height: 32px;
 }
@@ -95,13 +95,13 @@
   }
 
   /* PostgreSQL */
-  .postgreSQL {
+  .postgresql {
     width: 64px;
     height: 64px;
   }
 
   /* AWS */
-  .AWS {
+  .aws {
     width: 109.215px;
     height: 64px;
   }
@@ -113,7 +113,7 @@
   }
 
   /* PyTorch */
-  .pyTorch {
+  .pytorch {
     width: 64px;
     height: 64px;
   }

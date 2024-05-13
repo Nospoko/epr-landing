@@ -24,7 +24,7 @@ const RoundedTextComponent = ({
         <div className="max-w-[51.75rem]">
           <div className={`flex flex-col gap-${gap}`}>
             <div
-              className={`h2SB leading-[2.75rem] md:h2SB md:leading-[3.25rem] xl:h2 text-${textTitleColor} dark:text-${textTitleColorDark} `}
+              className={`h2SB leading-[2.75rem] md:h2SB md:leading-[3.25rem] xl:h2 xl:leading-[4rem] text-${textTitleColor} dark:text-${textTitleColorDark} `}
             >
               {title}
             </div>
@@ -43,7 +43,7 @@ const RoundedTextComponent = ({
         </div>
         {showButton && (
           <div className="mt-[0.5rem]">
-            <CustomLink variant="primary" text="Book a meeting"></CustomLink>
+            <CustomLink variant="secondary" text="Book a meeting"></CustomLink>
           </div>
         )}
       </div>

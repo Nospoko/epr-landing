@@ -33,8 +33,8 @@ const AWS = ({ color, className, width, height }) => {
       <defs>
         <clipPath id="clip0_139_13272">
           <rect
-            width="109.215"
-            height="64"
+            width={width}
+            height={height}
             fill="white"
             className="dark:fill-gray"
             transform="translate(0.286133)"

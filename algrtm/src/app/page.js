@@ -12,7 +12,7 @@ export default function Home() {
     <main className="flex flex-col items-center justify-center">
       <div className="w-full flex flex-col items-center justify-center px-4 md:mx-[2.75rem]">
         <DevelopSection />
-        <DataLabSection />
+        <OurWork />
         {/* <AlgorithmicMusicSection /> */}
         <SoftwareConsultingSection />
         <RoundedTextComponent
@@ -26,7 +26,7 @@ export default function Home() {
           gap="8"
           showButton={true}
         />
-        <OurWork />
+        <DataLabSection />
       </div>
       <RoundedRectangle />
       <SolutionsSection version="version1" />

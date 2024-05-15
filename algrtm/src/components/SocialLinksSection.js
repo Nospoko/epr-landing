@@ -25,7 +25,9 @@ const SocialLinksSection = ({ textColor, textDarkColor }) => {
       >
         Github
       </Link>
-      <div className={` flex text-${textColor} dark:text-${textDarkColor}`}>
+      <div
+        className={` flex justify-center items-center text-${textColor} dark:text-${textDarkColor}`}
+      >
         {/* TODO- add link when we create account */}
         <Link
           href={externalLinks.Clutch}
@@ -36,11 +38,13 @@ const SocialLinksSection = ({ textColor, textDarkColor }) => {
           Clutch{" "}
         </Link>
         {/* right now stars are static, don't come from Clutch ;) */}
-        <Star color={textColor} />
-        <Star color={textColor} />
-        <Star color={textColor} />
-        <Star color={textColor} />
-        <StarEmpty color={textColor} />
+        <div className="flex justify-center items-center">
+          <Star color={textColor} />
+          <Star color={textColor} />
+          <Star color={textColor} />
+          <Star color={textColor} />
+          <StarEmpty color={textColor} />
+        </div>
         4.9
       </div>
     </div>

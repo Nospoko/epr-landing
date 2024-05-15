@@ -70,8 +70,8 @@ export default function Navbar() {
         <div
           className={
             menuOpen
-              ? "fixed right-0 top-0 w-[100%] h-[100vh] bg-neutralLight-neutral100 dark:bg-neutralDark-neutral100 p-10 ease-in duration-500 flex flex-col justify-between"
-              : "fixed right-[-100%] top-0 w-[100%] h-screen bg-neutralLight-neutral100 dark:bg-neutralDark-neutral100 p-10 ease-in duration-500"
+              ? "fixed right-0 top-0 w-[100%] h-[100vh] bg-neutralLight-neutral100 dark:bg-neutralDark-neutral100 ease-in duration-500 flex flex-col justify-between"
+              : "fixed right-[-100%] top-0 w-[100%] h-screen bg-neutralLight-neutral100 dark:bg-neutralDark-neutral100 ease-in duration-500"
           }
         >
           {/* Top section */}
@@ -138,7 +138,7 @@ export default function Navbar() {
           </div>
 
           {/* Bottom section */}
-          <div className="mb-[1.5rem] flex justify-end items-end">
+          <div className="mb-[1.5rem] flex justify-end items-end position: absolute, left: 0, bottom: 0 i width: 100%">
             <SocialLinksSection textColor="black" textDarkColor="white" />
           </div>
         </div>

@@ -36,11 +36,11 @@ const SocialLinksSection = ({ textColor, textDarkColor }) => {
           Clutch{" "}
         </Link>
         {/* right now stars are static, don't come from Clutch ;) */}
-        <Star color="black" />
-        <Star color="black" />
-        <Star color="black" />
-        <Star color="black" />
-        <StarEmpty color="black" />
+        <Star color={textColor} />
+        <Star color={textColor} />
+        <Star color={textColor} />
+        <Star color={textColor} />
+        <StarEmpty color={textColor} />
         4.9
       </div>
     </div>

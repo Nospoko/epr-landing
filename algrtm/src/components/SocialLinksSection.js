@@ -3,14 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const SocialLinksSection = (textColor, textColorDark) => {
+const SocialLinksSection = (textColor) => {
   return (
     <div
-      className={`flex gap-[2.75rem] flex-center justify-center text-${textColor} p3SB w-full`}
+      className={`flex gap-[2.75rem] flex-center justify-center text-${textColor} p3 w-full`}
     >
       <Link
         href={externalLinks.Linkedin}
-        className={`text-${textColor} p3 animation`}
+        className={`text-${textColor} animation`}
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -18,7 +18,7 @@ const SocialLinksSection = (textColor, textColorDark) => {
       </Link>
       <Link
         href={externalLinks.Github}
-        className={`text-${textColor} p3 animation`}
+        className={`text-${textColor} animation`}
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -28,7 +28,7 @@ const SocialLinksSection = (textColor, textColorDark) => {
         {/* TODO- add link when we create account */}
         <Link
           href={externalLinks.Clutch}
-          className={`text-${textColor} p3 animation mr-2`}
+          className={`text-${textColor} animation mr-2`}
           target="_blank"
           rel="noopener noreferrer"
         >

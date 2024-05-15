@@ -1,18 +1,17 @@
 import externalLinks from "@/data/externalLinks";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Star from "./icons/Star";
 import StarEmpty from "./icons/StarEmpty";
 
-const SocialLinksSection = (textColor) => {
+const SocialLinksSection = (textColor, textDarkColor) => {
   return (
     <div
-      className={`flex gap-[2.75rem] flex-center justify-center text-${textColor} p3 w-full`}
+      className={`flex gap-[2.75rem] flex-center justify-center text-${textColor} dark:text-${textDarkColor} p3 w-full`}
     >
       <Link
         href={externalLinks.Linkedin}
-        className={`text-${textColor} animation`}
+        className={`text-${textColor} dark:text-${textDarkColor} animation`}
         target="_blank"
         rel="noopener noreferrer"
       >

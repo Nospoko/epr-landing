@@ -139,7 +139,7 @@ export default function Navbar() {
 
           {/* Bottom section */}
           <div className="mb-[1.5rem] flex justify-end items-end">
-            <SocialLinksSection />
+            <SocialLinksSection textColor="black" textDarkColor="white" />
           </div>
         </div>
       </div>

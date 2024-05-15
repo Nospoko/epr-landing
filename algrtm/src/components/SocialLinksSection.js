@@ -1,0 +1,74 @@
+import externalLinks from "@/data/externalLinks";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+
+const SocialLinksSection = (textColor, textColorDark) => {
+  return (
+    <div
+      className={`flex gap-[2.75rem] flex-center justify-center text-${textColor} p3SB w-full`}
+    >
+      <Link
+        href={externalLinks.Linkedin}
+        className={`text-${textColor} p3 animation`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Linkedin
+      </Link>
+      <Link
+        href={externalLinks.Github}
+        className={`text-${textColor} p3 animation`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Github
+      </Link>
+      <div className="flex">
+        {/* TODO- add link when we create account */}
+        <Link
+          href={externalLinks.Clutch}
+          className={`text-${textColor} p3 animation mr-2`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Clutch{" "}
+        </Link>
+        {/* right now stars are static, don't come from Clutch ;) */}
+        <Image
+          width={14}
+          height={15}
+          src="/assets/icons/star.svg"
+          alt="starIcon"
+        />
+        <Image
+          width={14}
+          height={15}
+          src="/assets/icons/star.svg"
+          alt="starIcon"
+        />
+        <Image
+          width={14}
+          height={15}
+          src="/assets/icons/star.svg"
+          alt="starIcon"
+        />
+        <Image
+          width={14}
+          height={15}
+          src="/assets/icons/star.svg"
+          alt="starIcon"
+        />
+        <Image
+          width={14}
+          height={15}
+          src="/assets/icons/starEmpty.svg"
+          alt="Empty starIcon"
+        />
+        4.9
+      </div>
+    </div>
+  );
+};
+
+export default SocialLinksSection;

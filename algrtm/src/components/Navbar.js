@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { AiOutlineClose } from "react-icons/ai";
 import ThemeToggle from "./shared/ThemeToggle";
+import SocialLinksSection from "./SocialLinksSection";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -50,13 +51,15 @@ export default function Navbar() {
         </div>
 
         <Link
-          className="flex justify-center items-center select-none text-sm px-5 py-2.5 h-10 gap-4 rounded-md border border-neutralLight-neutral40 bg-neutralLight-neutral10 dark:bg-neutralDark-neutral10 text-neutralLight-neutral100 dark:text-neutralDark-neutral100 p3SB animation focus:text-blueLight-blue50 dark:focus:text-blueLight-blue50 "
+          className="hidden md:flex justify-center items-center select-none text-sm px-5 py-2.5 h-10 gap-4 rounded-md border border-neutralLight-neutral40 bg-neutralLight-neutral10 dark:bg-neutralDark-neutral10 text-neutralLight-neutral100 dark:text-neutralDark-neutral100 p3SB animation focus:text-blueLight-blue50 dark:focus:text-blueLight-blue50 "
           href="/contactUs"
         >
           Contact us
         </Link>
+        <div className="hidden md:flex">
+          <ThemeToggle />
+        </div>
 
-        <ThemeToggle />
         <div
           className=" flex md:hidden items-center justify-center cursor-pointer"
           onClick={handleNav}
@@ -72,8 +75,8 @@ export default function Navbar() {
         <div
           className={
             menuOpen
-              ? "fixed right-0 top-0 width-[100%] h-[100vh] bg-neutralLight-neutral90 p-10 ease-in duration-500"
-              : "fixed right-[-100%] top-0 width-[100%] h-screen bg-neutralLight-neutral90 p-10 ease-in duration-500"
+              ? "fixed right-0 top-0 width-[100%] h-[100vh] bg-neutralLight-neutral100 dark:bg-neutralDark-neutral100 p-10 ease-in duration-500"
+              : "fixed right-[-100%] top-0 width-[100%] h-screen bg-neutralLight-neutral100 dark:bg-neutralDark-neutral100 p-10 ease-in duration-500"
           }
         >
           <div className="flex w-full items-center justify-end">
@@ -84,11 +87,13 @@ export default function Navbar() {
               <AiOutlineClose size={21} />
             </div>
           </div>
-          <div className="flex flex-col py-4">
+
+          {/* small screens menu */}
+          <div className="flex flex-col py-4 justify-center items-center text-center gap-[1.5rem] text-neutralLight-neutral10 dark:text-neutralDark-neutral10 p1SB">
             <Link href="/">
               <li
                 onClick={() => setMenuOpen(false)}
-                className="py-4 cursor-pointer list-none hover:text-blueLight-blue50 transition-transform duration-500 ease-in-out transform hover:scale-110 active:font-semibold"
+                className="py-4 cursor-pointer list-none hover:text-blueLight-blue50 transition-transform duration-500 ease-in-out transform hover:scale-110 active:font-semibold p-[0.625rem]"
               >
                 Home
               </li>
@@ -97,28 +102,42 @@ export default function Navbar() {
             <Link href="/pianoRoll">
               <li
                 onClick={() => setMenuOpen(false)}
-                className="py-4 cursor-pointer list-none hover:text-blueLight-blue50 transition-transform duration-500 ease-in-out transform hover:scale-110 active:font-semibold"
+                className="py-4 cursor-pointer list-none hover:text-blueLight-blue50 transition-transform duration-500 ease-in-out transform hover:scale-110 active:font-semibold p-[0.625rem]"
               >
-                PianoRoll
+                Piano for AI
               </li>
             </Link>
 
             <Link href="/customSolutions">
               <li
                 onClick={() => setMenuOpen(false)}
-                className="py-4 cursor-pointer list-none hover:text-blueLight-blue50 transition-transform duration-500 ease-in-out transform hover:scale-110 active:font-semibold"
+                className="py-4 cursor-pointer list-none hover:text-blueLight-blue50 transition-transform duration-500 ease-in-out transform hover:scale-110 active:font-semibold p-[0.625rem]"
               >
                 Custom Solutions
               </li>
             </Link>
-            <Link href="/knowledge">
+            {/* TODO: add the link when we have sth there */}
+            {/* <Link href="/knowledge">
               <li
                 onClick={() => setMenuOpen(false)}
                 className="py-4 cursor-pointer list-none hover:text-blueLight-blue50 transition-transform duration-500 ease-in-out transform hover:scale-110 active:font-semibold"
               >
                 Knowledge
               </li>
-            </Link>
+            </Link> */}
+            <div className="flex flex-col gap-[2rem]">
+              <Link
+                className="flex justify-center items-center select-none text-sm px-5 py-2.5 h-10 gap-4 rounded-md border border-neutralLight-neutral40 bg-neutralLight-neutral10 dark:bg-neutralDark-neutral10 text-neutralLight-neutral100 dark:text-neutralDark-neutral100 p3SB animation focus:text-blueLight-blue50 dark:focus:text-blueLight-blue50 "
+                href="/contactUs"
+              >
+                Contact us
+              </Link>
+              <ThemeToggle />
+              <SocialLinksSection
+                textColor="neutralLight-neutral10"
+                textColorDark="neutralDark-neutral10"
+              />
+            </div>
           </div>
         </div>
       </div>

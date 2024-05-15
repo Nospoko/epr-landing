@@ -6,9 +6,9 @@ const ThemeToggle = () => {
   const { darkMode, toggleDarkMode } = useThemeContext();
 
   return (
-    <div className="hidden md:flex items-center justify-center">
+    <div className="flex items-center justify-center">
       <div
-        className="toggleButton items-center justify-center hidden md:flex md:gap-1.5 dark:bg-neutralLight-neutral10 bg-neutralLight-neutral90 "
+        className="toggleButton items-center justify-center flex gap-1.5 dark:bg-neutralLight-neutral10 bg-neutralLight-neutral90 "
         onClick={toggleDarkMode}
       >
         {darkMode ? (

@@ -99,7 +99,7 @@ export default function Navbar() {
             </div>
           </div>
 
-          <div className="flex flex-col justify-center items-center text-center gap-[1.5rem] text-neutralLight-neutral10 dark:text-neutralDark-neutral10 p1SB">
+          <div className="flex flex-col justify-center items-center text-center gap-[1.5rem] text-neutralLight-neutral10 dark:text-neutralDark-neutral10 p1SB w-full">
             <Link href="/pianoRoll">
               <li
                 onClick={() => setMenuOpen(false)}
@@ -134,9 +134,9 @@ export default function Navbar() {
                 Contact us
               </Link>
               <ThemeToggle />
-              <div className="mb-[1.5rem] flex justify-end items-end">
-                <SocialLinksSection />
-              </div>
+            </div>
+            <div className="mb-[1.5rem] flex justify-end items-end">
+              <SocialLinksSection />
             </div>
           </div>
         </div>

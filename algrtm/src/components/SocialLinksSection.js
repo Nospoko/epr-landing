@@ -2,6 +2,8 @@ import externalLinks from "@/data/externalLinks";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import Star from "./icons/Star";
+import StarEmpty from "./icons/StarEmpty";
 
 const SocialLinksSection = (textColor) => {
   return (
@@ -24,7 +26,7 @@ const SocialLinksSection = (textColor) => {
       >
         Github
       </Link>
-      <div className="flex">
+      <div className={` flex text-${textColor}`}>
         {/* TODO- add link when we create account */}
         <Link
           href={externalLinks.Clutch}
@@ -35,36 +37,11 @@ const SocialLinksSection = (textColor) => {
           Clutch{" "}
         </Link>
         {/* right now stars are static, don't come from Clutch ;) */}
-        <Image
-          width={14}
-          height={15}
-          src="/assets/icons/star.svg"
-          alt="starIcon"
-        />
-        <Image
-          width={14}
-          height={15}
-          src="/assets/icons/star.svg"
-          alt="starIcon"
-        />
-        <Image
-          width={14}
-          height={15}
-          src="/assets/icons/star.svg"
-          alt="starIcon"
-        />
-        <Image
-          width={14}
-          height={15}
-          src="/assets/icons/star.svg"
-          alt="starIcon"
-        />
-        <Image
-          width={14}
-          height={15}
-          src="/assets/icons/starEmpty.svg"
-          alt="Empty starIcon"
-        />
+        <Star color="black" />
+        <Star color="black" />
+        <Star color="black" />
+        <Star color="black" />
+        <StarEmpty color="black" />
         4.9
       </div>
     </div>

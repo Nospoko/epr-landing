@@ -5,6 +5,7 @@ import Image from "next/image";
 import { AiOutlineClose } from "react-icons/ai";
 import ThemeToggle from "./shared/ThemeToggle";
 import SocialLinksSection from "./SocialLinksSection";
+import Menu from "./icons/Menu";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -64,13 +65,7 @@ export default function Navbar() {
           className="flex md:hidden items-center justify-center cursor-pointer"
           onClick={handleNav}
         >
-          <Image
-            src="/menu.svg"
-            width={24}
-            height={24}
-            alt="Hamburger icon"
-            className="mr-[1rem]"
-          />
+          <Menu className="mr-[1rem]" color="#2E2E2E" />
         </div>
         <div
           className={
@@ -95,7 +90,10 @@ export default function Navbar() {
               onClick={handleNav}
               className="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-150"
             >
-              <AiOutlineClose size={21} />
+              <AiOutlineClose
+                size={21}
+                className="dark:text-neutralDark-neutral10"
+              />
             </div>
           </div>
 

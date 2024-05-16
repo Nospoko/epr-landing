@@ -68,11 +68,12 @@ export default function Navbar() {
         >
           <Menu className="mr-[1rem]" color="#2E2E2E" />
         </div>
+        {/* NavbarDropdownMenu */}
         <div
           className={
             menuOpen
-              ? "fixed right-0 top-0 w-[100%] h-[100vh] bg-neutralLight-neutral100 dark:bg-neutralDark-neutral100 ease-in duration-500 flex flex-col justify-between"
-              : "fixed right-[-100%] top-0 w-[100%] h-screen bg-neutralLight-neutral100 dark:bg-neutralDark-neutral100 ease-in duration-500"
+              ? "fixed right-0 top-0 w-[100%] h-[100vh] bg-neutralLight-neutral100 dark:bg-neutralDark-neutral100 ease-in duration-500 flex flex-col justify-between "
+              : "fixed right-[-100%] top-0 w-[100%] h-screen bg-neutralLight-neutral100 dark:bg-neutralDark-neutral100 ease-in duration-500 flex flex-col justify-between"
           }
         >
           {/* Top section */}
@@ -100,7 +101,7 @@ export default function Navbar() {
           </div>
 
           {/* Middle section */}
-          <div className="flex flex-grow flex-col justify-center items-center text-center gap-[1.5rem] text-neutralLight-neutral10 dark:text-neutralDark-neutral10 p1SB w-full">
+          <div className=" flex flex-grow flex-col justify-center items-center text-center gap-[1.5rem] text-neutralLight-neutral10 dark:text-neutralDark-neutral10 p1SB w-full">
             <Link href="/pianoRoll">
               <li
                 onClick={() => setMenuOpen(false)}
@@ -140,7 +141,7 @@ export default function Navbar() {
           </div>
 
           {/* Bottom section */}
-          <div className="mb-[1.5rem] flex justify-end items-end position: absolute, left: 0, bottom: 0 i width: 100%">
+          <div className="mb-[1.5rem] flex justify-end items-end width: 100%">
             <SocialLinksSection textColor="black" textDarkColor="white" />
           </div>
         </div>

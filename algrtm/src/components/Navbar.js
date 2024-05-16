@@ -69,12 +69,17 @@ export default function Navbar() {
           <Menu className="mr-[1rem]" color="#2E2E2E" />
         </div>
         {/* NavbarDropdownMenu */}
-        <div
+        {/* <div
           className={
             menuOpen
               ? "fixed right-0 top-0 w-[100%] h-[100vh] bg-neutralLight-neutral100 dark:bg-neutralDark-neutral100 ease-in duration-500 flex flex-col justify-between "
               : "fixed right-[-100%] top-0 w-[100%] h-screen bg-neutralLight-neutral100 dark:bg-neutralDark-neutral100 ease-in duration-500 flex flex-col justify-between"
           }
+        > */}
+        <div
+          className={`fixed bg-neutralLight-neutral100 dark:bg-neutralDark-neutral100 ease-in duration-500 flex flex-col justify-between top-0 w-full h-screen ${
+            menuOpen ? "right-0" : "right-[-100%]"
+          }`}
         >
           {/* Top section */}
           <div className="absolute top-0 left-0 right-0 flex border-b border-solid border-neutralLight-neutral90 dark:border-neutralDark-neutral90 p-4 items-center justify-between">

@@ -1,6 +1,7 @@
 import React from "react";
 import CustomLink from "./shared/CustomLink";
 import CustomIcon from "./shared/CustomIcon";
+import externalLinks from "@/data/externalLinks";
 
 const ContactDescription = () => {
   return (

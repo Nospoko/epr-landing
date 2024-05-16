@@ -28,7 +28,6 @@ const SocialLinksSection = ({ textColor, textDarkColor }) => {
       <div
         className={` flex justify-center items-center text-${textColor} dark:text-${textDarkColor}`}
       >
-        {/* TODO- add link when we create account */}
         <Link
           href={externalLinks.Clutch}
           className={`text-${textColor} dark:text-${textDarkColor} animation mr-2`}

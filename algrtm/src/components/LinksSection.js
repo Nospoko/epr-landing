@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import externalLinks from "@/data/externalLinks";
+import SocialLinksSection from "./SocialLinksSection";
 
 const LinksSection = () => {
   return (
@@ -50,67 +51,7 @@ const LinksSection = () => {
           <hr className="w-full border-t border-neutralLight-neutral20"></hr>
         </div>
 
-        <div className="flex gap-[2.75rem] flex-center justify-center text-neutralLight-neutral90 p3SB w-full">
-          <Link
-            href={externalLinks.Linkedin}
-            className="text-neutralLight-neutral90 p3 animation"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Linkedin
-          </Link>
-          <Link
-            href={externalLinks.Github}
-            className="text-neutralLight-neutral90 p3 animation"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Github
-          </Link>
-          <div className="flex">
-            {/* TODO- add link when we create account */}
-            <Link
-              href={externalLinks.Clutch}
-              className="text-neutralLight-neutral90 p3 mr-2 animation"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Clutch{" "}
-            </Link>
-            {/* right now stars are static, don't come from Clutch ;) */}
-            <Image
-              width={14}
-              height={15}
-              src="/assets/icons/star.svg"
-              alt="starIcon"
-            />
-            <Image
-              width={14}
-              height={15}
-              src="/assets/icons/star.svg"
-              alt="starIcon"
-            />
-            <Image
-              width={14}
-              height={15}
-              src="/assets/icons/star.svg"
-              alt="starIcon"
-            />
-            <Image
-              width={14}
-              height={15}
-              src="/assets/icons/star.svg"
-              alt="starIcon"
-            />
-            <Image
-              width={14}
-              height={15}
-              src="/assets/icons/starEmpty.svg"
-              alt="Empty starIcon"
-            />
-            4.9
-          </div>
-        </div>
+        <SocialLinksSection textColor="neutralLight-neutral90" />
       </div>
     </section>
   );

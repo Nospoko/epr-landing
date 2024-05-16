@@ -2,6 +2,7 @@ import React from "react";
 import CustomLink from "./shared/CustomLink";
 import solutionsTexts from "@/data/solutionsSectionTexts";
 import CustomIcon from "./shared/CustomIcon";
+import externalLinks from "@/data/externalLinks";
 
 const SolutionsSection = ({ version }) => {
   const { title } = solutionsTexts[version];
@@ -12,19 +13,17 @@ const SolutionsSection = ({ version }) => {
           {title}
         </h4>
         <div className=" flex gap-4 justify-center items-center">
-          <CustomLink
-            variant="quinary"
-            text="Let's talk"
-            href="/contactUs"
-          ></CustomLink>
+          <CustomLink variant="quinary" text="Let's talk" href="/contactUs" />
 
-          {/*TODO add link href */}
           <CustomLink
             variant="tertiary"
             text="Book a meeting"
             customIcon={<CustomIcon name="ArrowUpRight" color="white" />}
             alt="arrow up icon"
-          ></CustomLink>
+            href={externalLinks.Calendry}
+            target="_blank"
+            rel="noopener noreferrer"
+          />
         </div>
       </div>
     </section>

@@ -3,7 +3,7 @@ import CustomLink from "./shared/CustomLink";
 
 const CustomSolutionsSection = () => {
   return (
-    <section className="flex mt-[0rem] md:mt-[3.94rem] w-full relative overflow-hidden">
+    <section className="flex mt-[0rem] md:mt-[3.94rem] w-full relative lg:overflow-hidden">
       <div className="flex flex-col gap-4 xl:gap-[1.5rem] py-[4rem] xl:pl-[9.75rem] pr-[0rem]">
         <h1 className="h2 md:h1SB xl:h1 text-neutralLight-neutral10 dark:text-neutralDark-neutral10 leading-[5.375rem]">
           Custom Solutions
@@ -17,7 +17,7 @@ const CustomSolutionsSection = () => {
               questionnaire instead.{" "}
             </p>
           </div>
-          <div className="flex items-start">
+          <div className="flex items-start ">
             <CustomLink
               variant="primary"
               href="/contactUs"

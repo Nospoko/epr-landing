@@ -1,4 +1,3 @@
-import AlgorithmicMusicSection from "@/components/AlgorithmicMusicSection";
 import DataLabSection from "@/components/DataLabSection";
 import DevelopSection from "@/components/DevelopSection";
 import OurWork from "@/components/OurWork";

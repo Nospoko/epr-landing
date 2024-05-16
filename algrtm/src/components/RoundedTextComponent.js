@@ -1,6 +1,7 @@
 import React from "react";
 import texts from "@/data/storyGoalConsultingTexts";
 import CustomLink from "./shared/CustomLink";
+import externalLinks from "@/data/externalLinks";
 
 const RoundedTextComponent = ({
   backgroundColor,
@@ -43,7 +44,13 @@ const RoundedTextComponent = ({
         </div>
         {showButton && (
           <div className="mt-[0.5rem]">
-            <CustomLink variant="secondary" text="Book a meeting"></CustomLink>
+            <CustomLink
+              variant="secondary"
+              text="Book a meeting"
+              href={externalLinks.Calendry}
+              target="_blank"
+              rel="noopener noreferrer"
+            />
           </div>
         )}
       </div>

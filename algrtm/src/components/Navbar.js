@@ -52,7 +52,8 @@ export default function Navbar() {
         </div>
 
         <Link
-          className="hidden md:flex justify-center items-center select-none text-sm px-5 py-2.5 h-10 gap-4 rounded-md border border-neutralLight-neutral40 bg-neutralLight-neutral10 dark:bg-neutralDark-neutral10 text-neutralLight-neutral100 dark:text-neutralDark-neutral100 p3SB animation focus:text-blueLight-blue50 dark:focus:text-blueLight-blue50"
+          className="hidden md:flex justify-center items-center select-none text-sm px-5 py-2.5 h-10 gap-4 rounded-md border border-neutralLight-neutral40 bg-neutralLight-neutral10 dark:bg-neutralDark-neutral10 text-neutralLight-neutral100 dark:text-neutralDark-neutral100 p3SB animation focus:text-blueLight-blue50 dark:focus:text-blueLight-blue50
+          hover:bg-neutralLight-neutral20"
           href="/contactUs"
         >
           Contact us
@@ -127,7 +128,8 @@ export default function Navbar() {
             </Link> */}
             <div className="flex flex-col gap-[2rem]">
               <Link
-                className="flex justify-center items-center select-none text-sm px-5 py-2.5 h-10 gap-4 rounded-md border border-neutralLight-neutral40 bg-neutralLight-neutral10 dark:bg-neutralDark-neutral10 text-neutralLight-neutral100 dark:text-neutralDark-neutral100 p3SB animation focus:text-blueLight-blue50 dark:focus:text-blueLight-blue50"
+                className="flex justify-center items-center select-none text-sm px-5 py-2.5 h-10 gap-4 rounded-md border border-neutralLight-neutral40 bg-neutralLight-neutral10 dark:bg-neutralDark-neutral10 text-neutralLight-neutral100 dark:text-neutralDark-neutral100 p3SB animation focus:text-blueLight-blue50 dark:focus:text-blueLight-blue50
+                hover:bg-neutralLight-neutral20"
                 href="/contactUs"
                 onClick={() => setMenuOpen(false)}
               >

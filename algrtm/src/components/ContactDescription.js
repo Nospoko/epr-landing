@@ -15,8 +15,13 @@ const ContactDescription = () => {
         </h6>
 
         <div className=" flex flex-col md:items-start gap-4 self-stretch xl:flex-row">
-          {/* TODO add link href */}
-          <CustomLink variant="secondary" text="Book a meeting" href="" />
+          <CustomLink
+            variant="secondary"
+            text="Book a meeting"
+            href={externalLinks.Calendry}
+            target="_blank"
+            rel="noopener noreferrer"
+          />
 
           {/* TODO add link href */}
           <CustomLink

@@ -1,5 +1,6 @@
 import React from "react";
 import CustomLink from "./shared/CustomLink";
+import externalLinks from "@/data/externalLinks";
 
 const SoftwareConsultingSection = () => {
   return (
@@ -27,7 +28,13 @@ const SoftwareConsultingSection = () => {
             animations.
           </p>
           <div className="mb-[2.75rem] mt-[2rem] flex items-start">
-            <CustomLink variant="tertiary" text="Book a meeting" />
+            <CustomLink
+              variant="tertiary"
+              text="Book a meeting"
+              href={externalLinks.Calendry}
+              target="_blank"
+              rel="noopener noreferrer"
+            />
           </div>
         </div>
       </div>

@@ -12,7 +12,6 @@ export default function Home() {
       <div className="w-full flex flex-col items-center justify-center px-4 md:mx-[2.75rem]">
         <DevelopSection />
         <DataLabSection />
-        {/* <AlgorithmicMusicSection /> */}
         <SoftwareConsultingSection />
         <RoundedTextComponent
           version="version4"

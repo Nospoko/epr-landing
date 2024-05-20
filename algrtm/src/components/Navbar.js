@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
-import Image from "next/image";
 import { AiOutlineClose } from "react-icons/ai";
 import ThemeToggle from "./shared/ThemeToggle";
 import SocialLinksSection from "./SocialLinksSection";

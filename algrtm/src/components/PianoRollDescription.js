@@ -1,10 +1,10 @@
 "use client";
-import { useThemeContext } from "@/contexts/ThemeContext";
+import { useTheme } from "next-themes";
 import Image from "next/image";
 import React from "react";
 
 const PianoRollDescription = () => {
-  const { darkMode } = useThemeContext();
+  const { darkMode } = useTheme();
   return (
     <section className="flex flex-col items-center justify-center w-full xl:px-[12.625rem] mt-[4rem] md:mt-[3.94rem]">
       <div className="lg:flex-row flex flex-col gap-[4.5rem] items-center justify-center w-full">

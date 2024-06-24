@@ -6,7 +6,7 @@ import Image from "next/image";
 const OpportunitiesSection = () => {
   return (
     <section className="flex flex-col w-full my-[4rem] lg:my-[7.19rem] gap-[2.75rem] justify-center items-center">
-      <h2 className="flex text-center h3SB xl:h2 text-neutralLight-neutral10 dark:text-neutralDark-neutral10 tracking-[-0.13rem]lg:tracking-[-0.13rem] xl:tracking-[-0.16rem]">
+      <h2 className="flex text-center h2SB xl:h2 text-neutralLight-neutral10 dark:text-neutralDark-neutral10">
         Opportunities in Data Science <br /> for the Medical Industry
       </h2>
       <div className="flex flex-col gap-4 w-full xl:px-[5.875rem]">

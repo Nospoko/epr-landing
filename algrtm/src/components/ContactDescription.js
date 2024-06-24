@@ -11,8 +11,8 @@ const ContactDescription = () => {
       </h2>
       <div className="flex flex-col gap-4">
         <h6 className="h6_400 xl:h6 text-neutralLight-neutral20 dark:text-neutralDark-neutral20 leading-[1.98rem]">
-          Let's explore how we can work together. Share your algorithmic ideas,
-          and we’ll provide the expertise to bring them to life.
+          Let's explore how we can work together. Share your ideas, and we’ll
+          provide the expertise to bring them to life.
         </h6>
 
         <div className=" flex flex-col md:items-start gap-4 self-stretch xl:flex-row">

@@ -6,7 +6,7 @@ import Image from "next/image";
 const OpportunitiesIndustrySection = () => {
   return (
     <section className="flex flex-col w-full my-[4rem] lg:my-[7.19rem] gap-[2.75rem] justify-center items-center text-center">
-      <h2 className="flex h3SB xl:h2 text-neutralLight-neutral10 dark:text-neutralDark-neutral10 tracking-[-0.13rem]lg:tracking-[-0.13rem] xl:tracking-[-0.16rem]">
+      <h2 className="flex h2SB lg:h2 text-neutralLight-neutral10 dark:text-neutralDark-neutral10">
         Opportunities in Data Science <br />
         for Heavy Industry
       </h2>

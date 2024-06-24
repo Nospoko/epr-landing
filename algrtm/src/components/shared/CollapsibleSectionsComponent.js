@@ -10,8 +10,10 @@ const CollapsibleSectionsComponent = ({ version }) => {
       setSections(offerSectionTexts.slice(0, 3));
     } else if (version === "version2") {
       setSections(offerSectionTexts.slice(3, 6));
+    } else if (version === "version3") {
+      setSections(offerSectionTexts.slice(6, 13));
     } else {
-      setSections(offerSectionTexts.slice(6));
+      setSections(offerSectionTexts.slice(13));
     }
   }, [version]);
 

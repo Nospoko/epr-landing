@@ -25,7 +25,7 @@ const OpportunitiesSection = () => {
             />
           </div>
 
-          <CollapsibleSectionsComponent version="version1" />
+          <CollapsibleSectionsComponent version="version4" />
         </div>
       </div>
     </section>

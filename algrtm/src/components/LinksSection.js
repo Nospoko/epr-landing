@@ -33,12 +33,13 @@ const LinksSection = () => {
                 Custom Solutions
               </p>
             </Link>
-            <Link
+            {/* TODO: add when we have blog */}
+            {/* <Link
               href="#"
               className="p3SB md:p3  text-neutralLight-neutral90 p-[0.625rem] animation"
             >
               Blog & News
-            </Link>
+            </Link> */}
             <Link href="/contactUs">
               <p className="p3SB md:p3  text-neutralLight-neutral90 p-[0.625rem] pl-[0]animation">
                 Contact us

@@ -9,9 +9,10 @@ const Footer = () => {
         <a href="#" className="p3 p-[0.625rem] animationSmall">
           Privacy policy
         </a>
-        <a href="#" className="p3 p-[0.625rem] animationSmall">
+        {/* TODO: add when we have Newsletter */}
+        {/* <a href="#" className="p3 p-[0.625rem] animationSmall">
           Newsletter
-        </a>
+        </a> */}
       </div>
     </footer>
   );

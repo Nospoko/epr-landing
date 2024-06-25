@@ -1,6 +1,6 @@
 const solutionsTexts = {
   version1: {
-    title: "Looking for Data Science Company?",
+    title: "Looking for Data Science services?",
   },
   version2: {
     title: "We know that algormitic solutions are future. Do you?",

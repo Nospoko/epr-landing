@@ -8,7 +8,7 @@ import { Providers } from "@/providers/providers";
 const pingFont = localFont({ src: "../fonts/PingFangHK.ttf" });
 
 export const metadata = {
-  title: "EPR | Algorithmic solutions",
+  title: "EPR Labs",
   description: "Make Data Science Great Again.",
 };
 

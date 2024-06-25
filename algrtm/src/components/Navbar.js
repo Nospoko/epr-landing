@@ -16,7 +16,7 @@ export default function Navbar() {
       <div className="flex justify-start p3SB text-neutralLight-neutral10 dark:text-neutralDark-neutral10 gap-5">
         <Link
           href="/"
-          className="transition-transform duration-500 ease-in-out transform hover:scale-150 hover:rotate-180"
+          className="transition-transform duration-500 ease-in-out transform hover:scale-150"
         >
           <div className="flex w-full items-center justify-center transition">
             <p className="text-neutralLight-neutral10 dark:text-neutralDark-neutral10 h5">

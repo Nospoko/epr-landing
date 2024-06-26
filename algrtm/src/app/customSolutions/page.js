@@ -29,7 +29,7 @@ const CustomSolutions = () => {
       </div>
       <OurWork />
       <RoundedRectangle />
-      <SolutionsSection version="version2" />
+      <SolutionsSection version="version1" />
     </main>
   );
 };

@@ -1,8 +1,6 @@
 import externalLinks from "@/data/externalLinks";
 import Link from "next/link";
 import React from "react";
-import Star from "./icons/Star";
-import StarEmpty from "./icons/StarEmpty";
 
 const SocialLinksSection = ({ textColor, textDarkColor }) => {
   return (

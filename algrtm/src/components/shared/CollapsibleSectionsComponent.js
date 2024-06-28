@@ -20,7 +20,7 @@ const CollapsibleSectionsComponent = ({ version }) => {
   const handleClick = (index) => {
     const updatedSections = sections.map((section, i) => ({
       ...section,
-      visible: index === i ? !section.visible : section.visible,
+      visible: index === i ? !section.visible : false,
     }));
     setSections(updatedSections);
   };
@@ -33,7 +33,7 @@ const CollapsibleSectionsComponent = ({ version }) => {
           className="flex flex-col border-b-[1px] border-neutralLight-neutral100 dark:border-neutralDark-neutral100"
         >
           <div
-            className="flex items-center gap-4 w-full pb-4 justify-between "
+            className="flex items-center gap-4 w-full pb-4 justify-between"
             onClick={() => handleClick(index)}
             role="button"
             aria-expanded={section.visible}

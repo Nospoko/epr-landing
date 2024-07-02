@@ -55,19 +55,15 @@ const offerSectionTexts = [
     visible: false,
   },
   {
-    title: "Identification of inefficient process stages ",
-    visible: false,
-  },
-  {
-    title: "Identification of missing measurement data",
-    visible: false,
-  },
-  {
     title: "Predictive Maintenance",
+    description:
+      "Employ predictive analytics to foresee potential equipment failures based on historical data and real-time monitoring. By adopting proactive maintenance strategies, Heavy Industry enhances equipment reliability, extends lifespan, and optimizes maintenance schedules for maximum operational uptime.",
     visible: false,
   },
   {
     title: "Operational Efficiency",
+    description:
+      "Enhancement of overall operational efficiency in heavy industries through predictive analytics and optimization algorithms, optimizes resource allocation, production scheduling, and logistics, thereby improving productivity and profitability.",
     visible: false,
   },
   // medTech

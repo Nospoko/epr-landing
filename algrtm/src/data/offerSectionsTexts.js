@@ -73,18 +73,21 @@ const offerSectionTexts = [
   // medTech
   {
     title: "Data quality assurance ",
+    description:
+      "Ensuring high-quality data is critical in the medical industry, where accurate information can significantly impact patient outcomes. Data science tools can help in cleaning, validating, and standardizing data to maintain its integrity and reliability. Tools for visualization and exploration can include human expertise.",
     visible: false,
   },
-  {
-    title: "Dataset curation applications",
-    visible: false,
-  },
+
   {
     title: "Operational Efficiency",
+    description:
+      "Data science offers valuable insights to enhance operational efficiency in medical institutions. By analyzing large datasets, it can reveal patterns and trends that highlight areas for potential optimization. Advanced analytics techniques can provide a clearer picture of patient admission trends, resource utilization, and workflow bottlenecks. With data-driven insights, healthcare providers can make informed decisions to reduce wait times, improve resource allocation, and ultimately deliver better patient care while managing costs more effectively.",
     visible: false,
   },
   {
     title: "Remote monitoring and telemedicine",
+    description:
+      "The integration of data science in remote monitoring and telemedicine is revolutionizing patient care. Advanced analytics and machine learning algorithms can process data from wearable devices and remote sensors to monitor patient health in real-time. This allows for early detection of potential health issues, timely interventions, and continuous patient management without the need for frequent in-person visits, thus improving access to care and patient outcomes.",
     visible: false,
   },
 ];

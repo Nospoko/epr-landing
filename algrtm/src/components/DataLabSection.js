@@ -13,10 +13,13 @@ const DataLabSection = () => {
             key={index}
             className="flex flex-col text-start bg-neutralLight-neutral90 border-neutralLight-neutral90  border-1 rounded-[2rem] gap-[1rem] p-[2rem] w-full max-w-[24.75rem] xl:h-[31.38rem] lg:h-[30.12rem] text-neutralLight-neutral20"
           >
-            <h5 className="h6_600 lg:text-[1.625rem] lg:leading-[2.34rem] lg:text-semibold max-w-[15rem] ">
+            <h5 className="h6_600 lg:text-[1.625rem] lg:leading-[2.34rem] lg:text-semibold max-w-[19.25rem] w-full">
               {item.title}
             </h5>
-            <p className="p2">{item.description}</p>
+            <p
+              className="p2"
+              dangerouslySetInnerHTML={{ __html: item.description }}
+            ></p>
           </div>
         ))}
       </div>

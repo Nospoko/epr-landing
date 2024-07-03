@@ -1,14 +1,28 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import ThemeToggle from "./shared/ThemeToggle";
 import SocialLinksSection from "./SocialLinksSection";
 import Menu from "./icons/Menu";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
   const [selectedMenu, setSelectedMenu] = useState("");
+
+  useEffect(() => {
+    if (pathname === "/pianoRoll") {
+      setSelectedMenu("pianoRoll");
+    } else if (pathname === "/customSolutions") {
+      setSelectedMenu("customSolutions");
+    } else if (pathname === "/contactUs") {
+      setSelectedMenu("contactUs");
+    } else {
+      setSelectedMenu("");
+    }
+  }, [pathname]);
 
   const handleNav = () => {
     setMenuOpen(!menuOpen);
@@ -38,34 +52,34 @@ export default function Navbar() {
       <div className="flex w-full max-w-[37rem] flex-wrap items-center justify-end gap-y-1 md:w-[initial] md:flex-nowrap gap-[1.5rem]">
         <div className="hidden md:flex items-center justify-center gap-x-2 text-neutralLight-neutral10 dark:text-neutralDark-neutral10">
           <Link
+            href="/pianoRoll"
             className={`flex w-full items-center justify-center transition md:p3SB xl:p3 p-2.5 animation ${
               selectedMenu === "pianoRoll"
                 ? "text-blueLight-blue50 border-b-2 border-blueLight-blue50"
                 : ""
             } hover:text-blueLight-blue50`}
-            href="/pianoRoll"
             onClick={() => handleMenuClick("pianoRoll")}
           >
             Piano for AI
           </Link>
 
           <Link
+            href="/customSolutions"
             className={`flex w-full items-center justify-center text-nowrap transition md:p3SB xl:p3 p-2.5 animation ${
               selectedMenu === "customSolutions"
                 ? "text-blueLight-blue50 border-b-2 border-blueLight-blue50"
                 : ""
             } hover:text-blueLight-blue50`}
-            href="/customSolutions"
             onClick={() => handleMenuClick("customSolutions")}
           >
             Custom Solutions
           </Link>
           {/* TODO- uncomment when we have sth to show on Knowledge page */}
           {/* <Link
+            href="/knowledge"
             className={`flex w-full items-center justify-center transition md:p3SB xl:p3 p-2.5 animation ${
               selectedMenu === "knowledge" ? "text-blueLight-blue50 border-b-2 border-blueLight-blue50" : ""
             } hover:text-blueLight-blue50`}
-            href="/knowledge"
             onClick={() => handleMenuClick("knowledge")}
           >
             Knowledge
@@ -73,12 +87,12 @@ export default function Navbar() {
         </div>
 
         <Link
+          href="/contactUs"
           className={`hidden md:flex justify-center items-center select-none text-sm px-5 py-2.5 h-10 gap-4 rounded-md border border-neutralLight-neutral40 bg-neutralLight-neutral10 dark:bg-neutralDark-neutral10 p3SB animation ${
             selectedMenu === "contactUs"
               ? "text-blueLight-blue50"
               : "text-neutralLight-neutral100 dark:text-neutralDark-neutral100"
           } hover:bg-neutralLight-neutral20`}
-          href="/contactUs"
           onClick={() => handleMenuClick("contactUs")}
         >
           Contact us
@@ -126,9 +140,11 @@ export default function Navbar() {
 
           {/* Middle section */}
           <div className=" flex flex-grow flex-col justify-center items-center text-center gap-[1.5rem] text-neutralLight-neutral10 dark:text-neutralDark-neutral10 p1SB w-full">
-            <Link href="/pianoRoll">
+            <Link
+              href="/pianoRoll"
+              onClick={() => handleMenuClick("pianoRoll")}
+            >
               <li
-                onClick={() => handleMenuClick("pianoRoll")}
                 className={`py-4 cursor-pointer list-none hover:text-blueLight-blue50 transition-transform duration-500 ease-in-out transform hover:scale-110 active:font-semibold p-[0.625rem] ${
                   selectedMenu === "pianoRoll"
                     ? "text-blueLight-blue50 border-b-2 border-blueLight-blue50"
@@ -138,9 +154,11 @@ export default function Navbar() {
                 Piano for AI
               </li>
             </Link>
-            <Link href="/customSolutions">
+            <Link
+              href="/customSolutions"
+              onClick={() => handleMenuClick("customSolutions")}
+            >
               <li
-                onClick={() => handleMenuClick("customSolutions")}
                 className={`py-4 cursor-pointer list-none hover:text-blueLight-blue50 transition-transform duration-500 ease-in-out transform hover:scale-110 active:font-semibold p-[0.625rem] ${
                   selectedMenu === "customSolutions"
                     ? "text-blueLight-blue50 border-b-2 border-blueLight-blue50"
@@ -163,13 +181,16 @@ export default function Navbar() {
             </Link> */}
             <div className="flex flex-col gap-[2rem]">
               <Link
-                className={`flex justify-center items-center select-none text-sm px-5 py-2.5 h-10 gap-4 rounded-md border border-neutralLight-neutral40 bg-neutralLight-neutral10 dark:bg-neutralDark-neutral10 text-neutralLight-neutral100 dark:text-neutralDark-neutral100 p3SB animation ${
-                  selectedMenu === "contactUs" ? "text-blueLight-blue50" : ""
-                }`}
                 href="/contactUs"
                 onClick={() => handleMenuClick("contactUs")}
               >
-                Contact us
+                <li
+                  className={`flex justify-center items-center select-none text-sm px-5 py-2.5 h-10 gap-4 rounded-md border border-neutralLight-neutral40 bg-neutralLight-neutral10 dark:bg-neutralDark-neutral10 text-neutralLight-neutral100 dark:text-neutralDark-neutral100 p3SB animation ${
+                    selectedMenu === "contactUs" ? "text-blueLight-blue50" : ""
+                  }`}
+                >
+                  Contact us
+                </li>
               </Link>
               <ThemeToggle />
             </div>

@@ -20,7 +20,7 @@ const LinksSection = () => {
           </div>
 
           <div className=" flex gap-x-[0.5rem] xl:px-4 items-end max-w-[28.93rem] text-nowrap flex-wrap xl:flex-nowrap mt-[2rem] md:mt-[0] content-end">
-            <Link href="/pianoRoll">
+            <Link href="https://pianoroll.io">
               <p className=" p3SB md:p3 text-neutralLight-neutral90 p-[0.625rem] pl-[0] animation">
                 PianoRoll
               </p>

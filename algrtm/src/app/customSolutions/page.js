@@ -26,8 +26,8 @@ const CustomSolutions = () => {
           version="version2"
           showButton={true}
         />
+        <OurWork />
       </div>
-      <OurWork />
       <RoundedRectangle />
       <SolutionsSection version="version1" />
     </main>

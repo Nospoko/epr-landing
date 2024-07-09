@@ -21,7 +21,7 @@ const MedTech = () => {
         <TechnologiesSection />
       </div>
       <RoundedRectangle />
-      <SolutionsSection version="version1" />
+      <SolutionsSection version="version2" />
     </main>
   );
 };

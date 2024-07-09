@@ -1,8 +1,6 @@
 import externalLinks from "@/data/externalLinks";
 import Link from "next/link";
 import React from "react";
-import Star from "./icons/Star";
-import StarEmpty from "./icons/StarEmpty";
 
 const SocialLinksSection = ({ textColor, textDarkColor }) => {
   return (
@@ -25,19 +23,20 @@ const SocialLinksSection = ({ textColor, textDarkColor }) => {
       >
         Github
       </Link>
-      <div
+      {/* TODO: add when we have real Clunch account */}
+      {/* <div
         className={` flex justify-center items-center text-${textColor} dark:text-${textDarkColor}`}
-      >
-        <Link
+      > */}
+      {/* <Link
           href={externalLinks.Clutch}
           className={`text-${textColor} dark:text-${textDarkColor} animation mr-2`}
           target="_blank"
           rel="noopener noreferrer"
         >
           Clutch{" "}
-        </Link>
-        {/* right now stars are static, don't come from Clutch ;) */}
-        <div className="flex justify-center items-center">
+        </Link> */}
+      {/* right now stars are static, don't come from Clutch ;) */}
+      {/* <div className="flex justify-center items-center">
           <Star color={textColor} />
           <Star color={textColor} />
           <Star color={textColor} />
@@ -45,7 +44,7 @@ const SocialLinksSection = ({ textColor, textDarkColor }) => {
           <StarEmpty color={textColor} />
         </div>
         4.9
-      </div>
+      </div> */}
     </div>
   );
 };

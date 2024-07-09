@@ -1,5 +1,6 @@
 import CustomSolutionsSection from "@/components/CustomSolutionsSection";
 import OfferSection from "@/components/OfferSection";
+import OurWork from "@/components/OurWork";
 import RoundedTextComponent from "@/components/RoundedTextComponent";
 
 import SolutionsSection from "@/components/SolutionsSection";
@@ -25,10 +26,10 @@ const CustomSolutions = () => {
           version="version2"
           showButton={true}
         />
+        <OurWork />
       </div>
-
       <RoundedRectangle />
-      <SolutionsSection version="version2" />
+      <SolutionsSection version="version1" />
     </main>
   );
 };

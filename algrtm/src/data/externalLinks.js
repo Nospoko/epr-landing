@@ -6,7 +6,7 @@ const externalLinks = {
   Clutch: "https://clutch.co/",
   Blog: "",
   Hugglingface: "https://huggingface.co/datasets/roszcz/maestro-sustain-v2",
-  Twitter: "",
+  Twitter: "https://x.com/pianoforai",
   Insta:
     "https://www.instagram.com/pianoroll.io?igsh=Mjdicno5NW9nb2pv&utm_source=qr",
   Note: "https://www.tiktok.com/@pianoroll.io?_t=8knv08Y0nRp&_r=1",

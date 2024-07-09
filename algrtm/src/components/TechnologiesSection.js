@@ -10,8 +10,10 @@ const TechnologiesSection = () => {
       <div className="flex flex-col gap-[2.75rem] md:gap-[4.5rem] w-full">
         <div className=" text-neutralLight-neutral20 dark:text-neutralDark-neutral20 h6_400 xl:h6 max-w-[51.75rem]">
           <p>
-            By harnessing MIDI data from our users, combined with intricate
-            algorithms, we're on a journey to find the optimal approach.
+            We use industry-leading software tools to build robust and scalable
+            data pipelines. Our solutions integrate seamlessly with both
+            cloud-based and <br />
+            on-premises infrastructures, ensuring flexibility and reliability.
           </p>
         </div>
         <div className="w-full">

@@ -5,7 +5,7 @@ const PianoRollLogoDescription = () => {
   return (
     <div className="flex max-w-[64.75rem] items-center gap-[4.5rem] my-[7.19rem]">
       <div className="bg-neutralLight-neutral90 rounded-[2rem] w-[36.25rem] h-[29.875rem] justify-center items-center gap-[0.625rem] shrink-0 flex">
-        <Image width={86.965} height={94} src="/PianoRollLogo.svg" />
+        <Image width={86.965} height={94} src="/pianoRollLogo.svg" />
         <Image width={218.057} height={38.198} src="/PianoRoll.svg" />
       </div>
       <div className="flex flex-col gap-[0.625rem] shrink-0 items-start max-w-[24rem]">

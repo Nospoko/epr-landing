@@ -6,7 +6,7 @@ const PythonToolsSection = () => {
   return (
     <section className="w-full flex flex-col gap-[4.5rem] justify-center items-center text-center mt-[2.75rem] px-[5.88rem] mx-[1rem] md:mt-[7.75rem] md:mx-[4.56rem] xl:mx-[5.88rem] bg-neutralLight-neutral100 dark:bg-neutralDark-neutral100">
       <h4 className="h4 lg:h2 text-neutralLight-neutral10 dark:text-neutralDark-neutral10 self-start md:self-center">
-        Python Tools for MIDI processing
+        Python Tools for MIDI Processing
       </h4>
       <div className="flex flex-wrap justify-center items-center w-full gap-[1.5rem] md:gap-[2rem] mt-[2rem]">
         {Object.values(pythonToolsData).map((tool, index) => (
@@ -35,7 +35,9 @@ const PythonToolsSection = () => {
                   variant="primary"
                   text="Learn more"
                   alt="arrow up icon"
-                  href="#"
+                  href={tool.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 />
               </div>
             </div>

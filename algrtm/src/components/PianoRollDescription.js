@@ -12,14 +12,15 @@ const PianoRollDescription = () => {
           <h1 className="h2 leading-[4.48rem] xl:h1 text-neutralLight-neutral10 dark:text-neutralDark-neutral10 ">
             PianoRoll
           </h1>
-          <div>
-            <p className="h6 text-neutralLight-neutral20 dark:text-neutralDark-neutral20">
-              At its surface, PianoRoll serves as a{" "}
-              <strong>
-                platform for pianists to track and share their progress
-              </strong>{" "}
-              with friends and the broader community. Yet, it’s so much more
-              than that.
+          <div className="h6 text-neutralLight-neutral20 dark:text-neutralDark-neutral20 flex flex-col gap-[1rem]">
+            <p className="h5_500">
+              PianoRoll is a platform for tracking effort and hosting piano
+              competitions.
+            </p>
+            <p>
+              PianoRoll users provide crowd-sourced, high-quality MIDI
+              recordings rich with performance nuances. This allows us to curate
+              datasets for cutting-edge machine learning research.
             </p>
           </div>
         </div>

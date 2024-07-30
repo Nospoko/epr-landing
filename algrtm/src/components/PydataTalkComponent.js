@@ -16,7 +16,9 @@ const PydataTalkComponent = () => {
             variant="primary"
             text="Learn more"
             alt="arrow up icon"
-            href="#"
+            href="https://www.youtube.com/watch?v=nUmLL61OYCc"
+            target="_blank"
+            rel="noopener noreferrer"
           />
         </div>
       </div>

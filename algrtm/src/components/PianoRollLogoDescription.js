@@ -3,7 +3,7 @@ import React from "react";
 
 const PianoRollLogoDescription = () => {
   return (
-    <div className="flex flex-col md:flex-row max-w-[64.75rem] items-center gap-[2rem] md:gap-[4.5rem] my-[7.19rem] px-4">
+    <div className="lg:flex-row flex flex-col max-w-[64.75rem] items-center gap-[2rem] md:gap-[4.5rem] my-[7.19rem] px-4">
       <div className="bg-neutralLight-neutral90 rounded-[2rem] w-full md:w-[36.25rem] h-[29.875rem] flex flex-col md:flex-row justify-center items-center gap-[0.625rem]">
         <Image width={86.965} height={94} src="/pianoRollLogo.svg" />
         <Image width={218.057} height={38.198} src="/PianoRoll.svg" />

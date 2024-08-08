@@ -1,18 +1,18 @@
 const pythonToolsData = {
   version1: {
-    image: "/labAssistant-bg-image.jpeg",
+    image: "/fortepyan.png",
     title: "Fortepyan python library",
     description: ["MIDI - pandas interface"],
     link: "https://github.com/nospoko/fortepyan",
   },
   version2: {
-    image: "/labAssistant-bg-image.jpeg",
+    image: "/streamlit.png",
     title: "PianoRoll streamlit widget",
     description: ["Visualisation and playback"],
     link: "https://github.com/nospoko/streamlit-pianoroll",
   },
   version3: {
-    image: "/labAssistant-bg-image.jpeg",
+    image: "/huggling.png",
     title: "Huggingface dataset",
     description: ["500 hours", "10000000 tokens", "Ethical sourcing"],
     // link:

@@ -15,7 +15,7 @@ const pythonToolsData = {
     image: "/huggling.png",
     title: "Huggingface dataset",
     description: ["500 hours", "10000000 tokens", "Ethical sourcing"],
-    // link:
+    link: "https://huggingface.co/datasets/roszcz/maestro-sustain-v2",
   },
 };
 

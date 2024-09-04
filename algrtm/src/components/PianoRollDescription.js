@@ -2,6 +2,7 @@
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import React from "react";
+import CustomLink from "./shared/CustomLink";
 
 const PianoRollDescription = () => {
   const { darkMode } = useTheme();
@@ -15,13 +16,25 @@ const PianoRollDescription = () => {
           <div className="text-neutralLight-neutral20 dark:text-neutralDark-neutral20 flex flex-col gap-[1rem]">
             <p className="h5_smaller lg:5h_small xl:h5_500">
               PianoRoll is a platform for tracking effort and hosting piano
-              competitions.
+              competitions. PianoRoll users provide crowd-sourced, high-quality
+              MIDI recordings rich with performance nuances. This allows us to
+              curate datasets for cutting-edge machine learning research.
             </p>
             <p className="h6_small xl:h6">
               PianoRoll users provide crowd-sourced, high-quality MIDI
               recordings rich with performance nuances. This allows us to curate
               datasets for cutting-edge machine learning research.
             </p>
+            <div className="flex items-start mt-[1.75rem]">
+              <CustomLink
+                variant="primary"
+                text="Learn more"
+                alt="arrow up icon"
+                href="https://pianoroll.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+              />
+            </div>
           </div>
         </div>
         <div className="bg-neutralLight-neutral90 dark:bg-neutralDark-neutral90 rounded-[2rem] md:min-w-[36.225rem] overflow-hidden">

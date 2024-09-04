@@ -6,8 +6,10 @@ const PydataTalkComponent = () => {
   return (
     <section className="flex flex-col items-center gap-[2.75rem] md:gap-[5.88rem] my-[4rem] md:my-[7.19rem] w-full">
       <div className="flex flex-col gap-[1.5rem] text-neutralLight-neutral10 dark:text-neutralDark-neutral10 h5_small lg:h5_500 md:px-[7.75rem] xl:px-[4rem] items-center max-w-[51.875rem] w-full">
-        <h2 className="h2">Pydata Talk</h2>
-        <h6 className="h6_400">
+        <h2 className="h2SB tracking-[-0.13rem] xl:h2 xl:tracking-[-0.16rem]">
+          Pydata Talk
+        </h2>
+        <h6 className="h6 text-center">
           We presented at PyData London 2024. Check out our speech on modeling
           the emotional nuances of music performances.
         </h6>

@@ -6,6 +6,7 @@ import SocialLinksSection from "./SocialLinksSection";
 import Menu from "./icons/Menu";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -42,9 +43,14 @@ export default function Navbar() {
           onClick={() => handleMenuClick("/")}
         >
           <div className="flex w-full items-center justify-center transition">
-            <p className="text-neutralLight-neutral10 dark:text-neutralDark-neutral10 h5">
-              EPR
-            </p>
+            <Image
+              height={45}
+              width={97.753}
+              sizes="100vw"
+              src="/EPR_Labs_logo_color.svg"
+              alt="EPR Labs logo"
+              className=""
+            />
           </div>
         </Link>
       </div>

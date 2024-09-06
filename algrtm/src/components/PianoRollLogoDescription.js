@@ -9,12 +9,12 @@ const PianoRollLogoDescription = () => {
         <Image width={218.057} height={38.198} src="/PianoRoll.svg" />
       </div>
       <div className="flex flex-col gap-[0.625rem] items-start w-full md:w-auto max-w-[24rem]">
-        <p className="h5_smaller text-neutralLight-neutral10">
+        <p className="h5_smaller text-neutralLight-neutral10 dark:text-neutralDark-neutral10">
           Audio, images and text already benefit from well-established deep
           learning architectures and processing pipelines that consistently
           yield amazing results.
         </p>
-        <p className=" h6_small text-neutralLight-neutral10">
+        <p className=" h6_small text-neutralLight-neutral10 dark:text-neutralDark-neutral10">
           Recording piano performances in MIDI format introduces a new and
           exciting area of research, combining challenges from text, image and
           audio into a single modality. MIDI format services as a bridge,

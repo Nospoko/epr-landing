@@ -12,7 +12,7 @@ const PythonToolsSection = () => {
         {Object.values(pythonToolsData).map((tool, index) => (
           <div
             key={index}
-            className="flex flex-col lg:flex justify-start items-center w-full lg:w-[calc(50%-1rem)] xl:w-[calc(33.333%-2rem)] max-h-[26.56rem] lg:h-[28.75rem] xl:h-[34.38rem] bg-neutralLight-neutral90 dark:bg-neutralDark-neutral90 rounded-[2rem] overflow-hidden"
+            className="flex flex-col lg:flex justify-start items-center w-full lg:w-[calc(50%-1rem)] xl:max-w-[24.75rem] max-h-[34.37rem] lg:h-[28.75rem] bg-neutralLight-neutral90 dark:bg-neutralDark-neutral90 rounded-[2rem] overflow-hidden"
           >
             <img
               src={tool.image}

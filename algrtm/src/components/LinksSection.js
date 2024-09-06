@@ -2,6 +2,7 @@
 import Link from "next/link";
 import React from "react";
 import SocialLinksSection from "./SocialLinksSection";
+import Image from "next/image";
 
 const LinksSection = () => {
   return (
@@ -10,9 +11,16 @@ const LinksSection = () => {
         <div className=" flex flex-col justify-between md:gap-auto md:flex-row xl:gap-[11.125rem] bg-neutralLight-neutral10 dark:bg-neutralDark-neutral90 w-full">
           <div className=" flex flex-col gap-6 ">
             {/* new logo */}
-            <div></div>
-            <div className=" flex w-full justify-start h5">
-              <p className=" text-neutralLight-neutral100 h5">EPR</p>
+
+            <div className=" flex w-full justify-start">
+              <Image
+                height={45}
+                width={97.601}
+                sizes="100vw"
+                src="/EPR_Labs_logo_white_mono.svg"
+                alt="EPR Labs logo white"
+                className=""
+              />
             </div>
             <div className=" p2 text-neutralLight-neutral60 dark:text-neutralDark-neutral60 max-w-[25.375rem]">
               We would love to make data science great again with machine

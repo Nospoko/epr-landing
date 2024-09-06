@@ -7,8 +7,10 @@ import Menu from "./icons/Menu";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { useTheme } from "next-themes";
 
 export default function Navbar() {
+  const { darkMode } = useTheme();
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
   const [selectedMenu, setSelectedMenu] = useState("");
@@ -47,7 +49,11 @@ export default function Navbar() {
               height={45}
               width={97.753}
               sizes="100vw"
-              src="/EPR_Labs_logo_color.svg"
+              src={
+                darkMode
+                  ? "/EPR_Labs_logo_color.svg"
+                  : "/EPR_Labs_logo_white_waves.svg"
+              }
               alt="EPR Labs logo"
               className=""
             />

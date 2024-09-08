@@ -51,8 +51,8 @@ export default function Navbar() {
               sizes="100vw"
               src={
                 darkMode
-                  ? "/EPR_Labs_logo_color.svg"
-                  : "/EPR_Labs_logo_white_waves.svg"
+                  ? "/EPR_Labs_logo_white_waves.svg"
+                  : "/EPR_Labs_logo_color.svg"
               }
               alt="EPR Labs logo"
               className=""

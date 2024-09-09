@@ -5,7 +5,7 @@ import React from "react";
 import CustomLink from "./shared/CustomLink";
 
 const PianoRollDescription = () => {
-  const { darkMode } = useTheme();
+  const { resolvedTheme } = useTheme();
   return (
     <section className="flex flex-col items-center justify-center w-full xl:px-[12.625rem]">
       <div className="lg:flex-row flex flex-col gap-[4rem] lg:gap-[4.5rem] items-center justify-center w-full">
@@ -42,7 +42,11 @@ const PianoRollDescription = () => {
             height={283}
             width={343}
             sizes="100vw"
-            src={darkMode ? "/PianoRollScreenDark.png" : "/PianoRollScreen.png"}
+            src={
+              resolvedTheme === "dark"
+                ? "/PianoRollScreenDark.png"
+                : "/PianoRollScreen.png"
+            }
             alt="Piano Roll App Screen"
             className="w-auto h-[17.678rem] md:h-[29.875rem]"
           />

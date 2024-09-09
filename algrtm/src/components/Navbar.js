@@ -10,7 +10,7 @@ import Image from "next/image";
 import { useTheme } from "next-themes";
 
 export default function Navbar() {
-  const { darkMode } = useTheme();
+  const { resolvedTheme } = useTheme();
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
   const [selectedMenu, setSelectedMenu] = useState("");
@@ -50,7 +50,7 @@ export default function Navbar() {
               width={97.753}
               sizes="100vw"
               src={
-                darkMode
+                resolvedTheme === "dark"
                   ? "/EPR_Labs_logo_white_waves.svg"
                   : "/EPR_Labs_logo_color.svg"
               }
@@ -86,16 +86,6 @@ export default function Navbar() {
           >
             Custom Solutions
           </Link>
-          {/* TODO- uncomment when we have sth to show on Knowledge page */}
-          {/* <Link
-            href="/knowledge"
-            className={`flex w-full items-center justify-center transition md:p3SB xl:p3 p-2.5 animation ${
-              selectedMenu === "knowledge" ? "text-blueLight-blue50 border-b-2 border-blueLight-blue50" : ""
-            } hover:text-blueLight-blue50`}
-            onClick={() => handleMenuClick("knowledge")}
-          >
-            Knowledge
-          </Link> */}
         </div>
 
         <Link
@@ -119,7 +109,6 @@ export default function Navbar() {
         >
           <Menu className="mr-[1rem]" color="#2E2E2E" />
         </div>
-        {/* NavbarDropdownMenu */}
 
         <div
           className={`fixed bg-neutralLight-neutral100 dark:bg-neutralDark-neutral100 ease-in duration-500 flex flex-col justify-between top-0 w-full h-screen ${
@@ -180,17 +169,7 @@ export default function Navbar() {
                 Custom Solutions
               </li>
             </Link>
-            {/* TODO: add the link when we have sth there */}
-            {/* <Link href="/knowledge">
-              <li
-                onClick={() => handleMenuClick("knowledge")}
-                className={`py-4 cursor-pointer list-none hover:text-blueLight-blue50 transition-transform duration-500 ease-in-out transform hover:scale-110 active:font-semibold ${
-                  selectedMenu === "knowledge" ? "text-blueLight-blue50 border-b-2 border-blueLight-blue50" : ""
-                }`}
-              >
-                Knowledge
-              </li>
-            </Link> */}
+
             <div className="flex flex-col gap-[2rem]">
               <Link
                 href="/contactUs"

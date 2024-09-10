@@ -1,11 +1,18 @@
 "use client";
 import { useTheme } from "next-themes";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import CustomLink from "./shared/CustomLink";
 
 const PianoRollDescription = () => {
   const { resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  // Wait until the component has mounted to avoid hydration mismatch
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   return (
     <section className="flex flex-col items-center justify-center w-full xl:px-[12.625rem]">
       <div className="lg:flex-row flex flex-col gap-[4rem] lg:gap-[4.5rem] items-center justify-center w-full">
@@ -38,18 +45,22 @@ const PianoRollDescription = () => {
           </div>
         </div>
         <div className="bg-neutralLight-neutral90 dark:bg-neutralDark-neutral90 rounded-[2rem] md:min-w-[36.225rem] overflow-hidden">
-          <Image
-            height={283}
-            width={343}
-            sizes="100vw"
-            src={
-              resolvedTheme === "dark"
-                ? "/PianoRollScreenDark.png"
-                : "/PianoRollScreen.png"
-            }
-            alt="Piano Roll App Screen"
-            className="w-auto h-[17.678rem] md:h-[29.875rem]"
-          />
+          {/* Only render image after component is mounted */}
+          {mounted && (
+            <Image
+              height={283}
+              width={343}
+              sizes="100vw"
+              src={
+                resolvedTheme === "dark"
+                  ? "/PianoRollScreenDark.png"
+                  : "/PianoRollScreen.png"
+              }
+              alt="Piano Roll App Screen"
+              className="w-auto h-[17.678rem] md:h-[29.875rem]"
+              priority
+            />
+          )}
         </div>
       </div>
     </section>

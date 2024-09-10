@@ -11,6 +11,7 @@ import { useTheme } from "next-themes";
 
 export default function Navbar() {
   const { resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
   const [selectedMenu, setSelectedMenu] = useState("");
@@ -26,6 +27,10 @@ export default function Navbar() {
       setSelectedMenu("");
     }
   }, [pathname]);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const handleNav = () => {
     setMenuOpen(!menuOpen);
@@ -45,18 +50,19 @@ export default function Navbar() {
           onClick={() => handleMenuClick("/")}
         >
           <div className="flex w-full items-center justify-center transition">
-            <Image
-              height={45}
-              width={97.753}
-              sizes="100vw"
-              src={
-                resolvedTheme === "dark"
-                  ? "/EPR_Labs_logo_white_waves.svg"
-                  : "/EPR_Labs_logo_color.svg"
-              }
-              alt="EPR Labs logo"
-              className=""
-            />
+            {mounted && (
+              <Image
+                height={45}
+                width={97.753}
+                sizes="100vw"
+                src={
+                  resolvedTheme === "dark"
+                    ? "/EPR_Labs_logo_white_waves.svg"
+                    : "/EPR_Labs_logo_color.svg"
+                }
+                alt="EPR Labs logo"
+              />
+            )}
           </div>
         </Link>
       </div>

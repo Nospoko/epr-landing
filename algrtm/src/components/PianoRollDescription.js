@@ -15,7 +15,7 @@ const PianoRollDescription = () => {
 
   return (
     <section className="flex flex-col items-center justify-center w-full xl:px-[12.625rem]">
-      <div className="lg:flex-row flex flex-col gap-[4rem] lg:gap-[4.5rem] items-center justify-center w-full">
+      <div className="lg:flex-row flex flex-col-reverse gap-[4rem] lg:gap-[4.5rem] items-center justify-center w-full">
         <div className="flex flex-col gap-4 max-w-[24.03rem] w-full">
           <h1 className="h4 tracking-[-0.11rem] lg:h2SB lg:tracking-[-0.13rem] xl:h2 xl:tracking-[-0.16rem] text-neutralLight-neutral10 dark:text-neutralDark-neutral10 ">
             PianoRoll

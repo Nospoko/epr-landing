@@ -17,11 +17,11 @@ export default function Navbar() {
   const [selectedMenu, setSelectedMenu] = useState("");
 
   useEffect(() => {
-    if (pathname === "/pianoRoll") {
-      setSelectedMenu("pianoRoll");
-    } else if (pathname === "/customSolutions") {
+    if (pathname === "/piano-for-ai") {
+      setSelectedMenu("pianoForAI");
+    } else if (pathname === "/custom-solutions") {
       setSelectedMenu("customSolutions");
-    } else if (pathname === "/contactUs") {
+    } else if (pathname === "/contact-us") {
       setSelectedMenu("contactUs");
     } else {
       setSelectedMenu("");
@@ -70,19 +70,19 @@ export default function Navbar() {
       <div className="flex w-full max-w-[37rem] flex-wrap items-center justify-end gap-y-1 md:w-[initial] md:flex-nowrap gap-[1.5rem]">
         <div className="hidden md:flex items-center justify-center gap-x-2 text-neutralLight-neutral10 dark:text-neutralDark-neutral10">
           <Link
-            href="/pianoRoll"
+            href="/piano-for-ai"
             className={`flex w-full items-center justify-center transition md:p3SB xl:p3 p-2.5 animation ${
-              selectedMenu === "pianoRoll"
+              selectedMenu === "pianoForAI"
                 ? "text-blueLight-blue50 border-b-2 border-blueLight-blue50"
                 : ""
             } hover:text-blueLight-blue50`}
-            onClick={() => handleMenuClick("pianoRoll")}
+            onClick={() => handleMenuClick("pianoForAI")}
           >
             Piano for AI
           </Link>
 
           <Link
-            href="/customSolutions"
+            href="/custom-solutions"
             className={`flex w-full items-center justify-center text-nowrap transition md:p3SB xl:p3 p-2.5 animation ${
               selectedMenu === "customSolutions"
                 ? "text-blueLight-blue50 border-b-2 border-blueLight-blue50"
@@ -95,7 +95,7 @@ export default function Navbar() {
         </div>
 
         <Link
-          href="/contactUs"
+          href="/contact-us"
           className={`hidden md:flex justify-center items-center select-none text-sm px-5 py-2.5 h-10 gap-4 rounded-md border border-neutralLight-neutral40 bg-neutralLight-neutral10 dark:bg-neutralDark-neutral10 p3SB animation ${
             selectedMenu === "contactUs"
               ? "text-blueLight-blue50"
@@ -148,7 +148,7 @@ export default function Navbar() {
           {/* Middle section */}
           <div className=" flex flex-grow flex-col justify-center items-center text-center gap-[1.5rem] text-neutralLight-neutral10 dark:text-neutralDark-neutral10 p1SB w-full">
             <Link
-              href="/pianoRoll"
+              href="/piano-for-ai"
               onClick={() => handleMenuClick("pianoRoll")}
             >
               <li
@@ -162,7 +162,7 @@ export default function Navbar() {
               </li>
             </Link>
             <Link
-              href="/customSolutions"
+              href="/custom-solutions"
               onClick={() => handleMenuClick("customSolutions")}
             >
               <li
@@ -178,7 +178,7 @@ export default function Navbar() {
 
             <div className="flex flex-col gap-[2rem]">
               <Link
-                href="/contactUs"
+                href="/contact-us"
                 onClick={() => handleMenuClick("contactUs")}
               >
                 <li

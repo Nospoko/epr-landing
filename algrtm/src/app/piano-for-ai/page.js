@@ -9,7 +9,7 @@ import PianoRollImgDescription from "@/components/shared/PianoRollImgDescription
 import RoundedRectangle from "@/components/shared/RoundedRectangle";
 import React from "react";
 
-function PianoRoll() {
+function PianoForAI() {
   return (
     <main className="flex flex-col items-center justify-center ">
       <div className="w-full flex flex-col items-center justify-center px-[1rem] md:px-[2.75rem] xl:px-[0]">
@@ -36,4 +36,4 @@ function PianoRoll() {
   );
 }
 
-export default PianoRoll;
+export default PianoForAI;

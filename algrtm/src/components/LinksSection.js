@@ -35,7 +35,7 @@ const LinksSection = () => {
                 PianoRoll
               </p>
             </Link>
-            <Link href="/customSolutions">
+            <Link href="/custom-solutions">
               <p className="p3SB md:p3  text-neutralLight-neutral90 p-[0.625rem] animation">
                 Custom Solutions
               </p>
@@ -47,7 +47,7 @@ const LinksSection = () => {
             >
               Blog & News
             </Link> */}
-            <Link href="/contactUs">
+            <Link href="/contact-us">
               <p className="p3SB md:p3  text-neutralLight-neutral90 p-[0.625rem] pl-[0] animation">
                 Contact us
               </p>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const CustomLink = ({ text, href, variant, alt, customIcon, target, rel }) => {
@@ -25,10 +26,10 @@ const CustomLink = ({ text, href, variant, alt, customIcon, target, rel }) => {
   }
 
   return (
-    <a className={linkClass} href={href} target={target} rel={rel}>
+    <Link className={linkClass} href={href} target={target} rel={rel}>
       {text}
       {customIcon && <span className="ml-[0.01rem]">{customIcon}</span>}
-    </a>
+    </Link>
   );
 };
 

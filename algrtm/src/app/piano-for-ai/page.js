@@ -1,19 +1,25 @@
 import PianoRollDescription from "@/components/PianoRollDescription";
-import PianoRollPlay from "@/components/PianoRollPlay";
+import PianoRollLogoDescription from "@/components/PianoRollLogoDescription";
+import PydataTalkComponent from "@/components/PydataTalkComponent";
+import PythonToolsSection from "@/components/PythonToolsSection";
 import RoundedTextComponent from "@/components/RoundedTextComponent";
 import SolutionsSection from "@/components/SolutionsSection";
-import StoryComponent from "@/components/StoryComponent";
+import StayUpToDate from "@/components/StayUpToDate";
+import PianoRollImgDescription from "@/components/shared/PianoRollImgDescription";
 import RoundedRectangle from "@/components/shared/RoundedRectangle";
 import React from "react";
 
-function PianoRoll() {
+function PianoForAI() {
   return (
     <main className="flex flex-col items-center justify-center ">
       <div className="w-full flex flex-col items-center justify-center px-[1rem] md:px-[2.75rem] xl:px-[0]">
+        <PianoRollImgDescription />
+        <PianoRollLogoDescription />
         <PianoRollDescription />
-        <PianoRollPlay />
+        <PythonToolsSection />
+        <PydataTalkComponent />
         <RoundedTextComponent
-          version="version3"
+          version="version5"
           backgroundColor="neutralLight-neutral10"
           backgroundColorDark="neutralDark-neutral90"
           textTitleColor="neutralLight-neutral100"
@@ -22,7 +28,7 @@ function PianoRoll() {
           textParagraph2ColorDark="neutralDark-neutral60"
           gap="6"
         />
-        <StoryComponent />
+        <StayUpToDate />
       </div>
       <RoundedRectangle />
       <SolutionsSection version="version1" />
@@ -30,4 +36,4 @@ function PianoRoll() {
   );
 }
 
-export default PianoRoll;
+export default PianoForAI;

@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "custom-gradient":
+          "linear-gradient(0deg, rgba(28, 28, 28, 0.32) 0%, rgba(28, 28, 28, 0.32) 100%)",
+      },
       colors: {
         transparent: "transparent",
         current: "currentColor",

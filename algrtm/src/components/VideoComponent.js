@@ -3,7 +3,7 @@ import { useRef } from "react";
 
 const VideoComponent = () => {
   const iframeRef = useRef();
-  const videoUrl = "https://www.youtube.com/embed/o5BR_GvKwDg";
+  const videoUrl = "https://www.youtube.com/embed/nUmLL61OYCc";
 
   return (
     <div>

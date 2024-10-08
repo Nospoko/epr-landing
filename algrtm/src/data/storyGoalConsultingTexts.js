@@ -22,6 +22,10 @@ const texts = {
     paragraph1:
       "If you're looking to bring a computational idea to life, we're here to help. We assist artists by staying up-to-date with the latest advancements in deep learning and developing custom solutions, whether they involve a unique set of differential equations or tailored JavaScript animations.",
   },
+  version5: {
+    title:
+      "Lets open the door to a mathematical understanding of music together.",
+  },
 };
 
 export default texts;

@@ -1,11 +1,10 @@
 import React from "react";
 import CustomLink from "./shared/CustomLink";
-import CustomIcon from "./shared/CustomIcon";
 import externalLinks from "@/data/externalLinks";
 
 const ContactDescription = () => {
   return (
-    <section className="flex flex-col gap-6 md:max-w-[18.375rem] xl:max-w-[22.38rem] w-full">
+    <section className="flex flex-col gap-6 md:max-w-[18.375rem] xl:max-w-[22.38rem] w-full mb-[2.75rem] md:mb-[0]">
       <h2 className=" h4 md:h2SB xl:h2 text-neutralLight-neutral10 dark:text-neutralDark-neutral10 leading-[4rem] ">
         Contact
       </h2>

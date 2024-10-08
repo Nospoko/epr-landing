@@ -94,8 +94,9 @@ h6 {
 .animationSmall:hover {
   transform: scale(1.1);
 }
+/* TODO: remove when works Mulish font */
 
-@font-face {
+/* @font-face {
   font-family: "PingFang";
   src: url("../fonts/PingFangHK-Regular.otf");
   font-weight: 400;
@@ -112,4 +113,4 @@ h6 {
   src: url("../fonts/PingFangHK-Semibold.otf");
   font-weight: 600;
   font-style: normal;
-}
+} */

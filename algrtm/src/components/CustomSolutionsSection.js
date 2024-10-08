@@ -20,7 +20,7 @@ const CustomSolutionsSection = () => {
           <div className="flex items-start ">
             <CustomLink
               variant="primary"
-              href="/contactUs"
+              href="/contact-us"
               text="Go to the questionnaire"
             />
           </div>

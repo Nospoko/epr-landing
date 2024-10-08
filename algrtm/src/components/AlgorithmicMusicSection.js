@@ -35,7 +35,7 @@ const AlgorithmicMusicSection = () => {
 
           <CustomLink
             variant="secondary"
-            href="/customSolutions"
+            href="/custom-solutions"
             text="Custom solutions"
             customIcon={<CustomIcon name="ArrowUpRight" color="black" />}
             alt="arrow up icon"

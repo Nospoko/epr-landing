@@ -6,6 +6,7 @@ import stepsData from "@/data/stepsData";
 import Link from "next/link";
 import React from "react";
 import CustomIcon from "./shared/CustomIcon";
+import StayUpToDate from "./StayUpToDate";
 
 const StoryComponent = () => {
   return (
@@ -66,7 +67,7 @@ const StoryComponent = () => {
         ))}
       </div>
 
-      <div className="flex flex-col md:flex-row gap-[1.5rem] xl:px-[12.62rem] pt-[5rem] ld:pt-[5.88rem] justify-center items-center">
+      {/* {/* <div className="flex flex-col md:flex-row gap-[1.5rem] xl:px-[12.62rem] pt-[5rem] ld:pt-[5.88rem] justify-center items-center">
         <div className="rounded-[1rem]  bg-neutralLight-neutral90  dark:bg-neutralDark-neutral90 py-[4rem] px-[1.5rem] flex flex-col items-center gap-[2.75rem] w-full max-w-[31.625rem]">
           <div className=" h3SB text-center md:text-[2.75rem] md:leading-[3.3rem] xl:text-[3.25rem] xl:leading-[3.9rem] ">
             <p className="text-neutralLight-neutral10 dark:text-neutralDark-neutral10">
@@ -118,7 +119,8 @@ const StoryComponent = () => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
+      <StayUpToDate />
     </section>
   );
 };

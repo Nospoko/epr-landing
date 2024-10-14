@@ -5,7 +5,7 @@ const DataLabSection = () => {
   return (
     <section className="w-full flex flex-col items-center gap-6 mb-[2.75rem] lg:my-[5.88rem] mt-[2.75rem] mx-[1rem] md:mt-[7.75rem] md:mx-[4.56rem] xl:mx-[5.88rem] bg-neutralLight-neutral100 dark:bg-neutralDark-neutral100">
       <div className="h4 lg:h2SB xl:h2 mx-[1rem] md:mx-[4.56rem] xl:mx-[5.88rem] text-neutralLight-neutral10 dark:text-neutralDark-neutral10">
-        Our Data Laboratory
+        Software Offer
       </div>
       <div className="flex flex-col gap-[2rem] lg:flex-row w-full self-stretch justify-center items-center text-center ">
         {dataLabSectionTexts.map((item, index) => (

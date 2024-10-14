@@ -14,7 +14,7 @@ export default function Home() {
         <DataLabSection />
         <SoftwareConsultingSection />
         <RoundedTextComponent
-          version="version4"
+          version="artistSoftwareOffer"
           backgroundColor="neutralLight-neutral10"
           backgroundColorDark="neutralDark-neutral90"
           textTitleColor="neutralLight-neutral100"

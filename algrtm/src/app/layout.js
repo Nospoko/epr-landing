@@ -1,6 +1,5 @@
 import localFont from "next/font/local";
 import "../styles/globals.css";
-import Footer from "@/components/Footer";
 import LinksSection from "@/components/LinksSection";
 import Header from "../components/Header";
 import { Providers } from "@/providers/providers";
@@ -22,7 +21,6 @@ export default function RootLayout({ children }) {
           <Header />
           {children}
           <LinksSection />
-          <Footer />
         </Providers>
       </body>
     </html>

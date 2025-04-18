@@ -17,8 +17,8 @@ const texts = {
     paragraph1:
       "By harnessing MIDI data from our users, combined with intricate algorithms, we're on a journey to find the optimal approach to instill AI with the ability to produce music that resonates with passion, emotion, and intellect. We're currently deep in this process.",
   },
-  version4: {
-    title: "Specialized Software Consulting for Artists",
+  artistSoftwareOffer: {
+    title: "Creative Software Consulting for Artists",
     paragraph1:
       "If you're looking to bring a computational idea to life, we're here to help. We assist artists by staying up-to-date with the latest advancements in deep learning and developing custom solutions, whether they involve a unique set of differential equations or tailored JavaScript animations.",
   },

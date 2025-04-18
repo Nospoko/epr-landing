@@ -23,9 +23,7 @@ const LinksSection = () => {
               />
             </div>
             <div className=" p2 text-neutralLight-neutral60 dark:text-neutralDark-neutral60 max-w-[25.375rem]">
-              We would love to make data science great again with machine
-              learning, research and prototyping, data quality engineering,
-              analytics automation, creative coding, dataset management.
+              Make Data Science Great Again
             </div>
           </div>
 

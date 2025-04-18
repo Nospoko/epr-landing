@@ -12,16 +12,14 @@ const CustomSolutionsSection = () => {
           {" "}
           <div className="leading-[1.98rem] text-neutralLight-neutral20 dark:text-neutralDark-neutral20 h6_400 md:h6 max-w-[40.063rem]">
             <p>
-              We’re ready to help and excited to learn about your project! Send
-              us an email and we’ll be in touch or take our 5-minute
-              questionnaire instead.{" "}
+              Do you have an idea for something special? We can squeeze it out of your data!
             </p>
           </div>
           <div className="flex items-start ">
             <CustomLink
               variant="primary"
               href="/contact-us"
-              text="Go to the questionnaire"
+              text="Get in touch"
             />
           </div>
         </div>

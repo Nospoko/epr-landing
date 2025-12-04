@@ -12,7 +12,7 @@ const dataLabSectionTexts = [
   {
     title: "Development and Scaling",
     description:
-      "Our development process is designed to be flexible, allowing us to create systems that are perfectly aligned with your operational needs and easily scalable as those needs evolve. By integrating best practices in data science with custom development strategies, we ensure that your data applications are not just cutting-edge today but are poised for future growth.",
+      "We support you in moving from early prototypes to reliable, production-ready systems. This includes hardening data pipelines, reducing latency, and designing infrastructure that can handle increased load without unnecessary complexity or cost. Whether the system needs to support more users, more data, or more demanding compute requirements, we ensure that the underlying architecture remains stable, predictable, and straightforward to extend as your operations grow.",
   },
 ];
 

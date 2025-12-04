@@ -12,7 +12,7 @@ const SoftwareConsultingSection = () => {
       <div className="flex flex-col gap-[0.5rem]">
         <p className="h6">
           We provide specialized software support for scientific research at
-          universities and other institu-tions. Our focus is on numerical
+          universities and other institutions. Our focus is on numerical
           methods, data visualization, data quality management, and the
           development of custom processing pipelines. The services we offer
           include crafting interactive dashboards and designing user-friendly
